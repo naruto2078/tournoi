@@ -51,4 +51,9 @@ class DbAuth {
     public function checkpassword($password, $password_confirm) {
         return $password == $password_confirm;
     }
+
+    public function register($username, $password, $nom, $prenom) {
+        $req = $this->db->prepare("INSERT INTO users(username, password,nom,prenom) VALUES (?,?,?,?)",[$username, $password, $nom, $prenom],null,true);
+        return $req;
+    }
 }

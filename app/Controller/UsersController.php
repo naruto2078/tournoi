@@ -16,7 +16,7 @@ class UsersController extends AppController {
             $auth = new DbAuth(\App::getInstance()->getDb());
             $profile = $this->User->getInfo($_POST['username']);
             if ($auth->login($_POST['username'], $_POST['password'])) {
-                header('Location:index.php?p=account.index&user='.$profile->username);
+                header('Location:index.php?p=account.index&user=' . $profile->username);
             } else {
                 $errors = true;
             }
@@ -33,7 +33,11 @@ class UsersController extends AppController {
             $auth = new DbAuth(\App::getInstance()->getDb());
             $error_login = !$auth->checklogin($_POST['username']);
             $error_password = !$auth->checkpassword($_POST['password'], $_POST['password_confirm']);
+            if (!$error_login && !$error_password) {
+                $auth->register($_POST['username'], $_POST['password'], $_POST['nom'], $_POST['prenom']);
+            }
         }
+
         $form = new BootstrapForm($_POST);
         $this->render('users.register', compact('error_login', 'error_password', 'form'));
     }
