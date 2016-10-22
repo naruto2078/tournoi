@@ -12,6 +12,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <![endif]-->
 </head>
 
