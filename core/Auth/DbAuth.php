@@ -53,7 +53,7 @@ class DbAuth {
     }
 
     public function register($username, $password, $nom, $prenom) {
-        $req = $this->db->prepare("INSERT INTO users(username, password,nom,prenom) VALUES (?,?,?,?)",[$username, $password, $nom, $prenom],null,true);
+        $req = $this->db->prepare("INSERT INTO users(username, password,nom,prenom) VALUES (?,?,?,?)", [$username, $password, $nom, $prenom], null, true);
         return $req;
     }
 }

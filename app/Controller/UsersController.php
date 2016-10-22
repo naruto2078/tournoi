@@ -25,7 +25,7 @@ class UsersController extends AppController {
         $form = new BootstrapForm($_POST);
         $this->render('users.login', compact('form', 'errors', 'profile'));
     }
-
+    
     public function register() {
         $error_login = false;
         $error_password = false;

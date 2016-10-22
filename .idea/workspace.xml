@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            <state relative-caret-position="111">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -81,15 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbAuth.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DbAuth.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/Auth/DbAuth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
+            <state relative-caret-position="52">
               <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
-                <marker date="1477147268244" expanded="true" signature="526:563" ph="SELECT * FRO... users" />
-                <marker date="1477147268244" expanded="true" signature="1008:1045" ph="SELECT * FRO... users" />
-                <marker date="1477147268244" expanded="true" signature="1383:1448" ph="INSERT INTO users... " />
+                <marker date="1477148100147" expanded="true" signature="526:563" ph="SELECT * FRO... users" />
+                <marker date="1477148100147" expanded="true" signature="1008:1045" ph="SELECT * FRO... users" />
+                <marker date="1477148100147" expanded="true" signature="1383:1448" ph="INSERT INTO users... " />
               </folding>
             </state>
           </provider>
@@ -144,8 +144,8 @@
         <option value="$PROJECT_DIR$/app/Table/UserTable.php" />
         <option value="$PROJECT_DIR$/app/Views/account/index.php" />
         <option value="$PROJECT_DIR$/app/Views/templates/default.php" />
-        <option value="$PROJECT_DIR$/core/Auth/DbAuth.php" />
         <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
+        <option value="$PROJECT_DIR$/core/Auth/DbAuth.php" />
       </list>
     </option>
   </component>
@@ -262,7 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Blog" />
@@ -349,12 +349,20 @@
       <workItem from="1476869693742" duration="13455000" />
       <workItem from="1476987332869" duration="10617000" />
       <workItem from="1477122680462" duration="1723000" />
-      <workItem from="1477146728933" duration="981000" />
+      <workItem from="1477146728933" duration="1358000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajout de la fonction register dans la classe d'authentification DbAuth">
+      <created>1477147768667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1477147768667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58101000" />
+    <option name="totallyTimeSpent" value="58478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -389,6 +397,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajout de la fonction register dans la classe d'authentification DbAuth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonction register dans la classe d'authentification DbAuth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -797,14 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/users/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="36" column="100" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/users/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -823,23 +827,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Auth/DbAuth.php">
+    <entry file="file://$PROJECT_DIR$/app/Views/users/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <marker date="1477147268244" expanded="true" signature="526:563" ph="SELECT * FRO... users" />
-            <marker date="1477147268244" expanded="true" signature="1008:1045" ph="SELECT * FRO... users" />
-            <marker date="1477147268244" expanded="true" signature="1383:1448" ph="INSERT INTO users... " />
-          </folding>
+        <state relative-caret-position="936">
+          <caret line="36" column="100" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        <state relative-caret-position="111">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Auth/DbAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1477148100147" expanded="true" signature="526:563" ph="SELECT * FRO... users" />
+            <marker date="1477148100147" expanded="true" signature="1008:1045" ph="SELECT * FRO... users" />
+            <marker date="1477148100147" expanded="true" signature="1383:1448" ph="INSERT INTO users... " />
+          </folding>
         </state>
       </provider>
     </entry>
