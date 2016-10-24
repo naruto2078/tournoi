@@ -272,9 +272,15 @@
                                         <button class="btn btn-default" type="button">
                                             <i class="fa fa-search"></i>
                                         </button>
-                                    </span>
+                            </span>
                         </div>
                         <!-- /input-group -->
+                    </li>
+
+                    <li>
+                        <a href="?p=account.teams.add&id=<?= $_SESSION['auth']; ?>">
+                            <button class="btn btn-success form-control">Créer un évènement</button>
+                        </a>
                     </li>
                     <li>
                         <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
@@ -405,12 +411,11 @@
 
         </div>
         <!-- /.row -->
-        <div class="row">
-            <div class="col-md-12">
-                <?=$content;?>
+            <div class="container">
+                <?= $content; ?>
             </div>
 
-        </div>
+
         <!-- /.row -->
     </div>
     <!-- /#page-wrapper -->

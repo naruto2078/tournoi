@@ -67,6 +67,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script>window.jQuery || document.write('<script src="/js/jquery-3.1.1.min.js"><\/script>')</script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/form.js"></script>
 
 </body>
 </html>

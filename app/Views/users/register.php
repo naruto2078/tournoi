@@ -7,6 +7,8 @@
     <div class="alert alert-danger">
         Les mots de passe ne correspondent pas
     </div>
+    <script>zero("password")</script>
+
 <?php endif; ?>
 
 <div class="container">
@@ -29,10 +31,10 @@
                                 <?= $form->input('username', 'Login', ['placeholder' => 'Login']); ?>
                             </div>
                             <div class="form-group">
-                                <?= $form->input('password', 'Mot de passe', ['type' => 'password', 'placeholder' => 'Mot de passe']); ?>
+                                <?= $form->input('password', 'Mot de passe', ['type' => 'password', 'placeholder' => 'Mot de passe', 'onsubmit' =>"reset('password','password_confirm')", 'id'=>'password']); ?>
                             </div>
                             <div class="form-group">
-                                <?= $form->input('password_confirm', 'Mot de passe', ['type' => 'password', 'placeholder' => 'Confirmer Mot de passe']); ?>
+                                <?= $form->input('password_confirm', 'Mot de passe', ['type' => 'password', 'placeholder' => 'Confirmer Mot de passe', 'onsubmit' =>"zero(this.value)", 'id'=>'password_confirm']); ?>
                             </div>
                             <button type="submit" class="btn btn-lg btn-success btn-block">S'inscire</button>
                         </fieldset>
