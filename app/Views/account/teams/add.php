@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION['auth']) || $_GET['id'] != $_SESSION['auth']) {
+    header('HTTP/1.0 404 Not Found');
+    die('Page introuvable');
+}
+?>
 <div class="container">
     <div class="row">
         <div class=" col-md-4 col-md-offset-3">
