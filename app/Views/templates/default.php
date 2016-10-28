@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
     <![endif]-->
 </head>
 
@@ -67,7 +67,23 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script>window.jQuery || document.write('<script src="/js/jquery-3.1.1.min.js"><\/script>')</script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/form.js"></script>
+<script>
+    $('.f1 input[type="text"], .f1 input[type="password"], .f1 textarea').on('focus', function() {
+        $(this).removeClass('input-error');
+    });
+    // fields validation
+    $('form button.btn').on('click',function () {
+        var parent_fieldset = $(this).parents('fieldset');
+        parent_fieldset.find('input[type="text"], input[type="password"], textarea').each(function() {
+            if( $(this).val() == "" ) {
+                $(this).addClass('input-error');
+            }
+            else {
+                $(this).removeClass('input-error');
+            }
+        });
+    })
 
+</script>
 </body>
 </html>

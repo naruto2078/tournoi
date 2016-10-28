@@ -10,14 +10,22 @@
     <meta name="author" content="">
 
     <title><?= App::getInstance()->title; ?></title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
+    <!-- DatePicker-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css">
     <!-- Custom CSS -->
     <link href="/css/dashboard.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!--Formulaire multistep-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form-elements.css">
+
     <!--Font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -269,16 +277,16 @@
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" placeholder="Search...">
                             <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">
-                                            <i class="fa fa-search"></i>
-                                        </button>
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
                             </span>
                         </div>
                         <!-- /input-group -->
                     </li>
 
                     <li>
-                        <a href="?p=account.teams.add&id=<?= $_SESSION['auth']; ?>">
+                        <a href="?p=account.events.add&id=<?= $_SESSION['auth']; ?>">
                             <button class="btn btn-success form-control">Créer un évènement</button>
                         </a>
                     </li>
@@ -378,42 +386,7 @@
     </nav>
 
     <div id="page-wrapper">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Dashboard</h1>
-            </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="fa fa-comments fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>New Comments!</div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="panel-footer">
-                            <span class="pull-left">View Details</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.row -->
-            <div class="container">
-                <?= $content; ?>
-            </div>
+        <?= $content; ?>
 
 
         <!-- /.row -->
@@ -435,7 +408,30 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="/js/dashboard.js"></script>
+<!--Formulaire multi step -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.backstretch.min.js"></script>
 
+<!--Date picker-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.fr.min.js"></script>
+<script src="/js/jquery.backstretch.min.js"></script>
+<script src="/js/form.js"></script>
+<script>
+    $(document).ready(function () {
+        var date_input = $('input[name="date"]'); //our date input has the name "date"
+        var container = $('.container form').length > 0 ? $('.container form').parent() : "body";
+        var options = {
+            format: 'dd-mm-yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+            startDate: new Date(),
+            language: 'fr'
+        };
+        date_input.datepicker(options);
+    })
+</script>
 </body>
 
 </html>
