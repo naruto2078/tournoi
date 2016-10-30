@@ -19,16 +19,15 @@
     <!-- Custom CSS -->
     <link href="/css/dashboard.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/form.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!--Formulaire multistep-->
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form-elements.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--Font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
+    <!--Themify-->
+    <link rel="stylesheet" href="/css/themify-icons/themify-icons.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +43,8 @@
 <div id="wrapper">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <nav class="navbar navbar-default navbar-static-top header bg-gradient-9" role="navigation"
+         style="margin-bottom: 0">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -57,7 +57,7 @@
         <!-- /.navbar-header -->
 
         <ul class="nav navbar-top-links navbar-right">
-            <li class="dropdown">
+            <!--<li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
@@ -104,11 +104,11 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </li>
-                </ul>
-                <!-- /.dropdown-messages -->
-            </li>
+                </ul>-->
+            <!-- /.dropdown-messages -->
+            <!--</li>-->
             <!-- /.dropdown -->
-            <li class="dropdown">
+            <!--<li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
@@ -187,11 +187,11 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </li>
-                </ul>
-                <!-- /.dropdown-tasks -->
-            </li>
+                </ul>-->
+            <!-- /.dropdown-tasks -->
+            <!--</li>-->
             <!-- /.dropdown -->
-            <li class="dropdown">
+            <!--<li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
@@ -247,13 +247,14 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </li>
-                </ul>
-                <!-- /.dropdown-alerts -->
-            </li>
+                </ul>-->
+            <!-- /.dropdown-alerts -->
+            <!--</li>-->
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    <!--<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>-->
+                    <i class="ti-user "></i> <span><?= $_SESSION['user']; ?></span> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -275,7 +276,7 @@
                 <ul class="nav" id="side-menu">
                     <li class="sidebar-search">
                         <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Search...">
+                            <input type="text" class="form-control" style="height: 34px" placeholder="Search...">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -287,9 +288,10 @@
 
                     <li>
                         <a href="?p=account.events.add&id=<?= $_SESSION['auth']; ?>">
-                            <button class="btn btn-success form-control">Créer un évènement</button>
+                            <button class="btn btn-danger form-control">Créer un évènement</button>
                         </a>
                     </li>
+                    <li class="li-title">Mes évènements</li>
                     <li>
                         <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
@@ -386,7 +388,32 @@
     </nav>
 
     <div id="page-wrapper">
-        <?= $content; ?>
+        <div class="col-lg-12">
+            <?= $content; ?>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur assumenda,
+                dignissimos dolor eaque exercitationem ipsam iste magnam molestiae mollitia nostrum officia possimus
+                quasi reiciendis repellat, veritatis? Et, eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Aliquam asperiores aspernatur assumenda, dignissimos dolor eaque exercitationem ipsam iste magnam
+                molestiae mollitia nostrum officia possimus quasi reiciendis repellat, veritatis? Et, eveniet!Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur assumenda, dignissimos
+                dolor eaque exercitationem ipsam iste magnam molestiae mollitia nostrum officia possimus quasi
+                reiciendis repellat, veritatis? Et, eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam asperiores aspernatur assumenda, dignissimos dolor eaque exercitationem ipsam iste magnam
+                molestiae mollitia nostrum officia possimus quasi reiciendis repellat, veritatis? Et, eveniet!Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur assumenda, dignissimos
+                dolor eaque exercitationem ipsam iste magnam molestiae mollitia nostrum officia possimus quasi
+                reiciendis repellat, veritatis? Et, eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam asperiores aspernatur assumenda, dignissimos dolor eaque exercitationem ipsam iste magnam
+                molestiae mollitia nostrum officia possimus quasi reiciendis repellat, veritatis? Et, eveniet!Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur assumenda, dignissimos
+                dolor eaque exercitationem ipsam iste magnam molestiae mollitia nostrum officia possimus quasi
+                reiciendis repellat, veritatis? Et, eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam asperiores aspernatur assumenda, dignissimos dolor eaque exercitationem ipsam iste magnam
+                molestiae mollitia nostrum officia possimus quasi reiciendis repellat, veritatis? Et, eveniet!Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur assumenda, dignissimos
+                dolor ea
+            </div>
+        </div>
 
 
         <!-- /.row -->
@@ -409,14 +436,15 @@
 <!-- Custom Theme JavaScript -->
 <script src="/js/dashboard.js"></script>
 <!--Formulaire multi step -->
-<script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.backstretch.min.js"></script>
+<script src="/js/scripts.js"></script>
+
 
 <!--Date picker-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.fr.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.fr.min.js"></script>
 <script src="/js/jquery.backstretch.min.js"></script>
-<script src="/js/form.js"></script>
 <script>
     $(document).ready(function () {
         var date_input = $('input[name="date"]'); //our date input has the name "date"

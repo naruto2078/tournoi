@@ -1,8 +1,9 @@
 
-.multistep input[type="text"],
-.multistep input[type="password"],
-.multistep textarea,
-.multistep textarea.form-control {
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea,
+textarea.form-control {
 	height: 44px;
     margin: 0;
     padding: 0 20px;
@@ -36,6 +37,7 @@
     border: 1px solid #ccc;
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
+
 
 .multistep input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder,
 .multistep textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; }

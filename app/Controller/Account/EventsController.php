@@ -31,11 +31,14 @@ class EventsController extends AppController {
             $date = date('Y-m-d',$time);
             /*$this->Event->create([
                 'nom' => $_POST['nom'],
-                'lieu' => $_POST['date'],
+                'lieu' => $_POST['lieu'],
+                'date' => $_POST['date']
                 'organisateur' => $_SESSION['auth'],
                 'type_de_jeu' => $_POST['type_de_jeu'],
                 'nb_tournois' => $_POST['nb_tournois']
-            ]);*/
+            ])
+            $_GET['event'] = $this->Event->lastInsertId();
+            header('Location:index.php?p=accounts.tournois.add&event=$_GET['event']);*/
         }
         $form = new BootstrapForm($_POST);
         $this->render('account.events.add', compact('form'));

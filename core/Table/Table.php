@@ -96,4 +96,8 @@ class Table {
         }
         return $return;
     }
+
+    public function lastInsertId(){
+        return $this->db->lastInsertId();
+    }
 }
