@@ -8,6 +8,10 @@ if (isset($_GET['p'])) {
 } else {
     $page = 'home.index';
 }
+if($page == 'logout') {
+    session_destroy();
+    header('Location:index.php');
+}
 
 $page = explode('.', $page);
 

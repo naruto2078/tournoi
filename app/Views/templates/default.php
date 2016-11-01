@@ -10,9 +10,11 @@
     <title><?= App::getInstance()->title; ?></title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.paper.min.css">
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/app.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
     <![endif]-->
 </head>
@@ -20,7 +22,7 @@
 <body>
 
 <!-- Static navbar -->
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -52,8 +54,8 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="?p=users.register">S'inscrire</a></li>
-                <li><a href="?p=users.login">Se connecter</a></li>
+                <li><a href="index.php?p=users.register">S'inscrire</a></li>
+                <li><a href="index.php?p=users.login">Se connecter</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

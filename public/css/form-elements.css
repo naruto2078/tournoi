@@ -3,7 +3,7 @@ input[type="text"],
 input[type="password"],
 input[type="number"],
 textarea,
-textarea.form-control {
+textarea.form-control , select.form-control{
 	height: 44px;
     margin: 0;
     padding: 0 20px;
@@ -31,7 +31,7 @@ textarea.form-control {
 .multistep input[type="text"]:focus,
 .multistep input[type="password"]:focus,
 .multistep textarea:focus,
-.multistep textarea.form-control:focus {
+.multistep textarea.form-control:focus, select.form-control:focus {
 	outline: 0;
 	background: #fff;
     border: 1px solid #ccc;

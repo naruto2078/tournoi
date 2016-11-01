@@ -40,7 +40,7 @@ class BootstrapForm extends Form {
     }
 
     public function select($name, $label, $options) {
-        $label = '<label>' . $label . '</label>';
+        $label = '<label class="sr-only">' . $label . '</label>';
         $input = '<select class="form-control" name="' . $name . '">';
         foreach ($options as $k => $v) {
             $attributes = '';

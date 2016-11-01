@@ -2,13 +2,12 @@
 
 <div class="container">
 
-
     <div class="row multistep">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
             <form role="form" action="" method="post" class="f1">
 
-                <h3>Register To Our App</h3>
-                <p>Fill in the form to get instant access</p>
+                <h3>Créez votre évènement</h3>
+                <p>Veuillez remplir le formulaire suivant</p>
                 <div class="f1-steps">
                     <div class="f1-progress">
                         <div class="f1-progress-line" data-now-value="25" data-number-of-steps="2"
@@ -57,7 +56,7 @@
                 <fieldset>
                     <h4>Type de jeu et nombre de tournois initiaux:</h4>
                     <div class="form-group">
-                        <?= $form->input('type_de_jeu', 'Type de jeu', ['placeholder' => 'Type de jeu...', 'id' => 'type_de_jeu']); ?>
+                        <?= $form->select('type_de_jeu', 'Type de jeu', $options); ?>
                         <!--<label class="sr-only" for="f1-email">Email</label>
                         <input type="text" name="f1-email" placeholder="Email..." class="f1-email form-control"
                                id="f1-email">-->
