@@ -4,11 +4,11 @@
 
     <div class="row multistep">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
-            <form role="form" action="" method="post" class="f1">
+            <form role="form" action="" method="post" class="f1 events">
 
                 <h3>Créez votre évènement</h3>
                 <p>Veuillez remplir le formulaire suivant</p>
-                <div class="f1-steps">
+                <div class="f1-steps " >
                     <div class="f1-progress">
                         <div class="f1-progress-line" data-now-value="25" data-number-of-steps="2"
                              style="width: 25%;"></div>

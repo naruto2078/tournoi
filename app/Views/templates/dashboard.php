@@ -23,7 +23,7 @@
     <!--Formulaire multistep-->
     <link rel="stylesheet" href="/css/form-elements.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <!--<link href="/css/events_css.php" rel="stylesheet" type="text/css" media="all" />-->
     <!--Font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!--Themify-->
@@ -35,6 +35,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        /*.f1-step{width: 25%};*/
+        <?= '.f1-step{width:'.$_SESSION['width'].'%';?>
+    </style>
 
 </head>
 

@@ -51,6 +51,10 @@ class TournoisController extends AppController {
         }
         $form = new BootstrapForm($_POST);
         $this->render('account.tournois.add', compact('form','nb_tournois','categories','genres'));
+
+        $_SESSION['width'] = 100/intval($nb_tournois);
+        var_dump($_SESSION['width']);
+        //require ROOT.'/app/Views/templates/dashboard.php' ;
     }
 
 }

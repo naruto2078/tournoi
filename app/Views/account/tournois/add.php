@@ -1,13 +1,13 @@
 <div class="container">
     <div class="row multistep">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
-            <form role="form" action="" method="post" class="f1">
+            <form role="form" action="" method="post" class="f1 tournois">
                 <h3>Renseignement sur les différents tournois</h3>
                 <p></p>
                 <div class="f1-steps">
                     <div class="f1-progress">
                         <div class="f1-progress-line" data-now-value="<?= 100 / intval($nb_tournois) / 2; ?>"
-                             data-number-of-steps="2"
+                             data-number-of-steps="<?= intval($nb_tournois); ?>"
                              style="width: <?= 100 / intval($nb_tournois) / 2; ?>%;"></div>
                     </div>
                     <div class="f1-step active">

@@ -96,8 +96,11 @@
 .f1-step {
     position: relative;
     float: left;
-    width: 50%;
+    /*width: 50%;*/
     padding: 0 5px;
+}
+.events .f1-step{
+    width: 50%;
 }
 
 .f1-step-icon {
