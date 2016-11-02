@@ -38,11 +38,16 @@ class TournoisController extends AppController {
         ];
         if (!empty($_POST)) {
 
-            /*$this->Event->create([
-                'nom_categorie' => $_POST['nom_categorie'],
-                'id_event' =>  $_SESSION['event']
-            ]);
-            ;*/
+            for($i=1;$i<= intval($nb_tournois); $i++){
+                $this->Tournoi->create([
+                    'nom_categorie' => $_POST["nom_categorie$i"],
+                    'genre'=> $_POST["genre$i"],
+                    'id_event' =>  $_SESSION['event']
+                ]);
+            }
+
+            header('Location:index.php?p=account.index&user='.$_SESSION['user']);
+
         }
         $form = new BootstrapForm($_POST);
         $this->render('account.tournois.add', compact('form','nb_tournois','categories','genres'));

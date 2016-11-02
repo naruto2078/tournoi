@@ -2,388 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147e0297-46c1-40e1-b795-935481c9073d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/fonts/themify.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/fonts/themify.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/fonts/themify.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Entity/CategorieEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Entity/Type_de_jeuEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Table/CategorieTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Table/Type_de_jeuTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Views/account/tournois/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap.paper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/Italic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/agenda.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/alarm-clock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/alert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/align-center.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/align-justify.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/align-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/align-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/anchor.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/android.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-double-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-double-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-double-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-double-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/angle-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/announcement.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/apple.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/archive.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-circle-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-circle-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-circle-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-circle-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-top-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-top-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrow.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrows-corner.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrows-horizontal.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/arrows-vertical.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/back-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/back-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bar-chart-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bar-chart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/basketball.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bell.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/blackboard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bolt-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bolt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/book.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bookmark-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/bookmark.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/briefcase.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/brush-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/brush.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/camera.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/car.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/check-box.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/check.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/clip.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/clipboard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/close.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/cloud-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/cloud-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/cloud.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/comment-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/comment.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/comments-smiley.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/comments.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-backward.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-eject.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-forward.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-pause.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-play.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-record.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-shuffle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-skip-backward.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-skip-forward.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/control-stop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/credit-card.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/crown.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/css3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/cup.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/cut.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/dashboard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/desktop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/direction-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/direction.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/download.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/dribbble.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/dropbox-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/dropbox.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/drupal.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/email.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/envelope.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/eraser.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/exchange-vertical.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/export.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/eye.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/face-sad.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/face-smile.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/facebook.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/file.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/files.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/filter.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/flag-alt-2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/flag-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/flag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/flickr-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/flickr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/folder.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/fullscreen.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/gallery.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/game.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/gift.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/github.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/google.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-drag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-open.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-point-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-point-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-point-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-point-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hand-stop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/harddrive.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/harddrives.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/headphone-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/headphone.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/heart-broken.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/heart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/help-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/help.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/home.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/html5.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/hummer.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/id-badge.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/image.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/import.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/infinite.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/info-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/info.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/ink-pen.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/instagram.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/joomla.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/jsfiddle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/key.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layers-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layers.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-accordion-list.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-accordion-merged.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-accordion-separated.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-column2-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-column2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-column3-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-column3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-column4-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-column4.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-cta-btn-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-cta-btn-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-cta-center.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-cta-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-cta-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid2-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid2-thumb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid3-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid4-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-grid4.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-line-solid.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-list-large-image.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-list-post.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-list-thumb-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-list-thumb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-center-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-center.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-left-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-overlay-alt-2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-overlay-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-overlay.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-right-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-media-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-menu-full.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-menu-separated.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-menu-v.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-menu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-placeholder.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-sidebar-2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-sidebar-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-sidebar-none.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-sidebar-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-slider-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-slider.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-tab-min.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-tab-v.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-tab-window.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-tab.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-width-default-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-width-default.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout-width-full.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/layout.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/light-bulb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/line-dashed.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/line-dotted.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/line-double.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/link.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/linkedin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/linux.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/list-ol.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/list.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/location-arrow.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/location-pin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/lock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/loop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/magnet.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/map-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/map.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/marker-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/marker.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/medall-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/medall.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/menu-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/menu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/microphone-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/microphone.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/microsoft-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/microsoft.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/minus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/mobile.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/money.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/more-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/more.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/mouse-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/mouse.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/music-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/music.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/na.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/new-window.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/notepad.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/package.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/paint-bucket.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/paint-roller.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/palette.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/panel.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/paragraph.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pencil-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pencil-alt2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pencil.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pie-chart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pin-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pin2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pinterest-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pinterest.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/plug.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/plus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/power-off.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/printer.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/pulse.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/quote-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/quote-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/receipt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/reddit.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/reload.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/rocket.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/rss-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/rss.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/ruler-alt-2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/ruler-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/ruler-pencil.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/ruler.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/save-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/save.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/server.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/settings.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/share-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/share.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/sharethis-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/sharethis.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shield.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shift-left-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shift-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shift-right-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shift-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shine.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shopping-cart-full.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shopping-cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/shortcode.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/signal.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/skype.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/slice.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/smallcap.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/soundcloud.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/split-h.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/split-v-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/split-v.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/spray.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/stack-overflow.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/stamp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/star.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/stats-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/stats-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/support.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/tablet.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/tag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/target.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/text.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/themify-favicon-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/themify-favicon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/themify-logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/thought.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/thumb-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/thumb-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/ticket.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/time.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/timer.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/trash.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/trello.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/truck.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/tumblr-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/tumblr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/twitter-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/twitter.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/underline.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/unlink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/unlock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/upload.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/uppercase.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/user.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/vector.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/video-camera.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/video-clapper.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/view-grid.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/view-list-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/view-list.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/vimeo-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/vimeo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/volume.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/wallet.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/wand.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/wheelchair.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/widget-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/widget.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/widgetized.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/window.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/wordpress.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/world.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/write.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/yahoo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/youtube.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/zip.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/zoom-in.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/SVG/zoom-out.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/Themify IconFonts 5-23-2014.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/demo-files/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/fonts/themify.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/ie7/ie7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/ie7/ie7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/themify-icons/themify-icons.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/EventsController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/EventsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/events/add.php" afterPath="$PROJECT_DIR$/app/Views/account/events/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/templates/dashboard.php" afterPath="$PROJECT_DIR$/app/Views/templates/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/templates/default.php" afterPath="$PROJECT_DIR$/app/Views/templates/default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/users/login.php" afterPath="$PROJECT_DIR$/app/Views/users/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/users/register.php" afterPath="$PROJECT_DIR$/app/Views/users/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/HTML/BootstrapForm.php" afterPath="$PROJECT_DIR$/core/HTML/BootstrapForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dashboard.css" afterPath="$PROJECT_DIR$/public/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/form-elements.css" afterPath="$PROJECT_DIR$/public/css/form-elements.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
     </list>
     <ignored path="tournoi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -407,17 +27,45 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="336">
               <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/Account/EventsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="48" column="64" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="64" />
+              <folding>
+                <marker date="1478031504993" expanded="true" signature="630:639" ph="SELECT * fro... " />
+                <marker date="1478031504993" expanded="true" signature="630:655" ph="SELECT * FRO... type_de_jeu" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TournoisController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+              <folding>
+                <marker date="1478080539407" expanded="true" signature="462:486" ph="SELECT nb_to... events" />
+                <marker date="1478080539407" expanded="true" signature="462:505" ph="SELECT nb_to... events" />
+                <marker date="1478080539407" expanded="true" signature="462:533" ph="SELECT * FRO... categories" />
+                <marker date="1478080539407" expanded="true" signature="626:650" ph="SELECT nb_to... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="676">
               <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
@@ -488,11 +136,11 @@
         <option value="$PROJECT_DIR$/app/Table/CategorieTable.php" />
         <option value="$PROJECT_DIR$/app/Entity/CategorieEntity.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/EventsController.php" />
-        <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
         <option value="$PROJECT_DIR$/app/Views/account/tournois/add.php" />
         <option value="$PROJECT_DIR$/app/Views/templates/dashboard.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/app/Views/users/register.php" />
+        <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
       </list>
     </option>
   </component>
@@ -504,8 +152,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP (5.6.16)" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="77" />
-    <option name="y" value="142" />
+    <option name="x" value="82" />
     <option name="width" value="1291" />
     <option name="height" value="735" />
   </component>
@@ -556,6 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -638,10 +286,31 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Account" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -763,6 +432,7 @@
       <workItem from="1478009916224" duration="33000" />
       <workItem from="1478009973865" duration="10824000" />
       <workItem from="1478029275446" duration="5741000" />
+      <workItem from="1478075359053" duration="1836000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de la fonction register dans la classe d'authentification DbAuth">
       <created>1477147768667</created>
@@ -782,16 +452,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163865000" />
+    <option name="totallyTimeSpent" value="165701000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="142" width="1291" height="735" extended-state="0" />
-    <editor active="false" />
+    <frame x="82" y="0" width="1291" height="735" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19764706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -804,7 +475,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -983,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="134" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="51" column="29" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-113">
           <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,13 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-          <folding>
-            <marker date="1477772462980" expanded="true" signature="660:674" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1477772462980" expanded="true" signature="1497:1536" ph="SELECT * FRO... $" />
-            <marker date="1477772462980" expanded="true" signature="1878:1924" ph="UPDATE ${{$t... " />
-            <marker date="1477772462980" expanded="true" signature="2238:2269" ph="INSERT INTO $... " />
-            <marker date="1477772462980" expanded="true" signature="2371:2408" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,19 +804,6 @@
         <state relative-caret-position="858">
           <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-          <folding>
-            <marker date="1478032127637" expanded="true" signature="462:486" ph="SELECT nb_to... events" />
-            <marker date="1478032127637" expanded="true" signature="462:505" ph="SELECT nb_to... events" />
-            <marker date="1478032127637" expanded="true" signature="462:533" ph="SELECT * FRO... categories" />
-            <marker date="1478032127637" expanded="true" signature="626:650" ph="SELECT nb_to... events" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,10 +823,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/Account/EventsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <caret line="48" column="64" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="64" />
           <folding>
             <marker date="1478031504993" expanded="true" signature="630:639" ph="SELECT * fro... " />
             <marker date="1478031504993" expanded="true" signature="630:655" ph="SELECT * FRO... type_de_jeu" />
@@ -1191,19 +850,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/add.php">
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="338">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+          <folding>
+            <marker date="1478080539407" expanded="true" signature="462:486" ph="SELECT nb_to... events" />
+            <marker date="1478080539407" expanded="true" signature="462:505" ph="SELECT nb_to... events" />
+            <marker date="1478080539407" expanded="true" signature="462:533" ph="SELECT * FRO... categories" />
+            <marker date="1478080539407" expanded="true" signature="626:650" ph="SELECT nb_to... events" />
+          </folding>
         </state>
       </provider>
     </entry>
