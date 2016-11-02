@@ -53,4 +53,11 @@ class TournoisController extends AppController {
         $this->render('account.tournois.add', compact('form','nb_tournois','categories','genres'));
     }
 
+    public function tournoiByEvent(){
+$id = $_GET["event_id"];
+        $tournois = $this->Tournoi->tournoiByEvent($id);
+        $this->render('account.tournois.tournoiByEvent',compact('tournois'));
+
+    }
+
 }

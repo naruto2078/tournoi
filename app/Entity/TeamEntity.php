@@ -13,4 +13,6 @@ use Core\Entity\Entity;
 
 class TeamEntity extends Entity {
 
+	
+
 }

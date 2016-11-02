@@ -52,6 +52,11 @@ class EventsController extends AppController {
         $this->render('account.events.add', compact('form','options'));
     }
 
+public function AllEventByOrganizer(){
 
+   $events= $this->Event->findByOrganizer($_SESSION['auth']);
+
+   $this->render('account.events.AllEventbyOrganizer',compact('events'));
+}
 
 }
