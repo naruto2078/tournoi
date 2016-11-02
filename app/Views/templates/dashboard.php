@@ -101,9 +101,9 @@
                             <button class="btn btn-danger form-control">Créer un évènement</button>
                         </a>
                     </li>
-                    <li class="li-title">Mes évènements</li>
+                    <li class="li-title">Tableau de Bord</li>
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="index.php?p=account.events.AllEventByOrganizer"><i class="fa fa-dashboard fa-fw"></i> Mes Evenements</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>

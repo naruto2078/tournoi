@@ -35,10 +35,18 @@ class UsersController extends AppController {
             $error_password = !$auth->checkpassword($_POST['password'], $_POST['password_confirm']);
             if (!$error_login && !$error_password) {
                 $auth->register($_POST['username'], $_POST['password'], $_POST['nom'], $_POST['prenom']);
+              
+            }
+              if ($auth->login($_POST['username'], $_POST['password'])) {
+                header('Location:index.php?p=account.index&user=' . $_POST['username']);
+            } else {
+                $errors = true;
             }
         }
 
         $form = new BootstrapForm($_POST);
         $this->render('users.register', compact('error_login', 'error_password', 'form'));
     }
+
+    
 }

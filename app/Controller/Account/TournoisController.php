@@ -57,4 +57,11 @@ class TournoisController extends AppController {
         //require ROOT.'/app/Views/templates/dashboard.php' ;
     }
 
+    public function tournoiByEvent(){
+$id = $_GET["event_id"];
+        $tournois = $this->Tournoi->tournoiByEvent($id);
+        $this->render('account.tournois.tournoiByEvent',compact('tournois'));
+
+    }
+
 }
