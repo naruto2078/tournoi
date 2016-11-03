@@ -103,16 +103,16 @@
                     </li>
                     <li class="li-title">Tableau de Bord</li>
                     <li>
-                        <a href="index.php?p=account.events.AllEventByOrganizer"><i class="fa fa-dashboard fa-fw"></i> Mes Evenements</a>
+                        <a href="index.php?p=account.events.AllEventByOrganizer"><i class="fa fa-trophy fa-fw"></i> Mes Evenements</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-users fa-fw"></i> Equipes<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="flot.html">Flot Charts</a>
+                                <a href="flot.html">Mes Equipes</a>
                             </li>
                             <li>
-                                <a href="morris.html">Morris.js Charts</a>
+                                <a href="?p=account.teams.add">Inscrire Une Equipe</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
