@@ -12,8 +12,8 @@ namespace App\Entity;
 use Core\Entity\Entity;
 
 class TournoiEntity extends Entity {
- 
 
-   
-
+    public function getUrl(){
+        return 'index.php?p=account.tournois.gerer&event_id=2&tournoi_id='.$this->id;
+    }
 }

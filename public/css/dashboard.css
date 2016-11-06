@@ -251,6 +251,9 @@ ul.collapse  li {
     background-color: transparent;
     transition: all .5s;
 }
+/*.btn-primary{
+    background: #0d87e9;
+}*/
 
 .btn-primary.btn-outline {
     color: #428bca;
@@ -282,6 +285,35 @@ ul.collapse  li {
 .btn-danger.btn-outline:hover {
     color: white;
 }
+
+.panel-primary{
+    background: #53BCE2;
+    border-color: #53BCE2;
+}
+.panel-primary > .panel-heading{
+    background: #53BCE2;
+    border-color: #53BCE2;
+}
+.panel-primary  .panel-footer{
+    background: #53BCE2;
+    border-color: #53BCE2;
+    background: rgba(0,0,0,.1);
+    color: #ffffff;
+}
+
+.panel-success, .panel-success > .panel-heading{
+    background: #2ecc71;
+    border-color: #2ecc71;
+    color: #ffffff;
+}
+.panel-success  .panel-footer{
+    background: #2ecc71;
+    border-color: #2ecc71;;
+    background: rgba(0,0,0,.1);
+    color: #ffffff;
+}
+
+
 
 .chat {
     margin: 0;

@@ -3,5 +3,9 @@
     die('Page introuvable');
 } ?>
 
-<h2>Bonjour <?=$_SESSION['user'];?></h2>
-<h3><a href="?p=account.events.myEvents">Events</a></h3>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Bonjour <?=$_SESSION['user'];?></h2>
+        <h3><a href="?p=account.events.myEvents">Events</a></h3>
+    </div>
+</div>
