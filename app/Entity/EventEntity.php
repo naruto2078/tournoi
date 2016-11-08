@@ -16,8 +16,12 @@ class EventEntity extends Entity {
         return 'index.php?p=account.myEvents&id=' . $this->id;
     }*/
 
-    public function getUrl(){
+    public function adminUrl(){
 		return 'index.php?p=account.tournois.tournoiByEvent&event_id='.$this->id;
 	}
+
+	public function url(){
+        return 'index.php?p=account.tournois.register&event_id='.$this->id;
+    }
 
 }

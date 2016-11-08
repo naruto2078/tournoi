@@ -18,7 +18,7 @@
             foreach ($events as $event) :?>
 
                 <tr>
-                    <th scope="row"><a href="<?= $event->adminUrl(); ?>"><?= $event->nom; ?></a></th>
+                    <th scope="row"><a href="<?= $event->Url(); ?>"><?= $event->nom; ?></a></th>
                     <td><?= $event->lieu; ?></td>
                     <td><?= date_format(new DateTime($event->date), 'd-m-Y'); ?></td>
                     <td><?= $event->type_de_jeu; ?></td>

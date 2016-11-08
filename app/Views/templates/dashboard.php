@@ -86,7 +86,7 @@
                 <ul class="nav" id="side-menu">
                     <li class="sidebar-search">
                         <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" style="height: 34px" placeholder="Search...">
+                            <input type="text" class="form-control" style="height: 34px" placeholder="Rechercher...">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -122,10 +122,10 @@
                         <a href="#"><i class="fa fa-trophy fa-fw"></i>Participations<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="panels-wells.html">Mes participations</a>
+                                <a href="index.php?p=account.events.participations">Mes participations</a>
                             </li>
                             <li>
-                                <a href="buttons.html">Participer à un tournoi</a>
+                                <a href="index.php?p=account.events.register">Participer à un tournoi</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -138,14 +138,7 @@
     </nav>
 
     <div id="page-wrapper">
-        <!--<div class="row">-->
-                <?= $content; ?>
-
-        <!--</div>-->
-
-
-
-        <!-- /.row -->
+        <?= $content; ?>
     </div>
     <!-- /#page-wrapper -->
 

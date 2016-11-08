@@ -57,4 +57,15 @@ class EventsController extends AppController {
         $this->render('account.events.AllEventbyOrganizer', compact('events'));
     }
 
+    public function participations() {
+
+    }
+
+    public function register() {
+        $current_date = date_format(new \DateTime('NOW'), 'Y-m-d');
+        $events = $this->Event->query("SELECT * FROM events WHERE date >= ? ORDER BY date DESC ", [$current_date], false);
+        $form = new BootstrapForm($_POST);
+        $this->render('account.events.register', compact('form', 'events'));
+    }
+
 }

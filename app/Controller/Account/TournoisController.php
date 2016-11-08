@@ -66,10 +66,16 @@ class TournoisController extends AppController {
 
 
     public function gerer() {
-        $tournoi = $this->Tournoi->query("SELECT * FROM tournois WHERE id=?", [$_GET['tournoi_id']], true);
+        $tournois = $this->Tournoi->query("SELECT * FROM tournois WHERE id=?", [$_GET['tournoi_id']], true);
         $this->loadModel('Participe');
         $inscrits = $this->Participe->nbInscrits($_GET['tournoi_id']);
-        $this->render('account.tournois.gerer', compact('inscrits','tournoi'));
+        $this->render('account.tournois.gerer', compact('inscrits','tournois'));
+    }
+
+    public function register() {
+        $tournois = $this->Tournoi->tournoiByEvent($_GET['event_id']);
+        $form = new BootstrapForm($_POST);
+        $this->render('account.tournois.register', compact('form','tournois'));
     }
 
 }
