@@ -16,20 +16,58 @@ class TeamsController extends AppController {
         parent::__construct();
         $this->loadModel('Team');
         $this->loadModel('Player');
+        $this->loadModel('Club');
 
     }
 
+
     public function add() {
+        $errors = false;
         if (!empty($_POST)) {
-            $this->Team->create([
-                'name' => $_POST['name'],
-                'lvl' => 0
+            
+            if($this->Club->clubExist($_POST['nomClub'])){
+                $errors=true;
+
+            }
+            else{
+            $this->Club->create([
+                'nom' => $_POST['nomClub'],
+                'idUser' => $_SESSION['auth']
+                
             ]);
+            
+            }
+var_dump($id=$this->Club->getid($_POST['nomClub']));
+
+            $this->Team->create([
+                'name' => $_POST['nomTeam'],
+                'level' => $_POST['levelTeam'],
+
+                'idClub' => $id->id
+            ]);   
+        }
+        $form = new BootstrapForm($_POST);
+        $this->render('account.teams.add', compact('form','errors'));
+    }
+
+ public function addClub() {
+        
+        if (!empty($_POST)) {
+            echo "pas de post";
+            var_dump($_POST['nomClub']);
+            $this->Club->create([
+                'nom' => $_POST['nomClub'],
+
+                
+            ]);
+            var_dump($_POST['nomClub']);
+        }
+        else{
+            echo "pas de post";
         }
         $form = new BootstrapForm($_POST);
         $this->render('account.teams.add', compact('form'));
     }
-
     public function addPlayer($id){
         if(!empty($_POST)) {
             $this->Player->create([

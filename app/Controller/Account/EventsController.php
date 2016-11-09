@@ -28,14 +28,14 @@ class EventsController extends AppController {
     public function add() {
         $this->loadModel('Type_de_jeu');
         $types = $this->Type_de_jeu->query("SELECT * FROM type_de_jeu");
-        $options = [];
+        $options=[];
         foreach ($types as $type) {
-            $options[$type->type] = $type->type;
+            $options[$type->type]= $type->type;
         }
         if (!empty($_POST)) {
             $time = strtotime($_POST['date']);
 
-            $date = date('Y-m-d', $time);
+            $date = date('Y-m-d',$time);
             $this->Event->create([
                 'nom' => $_POST['nom'],
                 'lieu' => $_POST['lieu'],
@@ -49,12 +49,14 @@ class EventsController extends AppController {
             header('Location:index.php?p=account.tournois.add');
         }
         $form = new BootstrapForm($_POST);
-        $this->render('account.events.add', compact('form', 'options'));
+        $this->render('account.events.add', compact('form','options'));
     }
 
-    public function AllEventByOrganizer() {
-        $events = $this->Event->findByOrganizer($_SESSION['auth']);
-        $this->render('account.events.AllEventbyOrganizer', compact('events'));
-    }
+public function AllEventByOrganizer(){
+
+   $events= $this->Event->findByOrganizer($_SESSION['auth']);
+
+   $this->render('account.events.AllEventByOrganizer',compact('events'));
+}
 
 }

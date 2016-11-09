@@ -33,6 +33,7 @@ class Table {
         return $this->query('SELECT * FROM ' . $this->table);
     }
 
+
     /**
      * Effectue une requête préparée ou nom sur une table
      * @param $statement
