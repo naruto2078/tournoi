@@ -15,7 +15,7 @@ class ClubController extends AppController {
     public function __construct() {
         parent::__construct();
         $this->loadModel('Club');
-        
+
 
     }
 
@@ -24,16 +24,12 @@ class ClubController extends AppController {
         if (!empty($_POST)) {
             $this->Club->create([
                 'nom' => $_POST['nomClub']
-                
+
             ]);
             var_dump($_POST['nomClub']);
-        }
-        else{
-            echo "pas de post";
         }
         $form = new BootstrapForm($_POST);
         $this->render('account.teams.add', compact('form'));
     }
-
 
 }
