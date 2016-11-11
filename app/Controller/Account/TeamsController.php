@@ -46,7 +46,6 @@ class TeamsController extends AppController {
         $nbPlayers = $this->Player->query("SELECT team_id, count(*) as nbplayers FROM players WHERE team_id IN 
                                             (SELECT teams.id FROM teams WHERE idClub IN (SELECT id FROM clubs WHERE idUser =?))
                                             GROUP BY team_id", [$_SESSION['auth']], true);
-        var_dump($teams, $nbPlayers);
         $this->render('account.teams.myteams', compact('teams', 'nbPlayers'));
 
     }
