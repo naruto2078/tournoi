@@ -12,21 +12,21 @@ namespace App\Table;
 use Core\Table\Table;
 
 class ClubTable extends Table {
-protected $table = 'clubs';
+    protected $table = 'clubs';
 
- public function getInfo($clubname) {
+    public function getInfo($clubname) {
         return $this->query("SELECT * FROM {$this->table} WHERE nom = ?", [$clubname], true);
     }
 
-    public function clubExist($club_name){
-    	$club = $this->query("SELECT * FROM {$this->table} WHERE nom = ?", [$club_name], true);
-    	if ($club){
-    		return true;
-    	}
-    	return false;
+    public function clubExist($club_name) {
+        $club = $this->query("SELECT * FROM {$this->table} WHERE nom = ?", [$club_name], true);
+        if ($club) {
+            return true;
+        }
+        return false;
     }
 
-   public function getid($clubname_){
-   	return $this->query("SELECT id FROM {$this->table} WHERE nom = ?", [$clubname_], true);
-   }
+    public function getid($clubname_) {
+        return $this->query("SELECT id FROM {$this->table} WHERE nom = ?", [$clubname_], true);
+    }
 }

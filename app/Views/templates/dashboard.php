@@ -109,7 +109,7 @@
                         <a href="#"><i class="fa fa-users fa-fw"></i> Equipes<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="flot.html">Mes Equipes</a>
+                                <a href="?p=account.teams.myteams">Mes Equipes</a>
                             </li>
                             <li>
                                 <a href="?p=account.teams.add">Inscrire Une Equipe</a>

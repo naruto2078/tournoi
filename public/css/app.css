@@ -7,12 +7,16 @@ body {
     line-height: 1.5;
 }
 
-.panel-title {
+/*.panel-title {
     height: 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
+}*/
+.panel-title{
+    text-align: center;
 }
+
 
 .form{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);

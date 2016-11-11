@@ -6,47 +6,52 @@
 
 .bg-gradient-9 {
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(-65deg,#008fe2 0,#00b29c 100%);
-    background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,#008fe2),color-stop(100%,#00b29c));
-    background: -webkit-linear-gradient(-65deg,#008fe2 0,#00b29c 100%);
-    background: -o-linear-gradient(-65deg,#008fe2 0,#00b29c 100%);
-    background: -ms-linear-gradient(-65deg,#008fe2 0,#00b29c 100%);
-    background: linear-gradient(154deg,#008fe2 0,#00b29c 100%);
+    background: -moz-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #008fe2), color-stop(100%, #00b29c));
+    background: -webkit-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+    background: -o-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+    background: -ms-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+    background: linear-gradient(154deg, #008fe2 0, #00b29c 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008fe2', endColorstr='#00b29c', GradientType=1);
 }
-
 
 body {
     background-color: #ffffff;
 }
 
-.header{
+.header {
     height: 64px;
     /*background: #0099CE;*/
 }
-.sidebar-nav ul li.li-title{
+
+.sidebar-nav ul li.li-title {
     color: #000000;
 }
-.li-title{
+
+.li-title {
     text-transform: uppercase;
     font-size: 12px;
     padding: 5px 10px;
     font-weight: 700;
 }
-.navbar-default .navbar-brand{
-    margin-top:2px;
+
+.navbar-default .navbar-brand {
+    margin-top: 2px;
     color: #ffffff;
     font-size: 24px;
 }
-.navbar-default .navbar-brand:hover{
+
+.navbar-default .navbar-brand:hover {
     color: #ffffff;
 }
-.navbar-header{
+
+.navbar-header {
     width: 250px;
     height: 64px;
     margin-top: -1px;
-   background: #199FDA;
+    background: #199FDA;
 }
+
 #wrapper {
     width: 100%;
 }
@@ -84,21 +89,24 @@ body {
     min-height: 64px;
     color: #F3FBFB;
 }
-.navbar-top-links li a:hover{
+
+.navbar-top-links li a:hover {
     color: #26B5BA;
 }
 
 .navbar-top-links .dropdown-menu li {
     display: block;
 }
+
 .dropdown-menu li a {
-    color:#5B646F;
+    color: #5B646F;
 
 }
 
-.sidebar-nav li a i{
+.sidebar-nav li a i {
     color: #66BEE8;
 }
+
 nav li
 .navbar-top-links .dropdown-menu li:last-child {
     margin-right: 0;
@@ -110,8 +118,8 @@ nav li
 
 }
 
-.navbar-right i.ti-user{
-    width: 30px ;
+.navbar-right i.ti-user {
+    width: 30px;
     height: 30px;
     padding: 5px 5px 5px;
     border-radius: 50%;
@@ -119,12 +127,12 @@ nav li
 }
 
 .navbar-right i.ti-user:hover {
-       border: 1px solid #26B5BA;
-}
-.ti-user{
-
+    border: 1px solid #26B5BA;
 }
 
+.ti-user {
+
+}
 
 .navbar-top-links .dropdown-menu li a div {
     white-space: normal;
@@ -160,7 +168,7 @@ nav li
 }
 
 .sidebar .sidebar-search {
-   padding: 15px;
+    padding: 15px;
 }
 
 .sidebar ul li {
@@ -170,12 +178,12 @@ nav li
     line-height: 2.69;
 }
 
-.sidebar ul a{
+.sidebar ul a {
     color: #8da0aa;
 }
 
-ul.collapse  li {
-   /* border-bottom: 1px solid #e7e7e7;*/
+ul.collapse li {
+    /* border-bottom: 1px solid #e7e7e7;*/
 }
 
 .sidebar ul li a.active {
@@ -207,11 +215,13 @@ ul.collapse  li {
 .sidebar .nav-third-level li a {
     padding-left: 52px;
 }
+
 .navbar-default {
     background-color: #ffffff;
     border-color: #ffffff;
 
 }
+
 @media (min-width: 768px) {
     .sidebar {
         z-index: 1;
@@ -219,7 +229,6 @@ ul.collapse  li {
         width: 250px;
         margin-top: 77px;
     }
-
 
     .navbar-top-links .dropdown-messages,
     .navbar-top-links .dropdown-tasks,
@@ -229,19 +238,22 @@ ul.collapse  li {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .navbar-toggle {
     border: none;
 }
+
 .navbar-toggle .icon-bar {
     display: block;
     width: 22px;
     height: 2px;
     border-radius: 1px;
 }
+
 @media (max-width: 768px) {
-    .navbar-header{
+    .navbar-header {
         width: 100%;
     }
 }
@@ -251,6 +263,7 @@ ul.collapse  li {
     background-color: transparent;
     transition: all .5s;
 }
+
 /*.btn-primary{
     background: #0d87e9;
 }*/
@@ -275,9 +288,10 @@ ul.collapse  li {
     color: #d9534f;
 }
 
-.btn-danger{
+.btn-danger {
     background: #E74C3C;
 }
+
 .btn-primary.btn-outline:hover,
 .btn-success.btn-outline:hover,
 .btn-info.btn-outline:hover,
@@ -286,34 +300,80 @@ ul.collapse  li {
     color: white;
 }
 
-.panel-primary{
+.panel-primary {
     background: #53BCE2;
     border-color: #53BCE2;
 }
-.panel-primary > .panel-heading{
+
+.panel-primary > .panel-heading {
     background: #53BCE2;
     border-color: #53BCE2;
 }
-.panel-primary  .panel-footer{
+
+.panel-primary .panel-footer {
     background: #53BCE2;
     border-color: #53BCE2;
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     color: #ffffff;
 }
 
-.panel-success, .panel-success > .panel-heading{
+.panel-success, .panel-success > .panel-heading {
     background: #2ecc71;
     border-color: #2ecc71;
     color: #ffffff;
 }
-.panel-success  .panel-footer{
+
+.panel-success .panel-footer {
     background: #2ecc71;
     border-color: #2ecc71;;
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     color: #ffffff;
 }
 
+.event-panel {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #3e4855;
+}
 
+.event-panel .content{
+    letter-spacing: 0;
+    padding: 10px 0 0;
+    opacity: .8;
+}
+
+.panel-default > .panel-heading {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #3e4855;
+}
+
+.event-panel .panel-body {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.row.header{
+    min-height: 200px;
+}
+.content {
+}
+
+.event-panel .panel-body h3 {
+    font-size: 12px;
+}
+
+.event-table{
+    margin-bottom: 0!important;
+}
+
+.event-table .text-left{
+    font-weight: 700;
+}
+
+.content .btn{
+    margin-top: 20px;
+}
 
 .chat {
     margin: 0;

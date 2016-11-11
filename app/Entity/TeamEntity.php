@@ -13,6 +13,13 @@ use Core\Entity\Entity;
 
 class TeamEntity extends Entity {
 
-	
+    public function adminUrl() {
+        return 'index.php?p=account.teams.gerer&team_id=' . $this->id;
+    }
+
+    public function addPlayerUrl(){
+        return 'index.php?p=account.teams.addPlayer&team_id=' . $this->id;
+    }
+
 
 }

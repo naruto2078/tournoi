@@ -9,6 +9,8 @@
 namespace App\Entity;
 
 
-class LevelEntity {
+use Core\Entity\Entity;
+
+class LevelEntity extends Entity {
 
 }

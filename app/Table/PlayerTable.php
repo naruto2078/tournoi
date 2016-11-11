@@ -12,5 +12,5 @@ namespace App\Table;
 use Core\Table\Table;
 
 class PlayerTable extends Table {
-    protected $table = 'tournois';
+    protected $table = 'players';
 }

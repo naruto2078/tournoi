@@ -9,6 +9,8 @@
 namespace App\Entity;
 
 
-class PlayerEntity {
+use Core\Entity\Entity;
+
+class PlayerEntity extends Entity {
 
 }

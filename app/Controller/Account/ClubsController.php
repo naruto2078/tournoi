@@ -11,7 +11,7 @@ namespace App\Controller\Account;
 
 use Core\HTML\BootstrapForm;
 
-class ClubController extends AppController {
+class ClubsController extends AppController {
     public function __construct() {
         parent::__construct();
         $this->loadModel('Club');

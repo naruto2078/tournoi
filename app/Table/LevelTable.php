@@ -9,6 +9,8 @@
 namespace App\Table;
 
 
-class LevelTable {
+use Core\Table\Table;
+
+class LevelTable extends Table {
 
 }
