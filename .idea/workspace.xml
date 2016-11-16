@@ -2,10 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147e0297-46c1-40e1-b795-935481c9073d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/MDB License.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Light.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Medium.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Thin.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Thin.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Thin.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/font/roboto/Roboto-Thin.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/lightbox/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/lightbox/default-skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/lightbox/preloader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/overlays/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Iyl08oh.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Mobile-Beach-volleyball-Wallpaper.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Wonderful-Beach-volleyball-Wallpaper.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/images-volley.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/rio_2016_olympics_volleyball-wallpaper-1920x1080.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/rio_2016_olympics_volleyball-wallpaper-960x540.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/tournoi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/volleyball-hd-wallpaper-free.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Views/account/events/participations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Views/account/tournois/detailtournoi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Views/account/tournois/infos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Views/templates/tmp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/css/mdb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/css/mdb.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/img/lightbox/default-skin.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/jquery-2.2.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/jquery-2.2.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/jquery-3.1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/jquery-3.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/mdb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/mdb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/tether.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/js/tether.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_cards-basic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_carousels-basic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_footer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_forms-basic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_global.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_helpers.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_hover-effects.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_navbars.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_roboto.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_typography.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/_waves.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/data/_colors.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/data/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/data/_prefixer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/data/_variables-b4.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/MDB Free/sass/mdb/free/data/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/sidebar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/EventsController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/EventsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/TeamsController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/TeamsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Entity/EventEntity.php" afterPath="$PROJECT_DIR$/app/Entity/EventEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Entity/TournoiEntity.php" afterPath="$PROJECT_DIR$/app/Entity/TournoiEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Table/TournoiTable.php" afterPath="$PROJECT_DIR$/app/Table/TournoiTable.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/events/AllEventByOrganizer.php" afterPath="$PROJECT_DIR$/app/Views/account/events/AllEventByOrganizer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/events/add.php" afterPath="$PROJECT_DIR$/app/Views/account/events/add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/events/register.php" afterPath="$PROJECT_DIR$/app/Views/account/events/register.php" />
@@ -45,50 +133,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EventsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/Account/EventsController.php">
+      <file leaf-file-name="gerer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/gerer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="338">
+              <caret line="16" column="98" selection-start-line="16" selection-start-column="98" selection-end-line="16" selection-end-column="98" />
               <folding>
-                <marker date="1479314157425" expanded="true" signature="630:655" ph="SELECT * FRO... type_de_jeu" />
-                <marker date="1479314157425" expanded="true" signature="1877:3176" ph="SELECT * FRO... events" />
-                <marker date="1479314157425" expanded="true" signature="1954:3117" ph="SELECT id_ev... tournois" />
-                <marker date="1479314157425" expanded="true" signature="2124:3033" ph="SELECT tourn... participe" />
-                <marker date="1479314157425" expanded="true" signature="2352:2937" ph="SELECT id FR... teams" />
-                <marker date="1479314157425" expanded="true" signature="2686:2821" ph="SELECT id FR... clubs" />
-                <marker date="1479314157425" expanded="true" signature="3446:3501" ph="SELECT * FRO... events" />
+                <element signature="n#div#2;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="participations.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/account/events/participations.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/templates/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Views/account/events/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -112,18 +166,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Views/account/tournois/add.php" />
-        <option value="$PROJECT_DIR$/public/css/events_tmp.php" />
         <option value="$PROJECT_DIR$/public/css/events_css.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/Table/ParticipeTable.php" />
         <option value="$PROJECT_DIR$/app/Entity/PartcipeEntity.php" />
         <option value="$PROJECT_DIR$/app/Views/account/index.php" />
-        <option value="$PROJECT_DIR$/app/Table/TournoiTable.php" />
-        <option value="$PROJECT_DIR$/app/Entity/EventEntity.php" />
         <option value="$PROJECT_DIR$/app/Table/EventTable.php" />
-        <option value="$PROJECT_DIR$/app/Entity/TournoiEntity.php" />
-        <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/ClubController.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/ClubsController.php" />
         <option value="$PROJECT_DIR$/app/Table/ClubTable.php" />
@@ -152,17 +200,23 @@
         <option value="$PROJECT_DIR$/app/Views/account/teams/add.php" />
         <option value="$PROJECT_DIR$/app/Views/account/events/AllEventByOrganizer.php" />
         <option value="$PROJECT_DIR$/app/Views/account/events/register.php" />
-        <option value="$PROJECT_DIR$/app/Views/account/tournois/register.php" />
         <option value="$PROJECT_DIR$/app/Views/account/teams/addPlayer.php" />
         <option value="$PROJECT_DIR$/app/Views/templates/default.php" />
-        <option value="$PROJECT_DIR$/app/Views/account/tournois/gerer.php" />
-        <option value="$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php" />
         <option value="$PROJECT_DIR$/app/Views/account/teams/myteams.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/TeamsController.php" />
         <option value="$PROJECT_DIR$/app/Views/account/teams/gerer.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/EventsController.php" />
-        <option value="$PROJECT_DIR$/app/Views/account/events/participations.php" />
         <option value="$PROJECT_DIR$/app/Views/templates/dashboard.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/tournois/register.php" />
+        <option value="$PROJECT_DIR$/app/Entity/EventEntity.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/events/participations.php" />
+        <option value="$PROJECT_DIR$/app/Table/TournoiTable.php" />
+        <option value="$PROJECT_DIR$/app/Entity/TournoiEntity.php" />
+        <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/tournois/infos.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/tournois/detailtournoi.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/tournois/gerer.php" />
       </list>
     </option>
   </component>
@@ -174,10 +228,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP (5.6.16)" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="441" />
-    <option name="y" value="132" />
-    <option name="width" value="1065" />
-    <option name="height" value="698" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -371,7 +425,7 @@
       <workItem from="1479219690926" duration="1751000" />
       <workItem from="1479244936099" duration="649000" />
       <workItem from="1479277886550" duration="11384000" />
-      <workItem from="1479299592080" duration="13226000" />
+      <workItem from="1479299592080" duration="20209000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de la fonction register dans la classe d'authentification DbAuth">
       <created>1477147768667</created>
@@ -398,10 +452,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335525000" />
+    <option name="totallyTimeSpent" value="342508000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="441" y="132" width="1065" height="698" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37940896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -470,55 +524,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Entity/EventEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Table/LevelTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Entity/LevelEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Table/ClubTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Table/Table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Table/PlayerTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/Account/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -527,13 +532,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/bootstrap-layout.css" />
-    <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2905">
@@ -659,22 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/HTML/BootstrapForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/form-elements.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -695,14 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-286">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -759,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/events/AllEventByOrganizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/account/events/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -791,39 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <marker date="1479310623925" expanded="false" signature="1051:1062" ph="..." />
-            <marker date="1479310623925" expanded="false" signature="1273:1284" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TeamsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="44" column="116" selection-start-line="44" selection-start-column="116" selection-end-line="44" selection-end-column="116" />
-          <folding>
-            <marker date="1479311146631" expanded="true" signature="1145:1300" ph="SELECT teams... teams" />
-            <marker date="1479311146631" expanded="true" signature="1263:1299" ph="SELECT id FR... clubs" />
-            <marker date="1479311146631" expanded="true" signature="1375:1632" ph="SELECT team_... players" />
-            <marker date="1479311146631" expanded="true" signature="1489:1570" ph="SELECT teams... teams" />
-            <marker date="1479311146631" expanded="true" signature="1533:1569" ph="SELECT id FR... clubs" />
-            <marker date="1479311146631" expanded="true" signature="1816:1881" ph="SELECT * FRO... teams" />
-            <marker date="1479311146631" expanded="true" signature="1954:2013" ph="SELECT count... players" />
-            <marker date="1479311146631" expanded="true" signature="2088:2109" ph="SELECT * FRO... players" />
-            <marker date="1479311146631" expanded="true" signature="2088:2110" ph="SELECT * FRO... players" />
-            <marker date="1479311146631" expanded="true" signature="2088:2127" ph="SELECT * FRO... players" />
-            <marker date="1479311146631" expanded="true" signature="2088:2156" ph="SELECT * FRO... players" />
-            <marker date="1479311146631" expanded="true" signature="2361:2381" ph="SELECT * FRO... levels" />
-            <marker date="1479311146631" expanded="true" signature="3120:3198" ph="SELECT * FRO... players" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/account/teams/gerer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -842,22 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/gerer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2107">
@@ -869,9 +786,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../tournoi_prev/app/Views/templates/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="41" column="12" selection-start-line="38" selection-start-column="4" selection-end-line="41" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/events/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Table/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <marker date="1478681584687" expanded="true" signature="660:674" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1478681584687" expanded="true" signature="1498:1537" ph="SELECT * FRO... $" />
+            <marker date="1478681584687" expanded="true" signature="1879:1925" ph="UPDATE ${{$t... " />
+            <marker date="1478681584687" expanded="true" signature="2239:2270" ph="INSERT INTO $... " />
+            <marker date="1478681584687" expanded="true" signature="2372:2409" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/Account/EventsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="767">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <marker date="1479314157425" expanded="true" signature="630:655" ph="SELECT * FRO... type_de_jeu" />
@@ -885,22 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/events/participations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tournoi_prev/app/Views/templates/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="41" column="12" selection-start-line="38" selection-start-column="4" selection-end-line="41" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/templates/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -909,11 +840,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/events/register.php">
+    <entry file="file://$PROJECT_DIR$/app/Views/account/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="52">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TeamsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="44" column="104" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <marker date="1479311146631" expanded="true" signature="1145:1300" ph="SELECT teams... teams" />
+            <marker date="1479311146631" expanded="true" signature="1263:1299" ph="SELECT id FR... clubs" />
+            <marker date="1479311146631" expanded="true" signature="1375:1632" ph="SELECT team_... players" />
+            <marker date="1479311146631" expanded="true" signature="1489:1570" ph="SELECT teams... teams" />
+            <marker date="1479311146631" expanded="true" signature="1533:1569" ph="SELECT id FR... clubs" />
+            <marker date="1479311146631" expanded="true" signature="1816:1881" ph="SELECT * FRO... teams" />
+            <marker date="1479311146631" expanded="true" signature="1954:2013" ph="SELECT count... players" />
+            <marker date="1479311146631" expanded="true" signature="2088:2109" ph="SELECT * FRO... players" />
+            <marker date="1479311146631" expanded="true" signature="2088:2110" ph="SELECT * FRO... players" />
+            <marker date="1479311146631" expanded="true" signature="2088:2127" ph="SELECT * FRO... players" />
+            <marker date="1479311146631" expanded="true" signature="2088:2156" ph="SELECT * FRO... players" />
+            <marker date="1479311146631" expanded="true" signature="2361:2381" ph="SELECT * FRO... levels" />
+            <marker date="1479311146631" expanded="true" signature="3120:3198" ph="SELECT * FRO... players" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/HTML/BootstrapForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/events/AllEventByOrganizer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/events/participations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Table/TournoiTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+          <folding>
+            <marker date="1479321185788" expanded="true" signature="274:405" ph="SELECT T.id,... tournois" />
+            <marker date="1479321185788" expanded="true" signature="516:626" ph="SELECT T.id,... tournois" />
+            <marker date="1479321185788" expanded="true" signature="516:628" ph="SELECT T.id,... tournois" />
+            <marker date="1479321185788" expanded="true" signature="516:640" ph="SELECT T.id,... tournois" />
+            <marker date="1479321185788" expanded="true" signature="516:642" ph="SELECT T.id,... tournois" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entity/TournoiEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entity/EventEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+          <folding>
+            <marker date="1479321569839" expanded="true" signature="462:505" ph="SELECT nb_to... events" />
+            <marker date="1479321569839" expanded="true" signature="628:652" ph="SELECT * FRO... categories" />
+            <marker date="1479321569839" expanded="true" signature="2241:2274" ph="SELECT * FRO... tournois" />
+            <marker date="1479321569839" expanded="true" signature="2457:2550" ph="SELECT * FRO... tournois" />
+            <marker date="1479321569839" expanded="true" signature="2507:2549" ph="SELECT id FR... events" />
+            <marker date="1479321569839" expanded="true" signature="3074:3229" ph="SELECT teams... teams" />
+            <marker date="1479321569839" expanded="true" signature="3192:3228" ph="SELECT id FR... clubs" />
+            <marker date="1479321569839" expanded="true" signature="3456:3496" ph="SELECT * FRO... participe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/infos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/detailtournoi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/gerer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="16" column="98" selection-start-line="16" selection-start-column="98" selection-end-line="16" selection-end-column="98" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

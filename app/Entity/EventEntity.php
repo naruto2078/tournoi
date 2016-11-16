@@ -24,4 +24,8 @@ class EventEntity extends Entity {
         return 'index.php?p=account.tournois.register&event_id='.$this->id;
     }
 
+    public function details(){
+        return 'index.php?p=account.tournois.detailtournoi&event_id='.$this->id;
+    }
+
 }

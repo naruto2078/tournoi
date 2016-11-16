@@ -14,6 +14,9 @@ use Core\Entity\Entity;
 class TournoiEntity extends Entity {
 
     public function adminUrl(){
-        return 'index.php?p=account.tournois.gerer&event_id=2&tournoi_id='.$this->id;
+        return 'index.php?p=account.tournois.gerer&event_id='.$this->id_event.'&tournoi_id='.$this->id;
+    }
+    public function Url(){
+        return 'index.php?p=account.tournois.infos&event_id='.$this->id_event.'&tournoi_id='.$this->id;
     }
 }

@@ -3,50 +3,48 @@
         <h3>Inscription à un tournoi: Choisissez le tournoi</h3>
     </div>
 </div>
+<hr class="extra-margins">
 
-<div class="row" style="padding-top: 100px">
-
-    <?php
-    foreach ($tournois as $tournoi) : ?>
-        <div class="col-sm-5 col">
-            <div class="panel panel-default event-panel">
-                <div class="panel-heading">
-                    <div class="row header">
-                        <div class="col-xs-3">
-                            <i class="fa fa-trophy fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div>
-                                <h3><?= $tournoi->nom; ?></h3>
-                            </div>
-                        </div>
+<div class="row">
+    <?php foreach ($tournois as $tournoi) : ?>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                    <div class="col-xs-3 float-xs-left" style="padding-top: 30px">
+                        <i class="fa fa-users fa-5x"></i>
                     </div>
-                    <div class="row content">
-                        <div class="col-md-12">
-                            <table class="table event-table">
-                                <tbody>
-                                <tr>
-                                    <td class="text-left">Genre</td>
-                                    <td style="width: 50%;"> <?= $tournoi->genre; ?></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Catégorie</td>
-                                    <td style="width: 50%;"><?= $tournoi->nom_categorie;?></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <a href="<?= $tournoi->adminUrl(); ?>">
-                                <button class="btn btn-primary btn-block">Gérer</button>
-                            </a>
+                    <div class="col-xs-9 float-xs-right" style="padding-left: 138px; padding-top: 66px">
+                        <h3><?= $tournoi->nom; ?></h3>
+                    </div>
+                </div>
+                <div class="card-block event-card">
+                    <div class="col-md-12">
+                        <table class="table event-table">
+                            <tbody>
+                            <tr>
+                                <td class="text-left">Genre</td>
+                                <td style="width: 50%;"> <?= $tournoi->genre; ?></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Catégorie</td>
+                                <td style="width: 50%;"><?= $tournoi->nom_categorie; ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="row text-xs-center">
+                            <form action="" method="post">
+                                <?=$form->select('team','Equipe',$teams);?>
+                                <input type="hidden" name="id" value="<?= $tournoi->id; ?>">
+                                <button type="submit" class="btn btn-success">Participer</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     <?php endforeach; ?>
-</div>
 
+</div>
 <div class="row">
     <div class="col-md-12">
         <table class="table table-striped table-bordered" style="margin-top: 100px;">

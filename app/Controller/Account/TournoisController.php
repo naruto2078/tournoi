@@ -64,18 +64,51 @@ class TournoisController extends AppController {
 
     }
 
+    public function detailtournoi(){
+        $tournois = $this->Tournoi->allByEvent($_GET['event_id']);
+        $this->render('account.tournois.detailtournoi', compact('form', 'tournois', 'teams'));
+    }
+
+    public function infos(){
+        $tournoi = $this->Tournoi->query("SELECT * FROM tournois WHERE id=? ", [$_GET['tournoi_id']], true);
+        $this->render('account.tournois.infos', compact('tournoi'));
+    }
+
 
     public function gerer() {
-        $tournoi = $this->Tournoi->query("SELECT * FROM tournois WHERE id=?", [$_GET['tournoi_id']], true);
+        $tournoi = $this->Tournoi->query("SELECT * FROM tournois WHERE id=? AND id_event IN(SELECT id FROM events WHERE organisateur=?)", [$_GET['tournoi_id'], $_SESSION['auth']], true);
+        if (!$tournoi) {
+            $this->notFound();
+        }
         $this->loadModel('Participe');
         $inscrits = $this->Participe->nbInscrits($_GET['tournoi_id']);
-        $this->render('account.tournois.gerer', compact('inscrits','tournoi'));
+        $this->render('account.tournois.gerer', compact('inscrits', 'tournoi'));
     }
 
     public function register() {
-        $tournois = $this->Tournoi->tournoiByEvent($_GET['event_id']);
+        $tournois = $this->Tournoi->allByEvent($_GET['event_id']);
+        $this->loadModel('Team');
+        $this->loadModel('Participe');
+        $req = $this->Team->query("SELECT teams.id, teams.name,teams.level, teams.id, clubs.nom FROM teams, clubs WHERE idClub = clubs.id AND idClub IN (SELECT id FROM clubs WHERE idUser =?)", [$_SESSION['auth']], false);
+        $teams = [];
+        foreach ($req as $team) {
+            $teams[$team->id] = $team->name;
+        }
+
+
+        if (!empty($_POST)) {
+
+            $dejainscrit = $this->Participe->query("SELECT * FROM participe WHERE team_id =?", [$_POST['team']]);//verifie que l'equipe n'est pas déja inscrite à ce tournoi
+            if (!$dejainscrit) {
+                $this->Participe->create([
+                    'team_id' => $_POST['team'],
+                    'tournoi_id' => $_POST['id']
+                ]);
+            }
+
+        }
         $form = new BootstrapForm($_POST);
-        $this->render('account.tournois.register', compact('form','tournois'));
+        $this->render('account.tournois.register', compact('form', 'tournois', 'teams'));
     }
 
 }
