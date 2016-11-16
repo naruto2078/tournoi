@@ -42,7 +42,7 @@ class TeamsController extends AppController {
     }
 
     public function myteams() {
-        $teams = $this->Team->query("SELECT * FROM teams, clubs WHERE idClub = clubs.id AND idClub IN (SELECT id FROM clubs WHERE idUser =?)", [$_SESSION['auth']], false);
+        $teams = $this->Team->query("SELECT teams.id, teams.name,teams.level, teams.id, clubs.nom FROM teams, clubs WHERE idClub = clubs.id AND idClub IN (SELECT id FROM clubs WHERE idUser =?)", [$_SESSION['auth']], false);
         $nbPlayers = $this->Player->query("SELECT team_id, count(*) as nbplayers FROM players WHERE team_id IN 
                                             (SELECT teams.id FROM teams WHERE idClub IN (SELECT id FROM clubs WHERE idUser =?))
                                             GROUP BY team_id", [$_SESSION['auth']], true);
@@ -53,7 +53,8 @@ class TeamsController extends AppController {
     public function gerer() {
         $team = $this->Team->query("SELECT * FROM teams, clubs WHERE idClub = clubs.id AND teams.id=?", [$_GET['team_id']], true);
         $nbPlayers = $this->Player->query("SELECT count(*) as nbplayers FROM players WHERE team_id = ?", [$_GET['team_id']], true);
-        $this->render('account.teams.gerer', compact('team', 'nbPlayers'));
+        $playersInfo = $this->Player->query("SELECT * FROM players WHERE team_id = ?", [$_GET['team_id']], false);
+        $this->render('account.teams.gerer', compact('team', 'playersInfo','nbPlayers'));
     }
 
 

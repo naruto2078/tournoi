@@ -28,14 +28,13 @@ class EventsController extends AppController {
     public function add() {
         $this->loadModel('Type_de_jeu');
         $types = $this->Type_de_jeu->query("SELECT * FROM type_de_jeu");
-        $options=[];
+        $options = [];
         foreach ($types as $type) {
-            $options[$type->type]= $type->type;
+            $options[$type->type] = $type->type;
         }
         if (!empty($_POST)) {
             $time = strtotime($_POST['date']);
-
-            $date = date('Y-m-d',$time);
+            $date = date('Y-m-d', $time);
             $this->Event->create([
                 'nom' => $_POST['nom'],
                 'lieu' => $_POST['lieu'],
@@ -49,18 +48,35 @@ class EventsController extends AppController {
             header('Location:index.php?p=account.tournois.add');
         }
         $form = new BootstrapForm($_POST);
-        $this->render('account.events.add', compact('form','options'));
+        $this->render('account.events.add', compact('form', 'options'));
     }
 
-public function AllEventByOrganizer(){
+    public function AllEventByOrganizer() {
 
-   $events= $this->Event->findByOrganizer($_SESSION['auth']);
+        $events = $this->Event->findByOrganizer($_SESSION['auth']);
 
-   $this->render('account.events.AllEventByOrganizer',compact('events'));
-}
+        $this->render('account.events.AllEventByOrganizer', compact('events'));
+    }
 
     public function participations() {
-
+        $this->loadModel('Participe');
+        $this->loadModel('Event');
+        $participations = $this->Event->query("SELECT * FROM events 
+                                          WHERE id IN (SELECT id_event 
+                                                        FROM tournois 
+                                                            WHERE tournois.id IN (SELECT tournoi_id FROM participe
+                                                                                  WHERE team_id IN 
+                                                                                              (SELECT id 
+                                                                                                  FROM teams 
+                                                                                                  WHERE idClub IN(
+                                                                                                  SELECT id 
+                                                                                                  FROM clubs WHERE idUser =?
+                                                                                                                  )
+                                                                                              )
+                                                                                  ) 
+                                                        )",
+        [$_SESSION['auth']], false);
+        $this->render('account.events.participations', compact('participations'));
     }
 
     public function register() {

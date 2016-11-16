@@ -1,3 +1,9 @@
+<div class="row">
+    <div class="col-lg-12 text-xs-center" style="padding-top: 40px">
+        <h3>Inscription à un tournoi: Choisissez le tournoi</h3>
+    </div>
+</div>
+
 <div class="row" style="padding-top: 100px">
 
     <?php
@@ -25,17 +31,17 @@
                                 </tr>
                                 <tr>
                                     <td class="text-left">Catégorie</td>
-                                    <td style="width: 50%;"><?= $tournoi->nom_categorie; ?></td>
+                                    <td style="width: 50%;"><?= $tournoi->nom_categorie;?></td>
                                 </tr>
                                 </tbody>
                             </table>
-                            <form action="" method="post">
-                                <input type="hidden" name="id" value="<?= $tournoi->id; ?>">
-                                <button type="submit" class="btn btn-primary btn-block">Participer</button>
-                            </form>
+                            <a href="<?= $tournoi->adminUrl(); ?>">
+                                <button class="btn btn-primary btn-block">Gérer</button>
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     <?php endforeach; ?>

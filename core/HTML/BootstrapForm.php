@@ -11,7 +11,7 @@ class BootstrapForm extends Form {
      * @return string
      */
     protected function surround($html) {
-        return "<div class=\"form-group\"> {$html}</div>";
+        return "<div class=\"md-form\"> {$html}</div>";
     }
 
     /**

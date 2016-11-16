@@ -1,0 +1,105 @@
+.navbar-brand {
+}
+
+/**sidebar**/
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 56px;
+    overflow-y: hidden;
+    background: #293C4E;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+}
+
+.sidebar li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar-text.hide {
+    display: none;
+    padding-left: 5px;
+}
+
+/**Main content**/
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding-left: 56px;
+    background: #F5F5F5;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    overflow-y: hidden;
+
+}
+
+/*Change the witdh of the sidebar to display it*/
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 240px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 240px;
+}
+
+/*Sidebar styling*/
+.sidebar-toggle {
+    padding-left: 100px;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+}
+
+.sidebar-nav li {
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.sidebar-nav i {
+    margin-right: 15px;
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 11px 14px 11px 14px;
+    position: relative;
+    color: rgba(255,255,255,0.5);
+}
+
+.sidebar-nav li{
+
+}
+
+.sidebar-nav li a.active{
+    color: #f6f6f6;
+    background: rgba(0,0,0,0.1);
+}
+
+.sidebar-nav li a:hover {
+    background: #253646;
+}
+
+#sidebar-wrapper button.btn{
+    margin-left: 20px;
+}
+
+/*submenu*/
+.sub-menu {
+    /*padding-left: 36px;*/
+}
+
+.sub-menu i{
+    margin-right: 32px;
+}
+
+.event-card{
+
+}

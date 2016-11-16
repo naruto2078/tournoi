@@ -1,25 +1,42 @@
 <?php if ($errors) : ?>
-    <div class="alert alert-danger">
+    <div class="alert alert-danger offset-md-3 col-md-6" style="margin-top: 60px; text-align: center">
         Identifiants incorrects
     </div>
 <?php endif; ?>
+<main class="main">
 
-<div class="container">
     <div class="row">
-        <div class=" col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-3 form login">
+        <!--Second column-->
+
+        <div class="offset-md-4 col-md-5">
             <div class="form-top-line"></div>
-            <form role="form" action="" method="post">
-                <h3><i class="fa fa-lock" aria-hidden="true"></i>Connexion</h3>
-                <div class="form-group">
-                    <?= $form->input('username', 'Login', ['placeholder' => "Nom d'utilisateur"]); ?>
-                </div>
-                <div class="form-group">
-                    <?= $form->input('password', 'Mot de passe', ['type' => 'password', 'placeholder' => 'Mot de passe']); ?>
-                </div>
+            <!--Form-->
+            <div class="card wow fadeInRight">
+                <div class="card-block">
+                    <!--Header-->
+                    <div class="text-xs-center">
+                        <h3><i class="fa fa-user"></i> Connexion </h3>
+                        <br>
+                    </div>
 
-                <button type="submit" class="btn  btn-primary btn-block">Connexion</button>
+                    <!--Body-->
+                    <form action="" method="post">
+                    <div class="md-form">
+                        <?= $form->input('username', 'Login', ['placeholder' => "Nom d'utilisateur"]); ?>
+                    </div>
 
-            </form>
+                    <div class="md-form">
+                        <?= $form->input('password', 'Mot de passe', ['type' => 'password', 'placeholder' => 'Mot de passe']); ?>
+                    </div>
+
+                    <div class="text-xs-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Connexion</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!--/.Form-->
         </div>
+        <!--/Second column-->
     </div>
-</div>
+</main>
