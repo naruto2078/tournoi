@@ -54,7 +54,6 @@ class EventsController extends AppController {
     public function AllEventByOrganizer() {
 
         $events = $this->Event->findByOrganizer($_SESSION['auth']);
-
         $this->render('account.events.AllEventByOrganizer', compact('events'));
     }
 

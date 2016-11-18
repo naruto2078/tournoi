@@ -7,6 +7,12 @@ body {
     line-height: 1.5;
 }
 
+
+
+.table-bordered{
+    border:1px solid #373A3C;
+}
+
 /*.panel-title {
     height: 30px;
     font-family: 'Roboto', sans-serif;

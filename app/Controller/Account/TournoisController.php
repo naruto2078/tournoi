@@ -17,6 +17,8 @@ class TournoisController extends AppController {
         parent::__construct();
         $this->loadModel('Tournoi');
         $this->loadModel('Event');
+        $this->loadModel('Team');
+        $this->loadModel('Participe');
     }
 
     public function add() {
@@ -64,12 +66,12 @@ class TournoisController extends AppController {
 
     }
 
-    public function detailtournoi(){
+    public function detailtournoi() {
         $tournois = $this->Tournoi->allByEvent($_GET['event_id']);
         $this->render('account.tournois.detailtournoi', compact('form', 'tournois', 'teams'));
     }
 
-    public function infos(){
+    public function infos() {
         $tournoi = $this->Tournoi->query("SELECT * FROM tournois WHERE id=? ", [$_GET['tournoi_id']], true);
         $this->render('account.tournois.infos', compact('tournoi'));
     }
@@ -80,21 +82,18 @@ class TournoisController extends AppController {
         if (!$tournoi) {
             $this->notFound();
         }
-        $this->loadModel('Participe');
         $inscrits = $this->Participe->nbInscrits($_GET['tournoi_id']);
         $this->render('account.tournois.gerer', compact('inscrits', 'tournoi'));
     }
 
     public function register() {
         $tournois = $this->Tournoi->allByEvent($_GET['event_id']);
-        $this->loadModel('Team');
-        $this->loadModel('Participe');
+
         $req = $this->Team->query("SELECT teams.id, teams.name,teams.level, teams.id, clubs.nom FROM teams, clubs WHERE idClub = clubs.id AND idClub IN (SELECT id FROM clubs WHERE idUser =?)", [$_SESSION['auth']], false);
         $teams = [];
         foreach ($req as $team) {
             $teams[$team->id] = $team->name;
         }
-
 
         if (!empty($_POST)) {
 
@@ -105,10 +104,15 @@ class TournoisController extends AppController {
                     'tournoi_id' => $_POST['id']
                 ]);
             }
-
         }
         $form = new BootstrapForm($_POST);
         $this->render('account.tournois.register', compact('form', 'tournois', 'teams'));
+    }
+
+    public function participants(){
+        $participants = $this->Participe->participants($_GET['tournoi_id']);
+
+        $this->render('account.tournois.participants',compact('participants'));
     }
 
 }

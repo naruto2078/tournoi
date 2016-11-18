@@ -1,4 +1,3 @@
-
 <div class="row">
     <div class="col-lg-12 " style="padding-top: 40px">
         <h3 style="color: #414C59; margin-bottom: 30px">Tournoi <?= $tournoi->nom_categorie; ?></h3>
@@ -15,15 +14,17 @@
                         <i class="fa fa-user fa-5x"></i>
                     </div>
                     <div class="col-xs-9 float-xs-right" style="padding-top: 10px;padding-left: 100px">
-                        <div style="font-size: 33px;">24</div>
+                        <div style="font-size: 33px; margin-left: -70px;"><?= $inscrits->nb_inscrits; ?></div>
                         <div>Participants</div>
                     </div>
                 </div>
             </div>
             <div class="card-footer">
-                <span class="float-xs-left">Voir les participants</span>
-                <span class="float-xs-right"><i class="fa fa-arrow-right"></i></span>
-                <div class="clearfix"></div>
+                <a class="card-link" href="<?= $tournoi->listeParticipants(); ?>">
+                    <span class="float-xs-left">Voir les participants</span>
+                    <span class="float-xs-right"><i class="fa fa-arrow-right"></i></span>
+                    <div class="clearfix"></div>
+                </a>
             </div>
         </div>
     </div>
@@ -34,8 +35,8 @@
                     <div class="col-xs-3">
                         <i class="fa fa-calendar fa-5x"></i>
                     </div>
-                    <div class="col-xs-9 float-xs-right" style="padding-top: 10px;padding-left: 180px">
-                        <div style="font-size: 33px;">23</div>
+                    <div class="col-xs-9 float-xs-right" style="padding-top: 10px;padding-left: 100px">
+                        <div style="font-size: 33px; margin-left: -28px;">23</div>
                         <div>Matches</div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@
                     </div>
                     <div class="col-xs-9 float-xs-right" style="padding-top: 10px;padding-left: 10px">
                         <div style="font-size: 33px;">Gestion</div>
-                        <div>scores,formule prochain tour...</div>
+                        <div style="font-size: 12px; margin-left: 55px;">scores,formule prochain tour...</div>
                     </div>
                 </div>
             </div>

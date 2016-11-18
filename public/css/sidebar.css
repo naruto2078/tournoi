@@ -1,15 +1,19 @@
 .navbar-brand {
 }
+html,body{
+    height:100%;
+}
 
 /**sidebar**/
 #sidebar-wrapper {
     z-index: 1;
     position: absolute;
     width: 56px;
+    min-height: 100%;
     overflow-y: hidden;
     background: #293C4E;
-    padding-bottom: 5000px;
-    margin-bottom: -5000px;
+    /*padding-bottom: 5000px;
+    margin-bottom: -5000px;*/
 }
 
 .sidebar li a {
@@ -24,12 +28,14 @@
 /**Main content**/
 #page-content-wrapper {
     width: 100%;
+    min-height: 100%;
     position: absolute;
     padding-left: 56px;
     background: #F5F5F5;
-    padding-bottom: 5000px;
+    /*padding-bottom: 5000px;
     margin-bottom: -5000px;
     overflow-y: hidden;
+    -moz-overflow-y: hidden;*/
 
 }
 

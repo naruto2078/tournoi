@@ -55,6 +55,8 @@ class TeamsController extends AppController {
         $nbPlayers = $this->Player->query("SELECT count(*) as nbplayers FROM players WHERE team_id = ?", [$_GET['team_id']], true);
         $playersInfo = $this->Player->query("SELECT * FROM players WHERE team_id = ?", [$_GET['team_id']], false);
         $this->render('account.teams.gerer', compact('team', 'playersInfo','nbPlayers'));
+
+
     }
 
 
@@ -82,6 +84,7 @@ class TeamsController extends AppController {
 
     public function getPlayer($id) {
         $req = $this->Player->query("SELECT * FROM players, levels WHERE team_id = ? AND player_level = levels.name", [$id], false);
+
         return $req;
     }
 

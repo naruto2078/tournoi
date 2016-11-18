@@ -13,10 +13,15 @@ use Core\Entity\Entity;
 
 class TournoiEntity extends Entity {
 
-    public function adminUrl(){
-        return 'index.php?p=account.tournois.gerer&event_id='.$this->id_event.'&tournoi_id='.$this->id;
+    public function adminUrl() {
+        return 'index.php?p=account.tournois.gerer&event_id=' . $this->id_event . '&tournoi_id=' . $this->id;
     }
-    public function Url(){
-        return 'index.php?p=account.tournois.infos&event_id='.$this->id_event.'&tournoi_id='.$this->id;
+
+    public function Url() {
+        return 'index.php?p=account.tournois.infos&event_id=' . $this->id_event . '&tournoi_id=' . $this->id;
+    }
+
+    public function listeParticipants() {
+        return 'index.php?p=account.tournois.participants&event_id=' . $this->id_event . '&tournoi_id=' . $this->id;
     }
 }

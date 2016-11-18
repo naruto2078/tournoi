@@ -125,7 +125,7 @@
 
     <!--Page content-->
     <div id="page-content-wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid content">
 
             <?= $content; ?>
 
@@ -151,6 +151,8 @@
         $(this).parent().find("i.icon").toggleClass("fa-angle-right")
         $(this).parent().find("i.icon").toggleClass("fa-angle-down")
     });
+    $("#sidebar-wrapper").height($(".container-fluid.content").height());
+    //$("#page-content-wrapper").height($(".container-fluid.content").height());
 </script>
 <!--Formulaire multi step -->
 <script src="/js/jquery.backstretch.min.js"></script>
