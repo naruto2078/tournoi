@@ -42,9 +42,11 @@
                 </div>
             </div>
             <div class="card-footer">
-                <span class="float-xs-left">Voir le calendrier et les résultats</span>
-                <span class="float-xs-right"><i class="fa fa-arrow-right"></i></span>
-                <div class="clearfix"></div>
+                <a class="card-link" href="<?= $tournoi->calendrier(); ?>">
+                    <span class="float-xs-left">Voir le calendrier et les résultats</span>
+                    <span class="float-xs-right"><i class="fa fa-arrow-right"></i></span>
+                    <div class="clearfix"></div>
+                </a>
             </div>
         </div>
     </div>

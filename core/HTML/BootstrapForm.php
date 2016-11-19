@@ -39,13 +39,18 @@ class BootstrapForm extends Form {
         return $this->surround($label . $input);
     }
 
-    public function select($name, $label, $options) {
+    public function select($name, $label, $options,$selected=null) {
         $label = '<label class="sr-only">' . $label . '</label>';
         $input = '<select class="form-control" name="' . $name . '">';
         foreach ($options as $k => $v) {
             $attributes = '';
             if ($k == $this->getValue($name)) {
                 $attributes = 'selected';
+            }
+            if($selected){
+                if($k==$selected){
+                    $attributes = 'selected';
+                }
             }
             $input .= "<option value ='$k' $attributes>$v</option>";
         }

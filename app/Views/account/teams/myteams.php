@@ -5,7 +5,6 @@
 </div>
 <hr class="extra-margins">
 <div class="row">
-    <?php var_dump($teams);?>
 
     <?php
     foreach ($teams as $team) : ?>

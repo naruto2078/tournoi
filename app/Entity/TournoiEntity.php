@@ -24,4 +24,8 @@ class TournoiEntity extends Entity {
     public function listeParticipants() {
         return 'index.php?p=account.tournois.participants&event_id=' . $this->id_event . '&tournoi_id=' . $this->id;
     }
+
+    public function calendrier(){
+        return 'index.php?p=account.tournois.calendrier&event_id=' . $this->id_event . '&tournoi_id=' . $this->id;
+    }
 }
