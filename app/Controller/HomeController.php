@@ -12,6 +12,10 @@ namespace App\Controller;
 class HomeController extends AppController {
 
     public function index() {
-        $this->render('home.index');
+        $this->loadModel('Event');
+        $this->loadModel('Tournoi');
+        $current_date = date_format(new \DateTime('NOW'), 'Y-m-d');
+        $events = $this->Event->query("SELECT * FROM events WHERE date >= ? ORDER BY date DESC ", [$current_date], false);
+        $this->render('home.index',compact('events'));
     }
 }

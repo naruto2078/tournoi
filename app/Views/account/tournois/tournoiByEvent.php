@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="view overlay hm-white-slight">
                     <div class="col-xs-3 float-xs-left" style="padding-top: 30px">
-                        <i class="fa fa-users fa-5x"></i>
+                        <i class="fa fa-trophy fa-5x"></i>
                     </div>
                     <div class="col-xs-9 float-xs-right" style="padding-left: 138px; padding-top: 66px">
                         <h3><?= $tournoi->nom; ?></h3>
