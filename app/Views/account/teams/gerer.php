@@ -41,7 +41,7 @@
                                         style="color: #ffffff">Ajouter un joueur</span>
                                 </button>
                             </a>
-
+                           
                             <button class="btn btn-danger">Supprimer un joueur</button>
 
                         </div>
