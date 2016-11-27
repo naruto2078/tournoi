@@ -23,8 +23,9 @@ class BootstrapForm extends Form {
     public function input($name, $label, $options = []) {
         $type = isset($options['type']) ? $options['type'] : 'text';
         $attr = [];
+        $class = isset($options['class']) ? $options['class'] : '';
         foreach ($options as $k => $v) {
-            if ($k != 'type') {
+            if ($k != 'type' && $k != 'class') {
                 $attr[] = "$k = \"$v\"";
             }
         }
@@ -34,12 +35,12 @@ class BootstrapForm extends Form {
         if ($type === 'textarea') {
             $input = '<textarea name="' . $name . '" class="form-control">' . $this->getValue($name) . '</textarea>';
         } else {
-            $input = '<input type ="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control"'.$attr.'>';
+            $input = '<input type ="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control ' . $class . '" ' . $attr . '>';
         }
         return $this->surround($label . $input);
     }
 
-    public function select($name, $label, $options,$selected=null) {
+    public function select($name, $label, $options, $selected = null) {
         $label = '<label class="sr-only">' . $label . '</label>';
         $input = '<select class="form-control" name="' . $name . '">';
         foreach ($options as $k => $v) {
@@ -47,8 +48,8 @@ class BootstrapForm extends Form {
             if ($k == $this->getValue($name)) {
                 $attributes = 'selected';
             }
-            if($selected){
-                if($k==$selected){
+            if ($selected) {
+                if ($k == $selected) {
                     $attributes = 'selected';
                 }
             }

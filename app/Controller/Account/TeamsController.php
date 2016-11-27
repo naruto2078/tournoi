@@ -51,7 +51,7 @@ class TeamsController extends AppController {
     }
 
     public function gerer() {
-        $team = $this->Team->query("SELECT * FROM teams, clubs WHERE idClub = clubs.id AND teams.id=?", [$_GET['team_id']], true);
+        $team = $this->Team->query("SELECT teams.id ,name,level,idClub,nom,idUser FROM teams, clubs WHERE idClub = clubs.id AND teams.id=?", [$_GET['team_id']], true);
         $nbPlayers = $this->Player->query("SELECT count(*) as nbplayers FROM players WHERE team_id = ?", [$_GET['team_id']], true);
         $playersInfo = $this->Player->query("SELECT * FROM players WHERE team_id = ?", [$_GET['team_id']], false);
         $this->render('account.teams.gerer', compact('team', 'playersInfo','nbPlayers'));
@@ -74,6 +74,7 @@ class TeamsController extends AppController {
                 'player_level' => $_POST['player_level'],
                 'team_id' => $_GET['team_id']
             ]);
+            var_dump($_GET['team_id']);
 
             $lvl = $this->getTeamLevel($_GET['team_id']);
             $this->Team->update($_GET['team_id'], ['level' => $lvl]);
@@ -91,9 +92,13 @@ class TeamsController extends AppController {
     public function getTeamLevel($id) {
         $players = $this->getPlayer($id);
         $lvl = 0;
-        foreach ($players as $player) {
-            $lvl += intval($player->value);
+        if($players){
+            foreach ($players as $player) {
+                $lvl += intval($player->value);
+            }
+            return round($lvl / count($players));
         }
-        return round($lvl / count($players));
+        return 0;
+
     }
 }

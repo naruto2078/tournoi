@@ -21,6 +21,7 @@ class TournoisController extends AppController {
         $this->loadModel('Team');
         $this->loadModel('Participe');
         $this->loadModel('Poule');
+        $this->loadModel('Match');
     }
 
     public function add() {
@@ -29,7 +30,6 @@ class TournoisController extends AppController {
 
         $nb_tournois = $nb_tournois->nb_tournois;
         $req = $this->Categorie->query("SELECT * FROM categories", null);
-        //var_dump($nb_tournois);
         $categories = [];
         foreach ($req as $categorie) {
             $categories[$categorie->nom] = $categorie->nom . ' (' . $categorie->description . ')';
@@ -57,8 +57,6 @@ class TournoisController extends AppController {
         $this->render('account.tournois.add', compact('form', 'nb_tournois', 'categories', 'genres'));
 
         $_SESSION['width'] = 100 / intval($nb_tournois);
-        var_dump($_SESSION['width']);
-        //require ROOT.'/app/Views/templates/dashboard.php' ;
     }
 
     public function tournoiByEvent() {
@@ -133,22 +131,20 @@ class TournoisController extends AppController {
         foreach ($initSerpentin->teams as $k => $v) {
             $initSerpentin->teams[$k] = $teamsName[$k];
         }
-        //$serpentin = $initSerpentin->serpentin();
         $divs = $initSerpentin->getDiviseurs(count($teams_i));
         $diviseurs = [];
         foreach ($divs as $k => $v) {
-            $diviseurs[$v] = $v . ' groupes de ' . count($teams) / $v;
+            $diviseurs[$v] = $v . ' groupes';
         }
         $done = false;
         if (!empty($_POST['formule'])) {
             $poules = $initSerpentin->repartition(intval($_POST['formule']));
             $done = true;
-            //var_dump($_POST['formule'], $poules);
             $numero = intval($_POST['formule']);
-
-
         }
+        $groupesCrees = false;
         if (isset($_POST['create'])) {
+            $groupesCrees = true;
             $numero = intval($_POST['formule']);
             $les_poules = [];
             for ($i = 1; $i <= $numero; $i++) {
@@ -161,7 +157,6 @@ class TournoisController extends AppController {
                     array_push($les_poules[$la_poule], $v);
                 }
             }
-            var_dump($les_poules);
             foreach ($les_poules as $k => $v) {
                 $this->Poule->create([
                     'nom' => $k
@@ -176,35 +171,134 @@ class TournoisController extends AppController {
 
             }
 
-            header('Location:index.php?p=account.tournois.gerer&event_id=' . $_GET['event_id'] . '&tournoi_id=' . $_GET['tournoi_id']);
+            header('Location:index.php?p=account.tournois.etablircalendrier&event_id=' . $_GET['event_id'] . '&tournoi_id=' . $_GET['tournoi_id']);
+
 
         }
+
         $form = new BootstrapForm($_POST);
-        $this->render('account.tournois.participants', compact('participants', 'estOuvert', 'form', 'diviseurs', 'done', 'numero', 'poules', 'options'));
+        $this->render('account.tournois.participants', compact('participants', 'estOuvert', 'form', 'diviseurs', 'done', 'numero', 'poules', 'options', 'groupesCrees', 'matches', 'all_teams'));
+    }
+
+    public function etablircalendrier() {
+        $participants = $this->Participe->participantsEtPoules($_GET['tournoi_id']);
+        $poules = [];
+        $equipes = [];
+        $equipes_id = [];
+        $poules_id = [];
+        foreach ($participants as $participant) {
+            $equipes[$participant->name] = $participant->nom;
+            $equipes_id[$participant->name] = $participant->team_id;
+            $poules_id[$participant->nom] = $participant->poule_id;
+        }
+        asort($equipes);
+
+        foreach ($equipes as $poule) {
+            $poules[$poule] = [];
+        }
+
+        foreach ($equipes as $k => $v) {
+            array_push($poules[$v], $k);
+            $nbJournees = count($poules[$v]) - 1;
+        }
+        $numero = count($poules);
+
+        $rencontres = [];
+
+        $indice = 1;
+
+        foreach ($poules as $poule) {
+            $nbJournees = count($poule) - 1;
+            $rencontres["poule $indice"] = [];
+            $journees = [];
+            for ($i = 0; $i < $nbJournees; $i++) {
+                $journees[$i] = [];
+            }
+            $cpt = 0;
+            for ($j = 0; $j < $nbJournees ; $j++) {
+
+                for ($k = $j + 1; $k < $nbJournees + 1; $k++) {
+                    array_push($journees[$cpt], [$poule[$j], $poule[$k]]);
+
+                    if ($cpt < $nbJournees - 1) {
+                        $cpt++;
+                    } else {
+                        $cpt = 0;
+                    }
+
+                }
+            }
+            //petit probleme au niveau d'une equipe qui se repete deux fois à la 1ere et a la derniere journee
+            $m1 = $journees[0][count($journees[0]) - 1];
+
+            $journees[0][count($journees[0]) - 1] = $journees[count($journees) - 1][count($journees[count($journees) - 1]) - 1];
+            $journees[count($journees) - 1][count($journees[count($journees) - 1]) - 1] = $m1;
+
+            foreach ($journees as $k => $journee) {
+                foreach ($journee as $match) {
+                    $this->Match->create([
+                        'group_id' => $poules_id["poule $indice"],
+                        'team_id_home' => $equipes_id[$match[0]],
+                        'team_id_away' => $equipes_id[$match[1]]
+                    ]);
+                }
+            }
+            array_push($rencontres["poule $indice"], $journees);
+            $indice++;
+
+        }
+        $matches = $this->Match->matchesTournoi($_GET['tournoi_id']);
+        $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=?)", [$_GET['tournoi_id']], false);
+        $all_teams = [];
+        foreach ($equipes_ as $item) {
+            $all_teams[$item->id] = $item->name;
+        }
+        if (!empty($_POST)) {
+            for ($i = 0; $i < count($matches); $i++) {
+                $time_aux = $_POST['date' . $matches[$i]->id];
+                $time_aux = $time_aux . ' ' . $_POST['heure' . $matches[$i]->id] . ':' . $_POST['minute' . $matches[$i]->id] . ':00';
+                $time = strtotime($time_aux);
+                $date = date('Y-m-d H:i:s', $time);
+                $this->Match->update($matches[$i]->id, [
+                    'date' => $date
+                ]);
+            }
+        }
+        $form = new BootstrapForm($_POST);
+        $this->render('account.tournois.etablircalendrier', compact('form','matches', 'all_teams'));
+
     }
 
     public function calendrier() {
         $participants = $this->Participe->participantsEtPoules($_GET['tournoi_id']);
+
         $poules = [];
         $equipes = [];
+        $equipes_id = [];
         foreach ($participants as $participant) {
             $equipes[$participant->name] = $participant->nom;
+            $equipes_id[$participant->nom] = $participant->team_id;
 
         }
         asort($equipes);
 
         foreach ($equipes as $poule) {
             $poules[$poule] = [];
-
         }
-
 
         foreach ($equipes as $k => $v) {
             array_push($poules[$v], $k);
         }
-        //var_dump($poules);
         $numero = count($poules);
-        $this->render('account.tournois.calendrier', compact('participants','numero','poules'));
+
+        $matches = $this->Match->matchesTournoi($_GET['tournoi_id']);
+        $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=?)", [$_GET['tournoi_id']], false);
+        $all_teams = [];
+        foreach ($equipes_ as $item) {
+            $all_teams[$item->id] = $item->name;
+        }
+
+        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules','matches','all_teams'));
     }
 
 }
