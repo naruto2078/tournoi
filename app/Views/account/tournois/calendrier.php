@@ -28,7 +28,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($poules["poule 1"] as $k => $equipe): ?>
+                    <?php
+                    foreach ($poules["poule 1"] as $k => $equipe): ?>
                         <tr>
                             <td><?= $k + 1; ?></td>
                             <td><?= $equipe; ?></td>
@@ -96,7 +97,7 @@
                     <div class="row">
                         <?php for ($j = 0; $j < count($matches); $j++): ?>
                             <?php $match = $matches[$j];
-                            if ($match->nom == "poule ".$i): ?>
+                            if ($match->nom == "poule " . $i): ?>
                                 <div class="col-sm-6">
                                     <div class="card  text-xs-center ">
                                         <div class="card-block">
@@ -119,10 +120,10 @@
                                         </div>
                                         <div class="card-footer">
                                             <div class="col-xs-5">
-                                                <?= $all_teams[$matches[$i]->team_id_home]; ?>
+                                                <?= $all_teams[$matches[$j]->team_id_home]; ?>
                                             </div>
                                             <div class="col-xs-2">SCORE</div>
-                                            <div class="col-xs-5"><?= $all_teams[$matches[$i]->team_id_away]; ?></div>
+                                            <div class="col-xs-5"><?= $all_teams[$matches[$j]->team_id_away]; ?></div>
                                         </div>
                                     </div>
                                 </div>

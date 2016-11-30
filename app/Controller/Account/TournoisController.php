@@ -307,8 +307,8 @@ class TournoisController extends AppController {
         foreach ($equipes_ as $item) {
             $all_teams[$item->id] = $item->name;
         }
-        /*var_dump($all_teams);
-        var_dump($matches);*/
+        /*var_dump($all_teams);*/
+        //var_dump($matches);
         //var_dump($equipes);
 
         $equipes_tmp = $this->Team->query("SELECT teams.id, teams.name, poule_id,poules.nom FROM teams,poules,participe WHERE participe.poule_id = poules.id AND participe.team_id = teams.id AND participe.tournoi_id=?", [$_GET['tournoi_id']], false);
