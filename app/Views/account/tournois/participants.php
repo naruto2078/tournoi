@@ -92,12 +92,14 @@
                         <!--</form>-->
                     </div>
                     <div class="text-xs-right">
-                        <input type="hidden" name="formule" value="<?= $numero;?>">
-                        <button type="submit" name="create" class="btn btn-secondary" style="text-transform: none">Créer les groupes
+                        <input type="hidden" name="formule" value="<?= $numero; ?>">
+                        <button type="submit" name="create" class="btn btn-secondary" style="text-transform: none">Créer
+                            les groupes
                         </button>
                     </div>
                 </form>
             <?php endif; ?>
+
         <?php endif; ?>
 
         <table class="table table-bordered table-striped">

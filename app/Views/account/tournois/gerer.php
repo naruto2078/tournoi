@@ -36,8 +36,8 @@
                         <i class="fa fa-calendar fa-5x"></i>
                     </div>
                     <div class="col-xs-9 float-xs-right" style="padding-top: 10px;padding-left: 100px">
-                        <div style="font-size: 33px; margin-left: -28px;">23</div>
-                        <div>Matches</div>
+                        <div style="font-size: 33px; margin-left: -28px;">Matches</div>
+
                     </div>
                 </div>
             </div>

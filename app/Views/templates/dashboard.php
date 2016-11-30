@@ -137,22 +137,27 @@
 <script src="/js/bootstrap.min.js"></script>
 <!--Menu-toggle script-->
 <script>
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menuDisplayed");
-        $(".sidebar-text").toggleClass("hide");
-    });
-    $(".sidebar-nav li a").click(function (e) {
-        //e.preventDefault();
-        $("a").removeClass("active");
-        $(this).addClass("active");
+    $().ready(function () {
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+            $(".sidebar-text").toggleClass("hide");
+        });
+        $(".sidebar-nav li a").click(function (e) {
+            //e.preventDefault();
+            $("a").removeClass("active");
+            $(this).addClass("active");
 
-        //changer l'icone lorsqu'on deroule le menu
-        $(this).parent().find("i.icon").toggleClass("fa-angle-right")
-        $(this).parent().find("i.icon").toggleClass("fa-angle-down")
-    });
-    $("#sidebar-wrapper").height($(".container-fluid.content").height());
-    //$("#page-content-wrapper").height($(".container-fluid.content").height());
+            //changer l'icone lorsqu'on deroule le menu
+            $(this).parent().find("i.icon").toggleClass("fa-angle-right")
+            $(this).parent().find("i.icon").toggleClass("fa-angle-down")
+        });
+        setTimeout(function () {
+            $("#sidebar-wrapper").height($(".container-fluid.content").height());
+        },1000)
+        //$("#page-content-wrapper").height($(".container-fluid.content").height());
+    })
+
 </script>
 <!--Formulaire multi step -->
 <script src="/js/jquery.backstretch.min.js"></script>
@@ -175,6 +180,20 @@
             language: 'fr'
         };
         date_input.datepicker(options);
+
+        var date_input2 = $('input.date'); //our date input has the name "date"
+        var container2 = $('.container form').length > 0 ? $('.container form').parent() : "body";
+        var options2 = {
+            format: 'dd-mm-yyyy',
+            container: container2,
+            todayHighlight: true,
+            autoclose: true,
+            startDate: new Date(),
+            language: 'fr'
+        };
+        date_input2.each(function () {
+            $(this).datepicker(options2);
+        })
     })
 </script>
 </body>

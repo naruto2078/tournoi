@@ -19,7 +19,7 @@ class Serpentin {
     public function __construct($teams) {
         arsort($teams);
         $teams_aux = $teams;
-        foreach ($teams_aux as $team){
+        foreach ($teams_aux as $team) {
             $this->teams[] = $team;
         }
 
@@ -38,7 +38,7 @@ class Serpentin {
                 }
             }
         }
-        return $diviseurs;
+        return empty($diviseurs) ? $this->getDiviseurs($n + 1) : $diviseurs;
     }
 
     public function repartition($nbGroup) {
@@ -48,13 +48,17 @@ class Serpentin {
             $groups[$i] = [];
 
         }
+
+
         $k = 0;
         $i = 0;
         $j = 0;
         while ($k < count($this->teams)) {
             if ($i == 0) {
                 while ($j <= count($groups) - 1) {
-                    array_push($groups[$j], $this->teams[$k]);
+                    if (isset($this->teams[$k])) {
+                        array_push($groups[$j], $this->teams[$k]);
+                    }
                     $j++;
                     $k++;
                 }
@@ -63,7 +67,10 @@ class Serpentin {
                 $k--;
             } else {
                 while ($j >= 0) {
-                    array_push($groups[$j], $this->teams[$k]);
+                    if (isset($this->teams[$k])) {
+                        array_push($groups[$j], $this->teams[$k]);
+                    }
+
                     $k++;
                     $j--;
                 }
@@ -74,6 +81,7 @@ class Serpentin {
 
             $k++;
         }
+
         /*Si le nombre d'équipes par poules est impair, il faut alors alterner la dernière ligne. Ce système de la table de Berger permet de préserver les têtes de séries en les faisant
         rencontrer les moins forts en premiers.*/
         $lastline = [];
@@ -83,6 +91,13 @@ class Serpentin {
         if (count($groups[0]) % 2 != 0) {
             for ($i = 0; $i <= count($groups) - 1; $i++) {
                 $groups[$i][count($groups[$i]) - 1] = $lastline[$i];
+            }
+        }
+        if ($nbGroup == 2) {
+            if (count($groups[0]) != count($groups[1])) {
+                $derniere = $groups[1][count($groups[1]) - 1];
+                array_push($groups[0], $derniere);
+                array_pop($groups[1]);
             }
         }
 
