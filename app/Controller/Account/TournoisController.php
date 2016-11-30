@@ -40,21 +40,26 @@ class TournoisController extends AppController {
             'Masculin' => 'Masculin',
             'Feminin' => 'Feminin'
         ];
-if (!empty($_POST["prix"])){
-    $prixDef=$_POST["prix"];
+
+        
+        if (!empty($_POST)) {
+
+
+
+            for ($i = 1; $i <= intval($nb_tournois); $i++) {
+
+if (!empty($_POST['prix'.$i])){
+    $prixDef=$_POST['prix'.$i];
 }
 else{
     $prixDef=0;
 }
-        
-        if (!empty($_POST)) {
 
-            for ($i = 1; $i <= intval($nb_tournois); $i++) {
                 $this->Tournoi->create([
                     'nom_categorie' => $_POST["nom_categorie$i"],
                     'genre' => $_POST["genre$i"],
                     'id_event' => $_SESSION['event'],
-                    'typeTarif'=> $_POST["typetarif"],
+                    'typeTarif'=> $_POST["typetarif$i"],
                     'prix'=>$prixDef
                 ]);
             }

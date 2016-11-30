@@ -14,12 +14,12 @@ class TournoiTable extends Table {
     protected $table = 'tournois';
 
     public function tournoiByEvent($id) {
-        return $this->query("SELECT T.id, E.nom, genre, nom_categorie,id_event from tournois T, events E WHERE E.id = T.id_event and E.id=? and E.organisateur=?", [$id,$_SESSION['auth']], false);
+        return $this->query("SELECT T.id, E.nom, genre, nom_categorie,id_event,typeTarif,prix from tournois T, events E WHERE E.id = T.id_event and E.id=? and E.organisateur=?", [$id,$_SESSION['auth']], false);
 
     }
 
     public  function allByEvent($id){
-        return $this->query("SELECT T.id, E.nom, genre, nom_categorie,id_event from tournois T, events E WHERE E.id = T.id_event AND E.id=?" ,[$id], false);
+        return $this->query("SELECT T.id, E.nom, genre, nom_categorie,id_event,typeTarif,prix from tournois T, events E WHERE E.id = T.id_event AND E.id=?" ,[$id], false);
     }
 
 }
