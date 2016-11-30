@@ -94,21 +94,41 @@
                 <form action="" method="post">
                     <div>
                         <ul>
-                            <?php for ($i = 0; $i < count($rencontres); $i++): ?>
+                            <?php $tmp = 0;
+                            $tmp2 = 0;
+
+                            for ($i = 0; $i < count($rencontres); $i++): ?>
                                 <li>
                                     <div class="col-sm-5">
-                                        <?= $form->select($phases[2 * count($rencontres)], "Equipe 1", $options, $all_teams_reverse[$rencontres[$i]]); ?>
-                                        <div class="text-xs-center">VS</div>
-                                        <?= $form->select($phases[2 * count($rencontres)], "Equipe 2", $options, $all_teams_reverse[$rencontres[++$i]]); ?>
+                                        <div class="card wow fadeInRight">
+                                            <div class="card-block">
+                                                <div class="card-text">
+                                                    <h4 class="text-xs-center">Match</h4>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <?= $form->select($phases[count($rencontres)] . 'home' . $tmp2, "Equipe 1", $options, $all_teams_reverse[$rencontres[$i]]); ?>
+                                                    <div class="text-xs-center">VS</div>
+                                                    <?= $form->select($phases[count($rencontres)] . 'away' . $tmp2, "Equipe 2", $options, $all_teams_reverse[$rencontres[++$i]]); ?>
+                                                    <div class="md-form">
+                                                        <?= $form->input('date' . $tmp2, 'Date', ['placeholder' => 'Date du match...', 'class' => 'date']); ?>
+                                                    </div>
+                                                    <div class="md-form">
+                                                        <?= $form->input('heure' . $tmp2, 'Heure', ['placeholder' => 'Heure match', 'type' => 'number']); ?>
+                                                    </div>
+                                                    <div class="md-form">
+                                                        <?= $form->input('minute' . $tmp2++, 'Minute', ['placeholder' => 'Minute match', 'type' => 'number']); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                             <?php endfor; ?>
                         </ul>
                     </div>
             </div>
-            <div class="col-md-4">
-                <button type="submit" class="btn btn-primary" name="btn2"
-                        style="text-transform: none">Valider
+            <div class="offset-md-4 col-md-4">
+                <button type="submit" class="btn btn-primary" name="btn2">Valider
                 </button>
             </div>
             </form>
