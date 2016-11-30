@@ -27,15 +27,15 @@ class Serpentin {
 
     public function getDiviseurs($n) {
         $diviseurs = [];
-        $deuxEstFacteur = false;
+        /*$deuxEstFacteur = false;
         if ($n % 2 == 0) {
             $deuxEstFacteur = true;
-        }
+        }*/
         for ($i = 2; $i <= $n - 1; $i++) {
             if ($n % $i == 0) {
-                if (($deuxEstFacteur && $i != $n / 2) || !$deuxEstFacteur) {
+                //if (($deuxEstFacteur && $i != $n / 2) || !$deuxEstFacteur) {
                     $diviseurs[] = $i;
-                }
+                //}
             }
         }
         return empty($diviseurs) ? $this->getDiviseurs($n + 1) : $diviseurs;

@@ -131,3 +131,16 @@
 
     </div>
 </div>
+<script type="text/javascript">
+
+    function activer(i) {
+        document.getElementById('prix' + i).disabled = false;
+
+    }
+
+    function desactiver(i) {
+        document.getElementById('prix' + i).disabled = true;
+        //document.getElementById('prix' + i).value = "0";
+
+    }
+</script>

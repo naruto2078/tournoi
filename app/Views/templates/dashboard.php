@@ -37,6 +37,8 @@
         /*.f1-step{width: 25%};*/
         <?= '.f1-step{width:'.$_SESSION['width'].'%';?>
     </style>
+    <script>window.jQuery || document.write('<script src="/js/jquery-3.1.1.min.js"><\/script>')</script>
+
 </head>
 <body>
 <header>
@@ -133,7 +135,6 @@
     </div>
 </div>
 
-<script>window.jQuery || document.write('<script src="/js/jquery-3.1.1.min.js"><\/script>')</script>
 <script src="/js/bootstrap.min.js"></script>
 <!--Menu-toggle script-->
 <script>
