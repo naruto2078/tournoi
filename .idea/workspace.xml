@@ -548,7 +548,7 @@
       <workItem from="1480494772203" duration="42707000" />
       <workItem from="1480756071354" duration="1799000" />
       <workItem from="1480776338545" duration="6318000" />
-      <workItem from="1481106619462" duration="5747000" />
+      <workItem from="1481106619462" duration="5849000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de la fonction register dans la classe d'authentification DbAuth">
       <created>1477147768667</created>
@@ -575,7 +575,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525358000" />
+    <option name="totallyTimeSpent" value="525460000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,7 +587,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41882804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
