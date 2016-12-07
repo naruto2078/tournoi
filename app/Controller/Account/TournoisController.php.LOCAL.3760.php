@@ -22,7 +22,6 @@ class TournoisController extends AppController {
         $this->loadModel('Participe');
         $this->loadModel('Poule');
         $this->loadModel('Match');
-        $this->loadModel('Results');
     }
 
     public function add() {
@@ -41,50 +40,31 @@ class TournoisController extends AppController {
             'Masculin' => 'Masculin',
             'Feminin' => 'Feminin'
         ];
-
+        if (!empty($_POST["prix"])) {
+            $prixDef = $_POST["prix"];
+        } else {
+            $prixDef = 0;
+        }
 
         if (!empty($_POST)) {
 
-
             for ($i = 1; $i <= intval($nb_tournois); $i++) {
-
-                if (!empty($_POST['prix' . $i])) {
-                    $prixDef = $_POST['prix' . $i];
-                } else {
-                    $prixDef = 0;
-                }
-
-                if (!empty($_POST["prix"])) {
-                    $prixDef = $_POST["prix"];
-                } else {
-                    $prixDef = 0;
-                }
-
-                if (!empty($_POST)) {
-
-                    $this->Tournoi->create([
-                        'nom_categorie' => $_POST["nom_categorie$i"],
-                        'genre' => $_POST["genre$i"],
-                        'id_event' => $_SESSION['event'],
-
-                        'typeTarif' => $_POST["typetarif$i"],
-                        'prix' => $prixDef
-
-                        /*'typeTarif' => $_POST["typetarif"],
-                        'prix' => $prixDef*/
-
-                    ]);
-                }
-
-                header('Location:index.php?p=account.index&user=' . $_SESSION['user']);
-
+                $this->Tournoi->create([
+                    'nom_categorie' => $_POST["nom_categorie$i"],
+                    'genre' => $_POST["genre$i"],
+                    'id_event' => $_SESSION['event'],
+                    'typeTarif' => $_POST["typetarif"],
+                    'prix' => $prixDef
+                ]);
             }
-            $form = new BootstrapForm($_POST);
-            $this->render('account.tournois.add', compact('form', 'nb_tournois', 'categories', 'genres'));
 
-            $_SESSION['width'] = 100 / intval($nb_tournois);
+            header('Location:index.php?p=account.index&user=' . $_SESSION['user']);
+
         }
+        $form = new BootstrapForm($_POST);
+        $this->render('account.tournois.add', compact('form', 'nb_tournois', 'categories', 'genres'));
 
+        $_SESSION['width'] = 100 / intval($nb_tournois);
     }
 
     public function tournoiByEvent() {
@@ -323,44 +303,10 @@ class TournoisController extends AppController {
 
         $matches = $this->Match->matchesTournoi($_GET['tournoi_id']);
         $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=?)", [$_GET['tournoi_id']], false);
-        $score = $this->Results->query("SELECT *  FROM results", false);
         $all_teams = [];
-
         foreach ($equipes_ as $item) {
             $all_teams[$item->id] = $item->name;
         }
-
-
-        foreach ($score as $item) {
-            $all_score[$item->match_id][0] = $item->score_home;
-            $all_score[0][$item->match_id] = $item->score_away;
-        }
-
-
-        if (!empty($_POST['idMatch'])) {
-
-            $dejascrorer = $this->Results->query("SELECT * FROM results WHERE match_id =?", [$_POST['idMatch']]);//verifie que le score de ce match a déjaété inserer
-            if (!$dejascrorer) {
-                $this->Results->create([
-
-                    'match_id' => $_POST['idMatch'],
-                    'score_home' => $_POST['idScoreH'],
-                    'score_away' => $_POST['idScoreA']
-                ]);
-            }
-
-        }
-
-        if (!empty($_POST['idMatch2']) && !empty($_POST['idScoreH2']) && !empty($_POST['idScoreA2'])) {
-            $scoreExistant = $this->Results->query("SELECT * FROM results WHERE match_id =?", [$_POST['idMatch2']]);//teste si le score a déja ete ajoute
-
-            if ($scoreExistant) {
-                $this->Results->query("UPDATE results SET score_home=?,score_away=? WHERE match_id=?", [$_POST['idScoreH2'], $_POST['idScoreA2'], $_POST['idMatch2']]);
-            }
-
-        }
-        //$this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules','matches','all_teams','all_score'));
-
         /*var_dump($all_teams);*/
         //var_dump($matches);
         //var_dump($equipes);
@@ -372,7 +318,7 @@ class TournoisController extends AppController {
             $lesPoules[$item->nom] = $item->nom;
         }
 
-        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score'));
+        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules'));
     }
 
     public function actualiser() {
@@ -417,7 +363,7 @@ class TournoisController extends AppController {
         }
 
 
-        /*Mise en place des matches du prochain tour*/
+        //Mise en place des matches du prochain tour
         $done = false;
         $options = [];
         if (isset($_POST["btn1"])) {
@@ -442,9 +388,9 @@ class TournoisController extends AppController {
             //var_dump($equipes_prochainTour);
             $rencontres = $this->tirage($equipes_prochainTour);
             $_SESSION["rencontres"] = $rencontres;
-            /*for ($i = 0; $i < count($rencontres); $i++) {
-                printf('%s vs %s<br />%s', $rencontres[$i], $rencontres[++$i], PHP_EOL);
-            }*/
+            //for ($i = 0; $i < count($rencontres); $i++) {
+            //    printf('%s vs %s<br />%s', $rencontres[$i], $rencontres[++$i], PHP_EOL);
+            //}
             $done = true;
 
         }
@@ -490,6 +436,41 @@ class TournoisController extends AppController {
             }
         }
 
+        //CONSOLANTE
+        if (isset($_POST['option_consolante'])) {
+            if (isset($_POST['consolante'])) {
+                $teams = [];
+                $i = 0;
+                foreach ($_POST['consolante'] as $team_consolante) {
+                    $teams[++$i] = $team_consolante;
+                }
+                $serpentin = new Serpentin($teams);
+                $consolante = $serpentin->repartition(1);
+                //créer le tournoi consolante
+                $infos = $this->Tournoi->allbyEvent($_GET['event_id']);
+
+                /*$this->Tournoi->create([
+                    'genre' => $infos->genre,
+                    'nom_categorie' => $infos->nom_categorie,
+                    'id_event' => $infos->id_event
+                ]);
+                $this->Poule->create([
+                    'nom' => 'consolante'
+                ]);
+                foreach ($consolante as $item) {
+                    foreach ($item as $value) {
+                        $this->Participe->create([
+                            'team_id' => $all_teams_reverse[$value],
+                            'tournoi_id' => $this->Tournoi->lastInsertId(),
+                            'tour' => 1,
+                            'poule_id' => $this->Poule->lastInsertId(),
+                            'a_paye' => 1
+                        ]);
+                    }
+                }
+                */
+            }
+        }
 
         $form = new BootstrapForm($_POST);
         $this->render('account.tournois.actualiser', compact('form', 'participants', 'numero', 'poules', 'all_teams', 'lesPoules', 'all_teams_poule', 'rencontres', 'phases', 'done', 'options', 'all_teams_reverse'));
@@ -519,8 +500,6 @@ class TournoisController extends AppController {
             printf('%s vs %s<br />%s', $teams[$i], $teams[++$i], PHP_EOL);
         }*/
         return $teams;
-
     }
-
 
 }
