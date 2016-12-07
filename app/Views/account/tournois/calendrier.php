@@ -28,7 +28,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($poules["poule 1"] as $k => $equipe): ?>
+                    <?php
+                    foreach ($poules["poule 1"] as $k => $equipe): ?>
                         <tr>
                             <td><?= $k + 1; ?></td>
                             <td><?= $equipe; ?></td>
@@ -119,8 +120,13 @@
                     <div class="row">
                         <?php for ($j = 0; $j < count($matches); $j++): ?>
                             <?php $match = $matches[$j];
+<<<<<<< HEAD
                             if ($match->nom == "poule ".$i): ?>
                                 <div class="col-sm-9">
+=======
+                            if ($match->nom == "poule " . $i): ?>
+                                <div class="col-sm-6">
+>>>>>>> 8a3fa56398fc0fbd4ad2d455da12bfac5363f356
                                     <div class="card  text-xs-center ">
                                         <div class="card-block">
                                             <div class="row card-text">
@@ -140,6 +146,7 @@
                                                 </div>
                                             </div>
                                         </div>
+<<<<<<< HEAD
                                        <div class="card-footer">
                                         <div class="col-xs-5">
                                         <?php
@@ -166,6 +173,14 @@
                                         </button>
                                         <button type="button" class="btn btn-info" name="button$jbisM" onclick=dialog2('<?= $all_teams[$matches[$j]->team_id_home]; ?>','<?= $all_teams[$matches[$j]->team_id_away]; ?>','<?= $match->id ?>') >Modifier le score
                                         </button>
+=======
+                                        <div class="card-footer">
+                                            <div class="col-xs-5">
+                                                <?= $all_teams[$matches[$j]->team_id_home]; ?>
+                                            </div>
+                                            <div class="col-xs-2">SCORE</div>
+                                            <div class="col-xs-5"><?= $all_teams[$matches[$j]->team_id_away]; ?></div>
+>>>>>>> 8a3fa56398fc0fbd4ad2d455da12bfac5363f356
                                         </div>
                                         
                                     </div>

@@ -64,9 +64,11 @@
                 </div>
             </div>
             <div class="card-footer">
+                <a class="card-link" href="<?= $tournoi->actualiser(); ?>">
                 <span class="float-xs-left">Gérer le tournoi</span>
                 <span class="float-xs-right"><i class="fa fa-arrow-right"></i></span>
                 <div class="clearfix"></div>
+                </a>
             </div>
         </div>
     </div>
