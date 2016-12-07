@@ -37,12 +37,12 @@
                             </tbody>
                         </table>
                         <div class="row text-xs-center">
-                         <?=$tarif=$tournoi->typeTarif;?>
-                         <button type="button" class="btn btn-warning btn-lg" data-toggle="modal"   onclick="dialog('<?=$tarif?>') " style="text-transform: none">
+                        
+                         <button type="button" class="btn btn-warning btn-lg" data-toggle="modal"   onclick="dialog('<?=$tournoi->typeTarif?>', '<?=$tournoi->id?>') " style="text-transform: none">
                             Participer 
                         </button>
-                    </div>
-                    <!-- Modal -->
+
+                         <!-- Modal -->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -53,7 +53,7 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <h4 class="modal-title" id="myModalLabel">Participation au tournoi <?= $tournoi->id; ?> </h4>
+                                <h4 class="modal-title" id="myModalLabel">Participation au tournoi <?= $tournoi->nom; ?> </h4>
                             </div>
                             <!--Body-->
                             <div class="modal-body">
@@ -122,7 +122,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <h4 class="modal-title" id="myModalLabel">Participation au tournoi <?= $tournoi->id; ?> </h4>
+                            <h4 class="modal-title" id="myModalLabel">Participation au tournoi <?php echo  $tournoi->nom; ?> </h4>
                         </div>
                         <!--Body-->
                         <div class="modal-body">
@@ -130,7 +130,7 @@
                                 <form action="" method="post">
                                        <div class="col-xs-7">
                                         <?=$form->select('team','Equipe',$teams);?>
-                                        <input type="text" name="id" value="<?= $tournoi->id; ?>">
+                                        <input type="text" name="id3" value="<?= $tournoi->id; ?>">
                                     </div>
                                      <div class="f1-buttons">
                                         <button type="submit" class="btn btn-success">Participer</button>
@@ -149,10 +149,14 @@
                     <!--/.Content-->
                 </div>
             </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
-</div>
-</div>
+
 <?php endforeach; ?>
 </div>
 <div class="row">
@@ -179,7 +183,7 @@
                     <td><?= $tournoi->typeTarif; ?></td>
                     <td>
                         <form action="" method="post">
-                            <input type="hidden" name="id" value="<?= $tournoi->id; ?>">
+                            <input type="hidden" name="id2" value="<?= $tournoi->id; ?>">
                             <button type="submit" class="btn btn-primary">Participer</button>
                         </form>
                     </td>
@@ -193,12 +197,14 @@
 
 <script type="text/javascript">
 
-    function dialog(i) {
-//alert("activer");
+    function dialog(typeTarif,id) {
+alert(typeTarif+id);
 //document.getElementById("toto").data-target="#myModal";
-if (i=='payant'){
+if (typeTarif=='payant'){
   
     $('#myModal').modal();
+    $('#myModal').find('.modal-title').text(id);
+
 }else{
     
     $('#myModal2').modal();

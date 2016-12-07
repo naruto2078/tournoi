@@ -22,6 +22,7 @@ class TournoisController extends AppController {
         $this->loadModel('Participe');
         $this->loadModel('Poule');
         $this->loadModel('Match');
+        $this->loadModel('Results');
     }
 
     public function add() {
@@ -307,12 +308,46 @@ else{
 
         $matches = $this->Match->matchesTournoi($_GET['tournoi_id']);
         $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=?)", [$_GET['tournoi_id']], false);
+        $score= $this->Results->query("SELECT *  FROM results",false);
         $all_teams = [];
+        
         foreach ($equipes_ as $item) {
             $all_teams[$item->id] = $item->name;
         }
+        
+        
 
-        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules','matches','all_teams'));
+        foreach ($score as $item) {
+            $all_score[$item->match_id][0] = $item->score_home;
+             $all_score[0][$item->match_id] =$item->score_away ;
+        }
+
+
+if (!empty($_POST['idMatch'])) {
+
+            $dejascrorer = $this->Results->query("SELECT * FROM results WHERE match_id =?", [$_POST['idMatch']]);//verifie que le score de ce match a déjaété inserer
+            if (!$dejascrorer) {
+                $this->Results->create([
+                    
+                    'match_id' => $_POST['idMatch'],
+                    'score_home' => $_POST['idScoreH'],
+                    'score_away' => $_POST['idScoreA']
+                ]);
+            }
+          
+        }
+
+          if (!empty($_POST['idMatch2']) && !empty($_POST['idScoreH2']) && !empty($_POST['idScoreA2'])){
+            $scoreExistant = $this->Results->query("SELECT * FROM results WHERE match_id =?", [$_POST['idMatch2']]);//teste si le score a déja ete ajoute
+               
+        if($scoreExistant){
+                $this->Results->query("UPDATE results SET score_home=?,score_away=? WHERE match_id=?",[$_POST['idScoreH2'],$_POST['idScoreA2'],$_POST['idMatch2']]);
+            }
+
+}
+        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules','matches','all_teams','all_score'));
     }
+
+
 
 }
