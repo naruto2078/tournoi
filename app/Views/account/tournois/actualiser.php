@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div>
-                                            <h4><input type="checkbox" name="consolante" id="consolante">Consolante?
+                                            <h4><input type="checkbox" name="option_consolante" id="option_consolante">Consolante?
                                             </h4>
                                         </div>
                                         <div id="consolante-equipes">
@@ -138,7 +138,7 @@
 </main>
 <script type="text/javascript">
     $("#consolante-equipes").hide();
-    $('#consolante').change(function () {
+    $('#option_consolante').change(function () {
         if ($(this).prop('checked')) {
             $("#consolante-equipes").show();
         } else {
