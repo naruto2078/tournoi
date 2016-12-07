@@ -301,7 +301,7 @@ class TournoisController extends AppController {
 
     public function calendrier() {
         $participants = $this->Participe->participantsEtPoulesParTour($_GET['tournoi_id'], 1);
-
+        $organisateur = $this->Event->query("SELECT organisateur from events WHERE id=?", [$_GET['event_id']], true);
         $poules = [];
         $equipes = [];
         $equipes_id = [];
@@ -371,8 +371,8 @@ class TournoisController extends AppController {
             $all_teams_poule[$item->name] = $item->nom;
             $lesPoules[$item->nom] = $item->nom;
         }
-
-        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score'));
+        $ok = $organisateur->organisateur == $_SESSION['auth'];
+        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'ok'));
     }
 
     public function actualiser() {
