@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<header>
+<header id="accueil">
     <!--Navbar-->
     <nav class="navbar navbar-dark bg-primary">
 
@@ -87,11 +87,11 @@
             <div class="col-md-6">
                 <h5 class="title">Navigation</h5>
                 <ul>
-                    <li><a href="#!">Accueil</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#!">A propos</a></li>
                     <li><a href="#!">Contact</a></li>
-                    <li><a href="#!">Inscription</a></li>
-                    <li><a href="#!">Connexion</a></li>
+                    <li><a href="index.php?p=users.register">Inscription</a></li>
+                    <li><a href="index.php?p=users.login">Connexion</a></li>
                 </ul>
             </div>
             <!--/.Second column-->

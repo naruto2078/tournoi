@@ -8,200 +8,214 @@
     <div class="col-md-10">
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item active">
-                <a href="#panel1" class="nav-link" data-toggle="tab" role="tab">Poule 1</a>
+                <a href="#phase_poule" class="nav-link" data-toggle="tab" role="tab"><button class="btn btn-success">Phase de poules</button></a>
             </li>
-            <?php for ($i = 2; $i <= $numero; $i++): ?>
-                <li class="nav-item">
-                    <a class="nav-link " data-toggle="tab" href="#panel<?= $i; ?>"
-                       role="tab">Poule <?= $i; ?></a>
-                </li>
-            <?php endfor; ?>
+            <li class="nav-item">
+                <a href="#phase_qualif" class="nav-link" data-toggle="tab" role="tab"><button class="btn btn-success">Qualifications</button></a>
+            </li>
         </ul>
         <div class="tab-content">
-            <!--<form action="" method="post">-->
-            <div class="tab-pane active" id="panel1" role="tabpanel">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Equipe</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <?php
-                    foreach ($poules["poule 1"] as $k => $equipe): ?>
-                        <tr>
-                            <td><?= $k + 1; ?></td>
-                            <td><?= $equipe; ?></td>
-                        </tr>
-                    <?php endforeach; ?>
-                    </tbody>
-
-                </table>
-                <div class="row">
-                    <?php for ($i = 0; $i < count($matches); $i++): ?>
-                        <?php $match = $matches[$i];
-                        if ($match->nom == "poule 1"): ?>
-                            <div class="col-sm-9">
-                                <div class="card  text-xs-center ">
-                                    <div class="card-block">
-                                        <div class="row card-text">
-                                            <div class="col-xs-4">
-                                                <div><i class="fa fa-calendar fa"></i></div>
-                                                <div><?= date_format(new DateTime($match->date), 'd-M'); ?></div>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                                                <div><?= date_format(new DateTime($match->date), 'H:i'); ?></div>
-                                            </div>
-                                            <div class="col-xs-4 float-xs-right">
-                                                <div>
-                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                </div>
-                                                <div>Stade</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-
-                                        <div class="col-xs-5">
-                                            <?php
-                                            if (empty($all_score[$match->id][0]) || empty($all_score[0][$match->id])) {
-                                                $scoreH = "NR";
-                                                $scoreA = "NR";
-                                            } else {
-                                                $scoreH = $all_score[$match->id][0];
-                                                $scoreA = $all_score[0][$match->id];
-                                            }
-                                            ?>
-                                            <?= $all_teams[$matches[$i]->team_id_home]; ?>
-                                            <div class="col-xs-4"><input type="text" name="scorehome$j"
-                                                                         value='<?= $scoreH ?>' disabled=false></div>
-                                        </div>
-                                        <div class="col-xs-2">SCORE</div>
-                                        <div class="col-xs-5"><?= $all_teams[$matches[$i]->team_id_away]; ?>
-                                            <div class="col-xs-4"><input type="text" name="scoreaway$j"
-                                                                         value='<?= $scoreA ?>' disabled=false></div>
-                                        </div>
-                                        <?php var_dump($ok); ?>
-                                        <?php if ($ok): ?>
-                                            <div>
-                                                <button type="button" class="btn btn-info" name="button$j"
-                                                        onclick=dialog('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>')>
-                                                    Ajouter le score
-                                                </button>
-                                                <button type="button" class="btn btn-info" name="button$j"
-                                                        onclick=dialog2('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>')>
-                                                    Modifier le score
-                                                </button>
-                                            </div>
-                                        <?php endif; ?>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        <?php endif; ?>
+            <div class="tab-pane active" id="phase_poule" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item active">
+                        <a href="#panel1" class="nav-link" data-toggle="tab" role="tab">Poule 1</a>
+                    </li>
+                    <?php for ($i = 2; $i <= $numero; $i++): ?>
+                        <li class="nav-item">
+                            <a class="nav-link " data-toggle="tab" href="#panel<?= $i; ?>"
+                               role="tab">Poule <?= $i; ?></a>
+                        </li>
                     <?php endfor; ?>
+                </ul>
+                <div class="tab-content">
+                    <!--<form action="" method="post">-->
+                    <div class="tab-pane active" id="panel1" role="tabpanel">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Equipe</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            foreach ($poules["poule 1"] as $k => $equipe): ?>
+                                <tr>
+                                    <td><?= $k + 1; ?></td>
+                                    <td><?= $equipe; ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+
+                        </table>
+                        <div class="row">
+                            <?php for ($i = 0; $i < count($matches); $i++): ?>
+                                <?php $match = $matches[$i];
+                                if ($match->nom == "poule 1"): ?>
+                                    <div class="col-sm-9">
+                                        <div class="card  text-xs-center ">
+                                            <div class="card-block">
+                                                <div class="row card-text">
+                                                    <div class="col-xs-4">
+                                                        <div><i class="fa fa-calendar fa"></i></div>
+                                                        <div><?= date_format(new DateTime($match->date), 'd-M'); ?></div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                                        <div><?= date_format(new DateTime($match->date), 'H:i'); ?></div>
+                                                    </div>
+                                                    <div class="col-xs-4 float-xs-right">
+                                                        <div>
+                                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>Stade</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+
+                                                <div class="col-xs-5">
+                                                    <?php
+                                                    if (empty($all_score[$match->id][0]) || empty($all_score[0][$match->id])) {
+                                                        $scoreH = "NR";
+                                                        $scoreA = "NR";
+                                                    } else {
+                                                        $scoreH = $all_score[$match->id][0];
+                                                        $scoreA = $all_score[0][$match->id];
+                                                    }
+                                                    ?>
+                                                    <?= $all_teams[$matches[$i]->team_id_home]; ?>
+                                                    <div class="col-xs-4"><input type="text" name="scorehome$j"
+                                                                                 value='<?= $scoreH ?>' disabled=false></div>
+                                                </div>
+                                                <div class="col-xs-2">SCORE</div>
+                                                <div class="col-xs-5"><?= $all_teams[$matches[$i]->team_id_away]; ?>
+                                                    <div class="col-xs-4"><input type="text" name="scoreaway$j"
+                                                                                 value='<?= $scoreA ?>' disabled=false></div>
+                                                </div>
+                                                <?php var_dump($ok); ?>
+                                                <?php if ($ok): ?>
+                                                    <div>
+                                                        <button type="button" class="btn btn-info" name="button$j"
+                                                                onclick=dialog('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>')>
+                                                            Ajouter le score
+                                                        </button>
+                                                        <button type="button" class="btn btn-info" name="button$j"
+                                                                onclick=dialog2('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>')>
+                                                            Modifier le score
+                                                        </button>
+                                                    </div>
+                                                <?php endif; ?>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <?php endif; ?>
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                    <?php for ($i = 2; $i <= $numero; $i++): ?>
+                        <div class="tab-pane" id="panel<?= $i; ?>" role="tabpanel">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php foreach ($poules['poule ' . $i] as $k => $equipe): ?>
+                                    <tr>
+                                        <td><?= $k + 1; ?></td>
+                                        <td><?= $equipe; ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                                </tbody>
+
+                            </table>
+                            <div class="row">
+                                <?php for ($j = 0; $j < count($matches); $j++): ?>
+                                    <?php $match = $matches[$j];
+
+                                    if ($match->nom == "poule " . $i): ?>
+                                        <div class="col-sm-9">
+
+                                            <div class="card  text-xs-center ">
+                                                <div class="card-block">
+                                                    <div class="row card-text">
+                                                        <div class="col-xs-4">
+                                                            <div><i class="fa fa-calendar fa"></i></div>
+                                                            <div><?= date_format(new DateTime($match->date), 'd-M'); ?></div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                                            <div><?= date_format(new DateTime($match->date), 'H:i'); ?></div>
+                                                        </div>
+                                                        <div class="col-xs-4 float-xs-right">
+                                                            <div>
+                                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div>Stade</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-footer">
+                                                    <div class="col-xs-5">
+                                                        <?php
+                                                        if (empty($all_score[$match->id][0]) || empty($all_score[0][$match->id])) {
+                                                            $scoreH = "NR";
+                                                            $scoreA = "NR";
+                                                        } else {
+                                                            $scoreH = $all_score[$match->id][0];
+                                                            $scoreA = $all_score[0][$match->id];
+                                                        }
+                                                        ?>
+                                                        <?= $all_teams[$matches[$j]->team_id_home]; ?>
+                                                        <div class="col-xs-4"><input type="text" name="scorehome$jbis"
+                                                                                     value='<?= $scoreH ?>' disabled=false>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2">SCORE</div>
+                                                    <div class="col-xs-5"><?= $all_teams[$matches[$j]->team_id_away]; ?>
+                                                        <div class="col-xs-4"><input type="text" name="scoreaway$jbis"
+                                                                                     value='<?= $scoreA ?>' disabled=false>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div>
+
+                                                        <?php if ($ok) : ?>
+                                                            <button type="button" class="btn btn-info" name="button$jbis"
+                                                                    onclick=dialog('<?= $all_teams[$matches[$j]->team_id_home]; ?>','<?= $all_teams[$matches[$j]->team_id_away]; ?>','<?= $match->id ?>')>
+                                                                Ajouter le score
+                                                            </button>
+                                                            <button type="button" class="btn btn-info" name="button$jbisM"
+                                                                    onclick=dialog2('<?= $all_teams[$matches[$j]->team_id_home]; ?>','<?= $all_teams[$matches[$j]->team_id_away]; ?>','<?= $match->id ?>')>
+                                                                Modifier le score
+                                                            </button>
+                                                        <?php endif; ?>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endfor; ?>
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+
+
+                    <!--</form>-->
                 </div>
             </div>
-            <?php for ($i = 2; $i <= $numero; $i++): ?>
-                <div class="tab-pane" id="panel<?= $i; ?>" role="tabpanel">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Equipe</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php foreach ($poules['poule ' . $i] as $k => $equipe): ?>
-                            <tr>
-                                <td><?= $k + 1; ?></td>
-                                <td><?= $equipe; ?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                        </tbody>
-
-                    </table>
-                    <div class="row">
-                        <?php for ($j = 0; $j < count($matches); $j++): ?>
-                            <?php $match = $matches[$j];
-
-                            if ($match->nom == "poule " . $i): ?>
-                                <div class="col-sm-9">
-
-                                    <div class="card  text-xs-center ">
-                                        <div class="card-block">
-                                            <div class="row card-text">
-                                                <div class="col-xs-4">
-                                                    <div><i class="fa fa-calendar fa"></i></div>
-                                                    <div><?= date_format(new DateTime($match->date), 'd-M'); ?></div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                                                    <div><?= date_format(new DateTime($match->date), 'H:i'); ?></div>
-                                                </div>
-                                                <div class="col-xs-4 float-xs-right">
-                                                    <div>
-                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div>Stade</div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-footer">
-                                            <div class="col-xs-5">
-                                                <?php
-                                                if (empty($all_score[$match->id][0]) || empty($all_score[0][$match->id])) {
-                                                    $scoreH = "NR";
-                                                    $scoreA = "NR";
-                                                } else {
-                                                    $scoreH = $all_score[$match->id][0];
-                                                    $scoreA = $all_score[0][$match->id];
-                                                }
-                                                ?>
-                                                <?= $all_teams[$matches[$j]->team_id_home]; ?>
-                                                <div class="col-xs-4"><input type="text" name="scorehome$jbis"
-                                                                             value='<?= $scoreH ?>' disabled=false>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-2">SCORE</div>
-                                            <div class="col-xs-5"><?= $all_teams[$matches[$j]->team_id_away]; ?>
-                                                <div class="col-xs-4"><input type="text" name="scoreaway$jbis"
-                                                                             value='<?= $scoreA ?>' disabled=false>
-                                                </div>
-                                            </div>
-
-
-                                            <div>
-
-                                                <?php if ($ok) : ?>
-                                                    <button type="button" class="btn btn-info" name="button$jbis"
-                                                            onclick=dialog('<?= $all_teams[$matches[$j]->team_id_home]; ?>','<?= $all_teams[$matches[$j]->team_id_away]; ?>','<?= $match->id ?>')>
-                                                        Ajouter le score
-                                                    </button>
-                                                    <button type="button" class="btn btn-info" name="button$jbisM"
-                                                            onclick=dialog2('<?= $all_teams[$matches[$j]->team_id_home]; ?>','<?= $all_teams[$matches[$j]->team_id_away]; ?>','<?= $match->id ?>')>
-                                                        Modifier le score
-                                                    </button>
-                                                <?php endif; ?>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            <?php endif; ?>
-                        <?php endfor; ?>
-                    </div>
-                </div>
-            <?php endfor; ?>
-
-
-            <!--</form>-->
+            <div class="tab-pane" id="phase_qualif" role="tabpanel"></div>
         </div>
+
     </div>
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
