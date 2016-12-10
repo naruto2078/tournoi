@@ -627,6 +627,41 @@ class TournoisController extends AppController {
             }
         }
 
+        //CONSOLANTE
+        if (isset($_POST['option_consolante'])) {
+            if (isset($_POST['consolante'])) {
+                $teams = [];
+                $i = 0;
+                foreach ($_POST['consolante'] as $team_consolante) {
+                    $teams[++$i] = $team_consolante;
+                }
+                $serpentin = new Serpentin($teams);
+                $consolante = $serpentin->repartition(1);
+                //créer le tournoi consolante
+                $infos = $this->Tournoi->allbyEvent($_GET['event_id']);
+
+                /*$this->Tournoi->create([
+                    'genre' => $infos->genre,
+                    'nom_categorie' => $infos->nom_categorie,
+                    'id_event' => $infos->id_event
+                ]);
+                //$this->Poule->create([
+                  //  'nom' => 'consolante'
+                //]);
+                foreach ($consolante as $item) {
+                    foreach ($item as $value) {
+                        $this->Participe->create([
+                            'team_id' => $all_teams_reverse[$value],
+                            'tournoi_id' => $this->Tournoi->lastInsertId(),
+                            'tour' => 1,
+                            //'poule_id' => $this->Poule->lastInsertId(),
+                            'a_paye' => 1
+                        ]);
+                    }
+                }
+                */
+            }
+        }
 
         $form = new BootstrapForm($_POST);
         $this->render('account.tournois.actualiser', compact('form', 'participants', 'numero', 'poules', 'all_teams', 'lesPoules', 'all_teams_poule', 'rencontres', 'phases', 'done', 'options', 'all_teams_reverse','tour'));
