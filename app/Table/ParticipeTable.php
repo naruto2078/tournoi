@@ -25,7 +25,7 @@ class ParticipeTable extends Table {
         return $this->query("SELECT * FROM teams,participe,poules WHERE teams.id = participe.team_id AND participe.tournoi_id=? AND poules.id=participe.poule_id ",[$tournoi_id]);
     }
     public function participantsEtPoulesParTour($tournoi_id,$tour){
-        return $this->query("SELECT * FROM teams,participe,poules WHERE teams.id = participe.team_id AND participe.tournoi_id=? AND poules.id=participe.poule_id AND participe.tour=?",[$tournoi_id,$tour]);
+        return $this->query("SELECT * FROM teams,participe,poules WHERE teams.id = participe.team_id AND participe.tournoi_id=? AND poules.id=participe.poule_id AND participe.tour=? ORDER BY participe.poule_id",[$tournoi_id,$tour]);
     }
 
 }

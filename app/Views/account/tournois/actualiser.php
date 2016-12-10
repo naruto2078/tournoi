@@ -42,6 +42,7 @@
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
+                                    <?php if($tour->tour_max == 1):?>
                                     <div class="col-md-12">
                                         <div>
                                             <h4><input type="checkbox" name="option_consolante" id="option_consolante">Consolante?
@@ -68,6 +69,7 @@
                                             <?php endforeach; ?>
                                         </div>
                                     </div>
+                                    <?php endif;?>
                                     <button type="submit" class="btn btn-primary" name="btn1"
                                             style="text-transform: none">Valider
                                     </button>
