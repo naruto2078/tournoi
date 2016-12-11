@@ -490,7 +490,7 @@ class TournoisController extends AppController {
             $lesPoules[$item->nom] = $item->nom;
         }
 
-        $pouleId = $this->Participe->query("SELECT * FROM participe P,poules po WHERE P.poule_id = po.id", false);
+        $pouleId = $this->Participe->query("SELECT * FROM participe P,poules po WHERE P.poule_id = po.id AND P.tournoi_id = ?", [$_GET['tournoi_id']], false);
         //   var_dump($pouleId);
 
         foreach ($pouleId as $item) {
@@ -499,7 +499,6 @@ class TournoisController extends AppController {
             $all_nb_set[$item->nom][$item->tournoi_id] = $item->nb_set;
 
         }
-
         $querySetByTeamAndMatch = $this->Results->query("SELECT * FROM results, matches,setmatch WHERE results.match_id= matches.id AND results.id=setmatch.id_results");
         $compt = 1;
         foreach ($querySetByTeamAndMatch as $tuple) {
@@ -508,7 +507,6 @@ class TournoisController extends AppController {
             $compt++;
         }
         //var_dump($all_set_by_team_match);
-        var_dump($all_nb_set);
 
 
         $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
@@ -664,7 +662,7 @@ class TournoisController extends AppController {
         }
 
         $form = new BootstrapForm($_POST);
-        $this->render('account.tournois.actualiser', compact('form', 'participants', 'numero', 'poules', 'all_teams', 'lesPoules', 'all_teams_poule', 'rencontres', 'phases', 'done', 'options', 'all_teams_reverse','tour'));
+        $this->render('account.tournois.actualiser', compact('form', 'participants', 'numero', 'poules', 'all_teams', 'lesPoules', 'all_teams_poule', 'rencontres', 'phases', 'done', 'options', 'all_teams_reverse', 'tour'));
     }
 
     private function tirage($teams) {
