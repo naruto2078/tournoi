@@ -335,6 +335,7 @@ class TournoisController extends AppController {
             4 => 2,
             2 => 1
         ];
+        $equipesParPhase=["16e"=>16, "Huitièmes"=>8, "Quarts"=>4, "Demi-finales"=>2, "Finale"=>1];
 
         //var_dump($lesQualifiees);
         foreach ($equipes as $poule) {
@@ -528,7 +529,7 @@ class TournoisController extends AppController {
         //var_dump($all_set_by_team_match);
 
 
-        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases', 'lesPhases','lesQualifiees', 'nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
+        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases','equipesParPhase', 'lesPhases','lesQualifiees', 'nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
     }
 
     public function actualiser() {
