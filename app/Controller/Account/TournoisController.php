@@ -517,7 +517,6 @@ class TournoisController extends AppController {
             $all_nb_set[$item->nom][$item->tournoi_id] = $item->nb_set;
 
         }
-        var_dump($all_poule_id);
 
         $querySetByTeamAndMatch = $this->Results->query("SELECT * FROM results, matches,setmatch WHERE results.match_id= matches.id AND results.id=setmatch.id_results");
         $compt = 1;
