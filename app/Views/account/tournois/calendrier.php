@@ -65,81 +65,81 @@
                                 <?php $match = $matches[$i];
                                 if ($match->nom == "poule 1"): ?>
                                     <div class="col-sm-9">
-                                    <div class="card  text-xs-center ">
-                                    <div class="card-block">
-                                        <div class="row card-text">
-                                            <div class="col-xs-4">
-                                                <div><i class="fa fa-calendar fa"></i></div>
-                                                <div><?= date_format(new DateTime($match->date), 'd-M'); ?></div>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                                                <div><?= date_format(new DateTime($match->date), 'H:i'); ?></div>
-                                            </div>
-                                            <div class="col-xs-4 float-xs-right">
-                                                <div>
-                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <div class="card  text-xs-center ">
+                                            <div class="card-block">
+                                                <div class="row card-text">
+                                                    <div class="col-xs-4">
+                                                        <div><i class="fa fa-calendar fa"></i></div>
+                                                        <div><?= date_format(new DateTime($match->date), 'd-M'); ?></div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                                        <div><?= date_format(new DateTime($match->date), 'H:i'); ?></div>
+                                                    </div>
+                                                    <div class="col-xs-4 float-xs-right">
+                                                        <div>
+                                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>Stade</div>
+                                                    </div>
                                                 </div>
-                                                <div>Stade</div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="col-xs-5">
+                                                    <?php
+                                                    if (empty($all_score[$match->id][0]) || empty($all_score[0][$match->id])) {
+                                                        $scoreH = "NR";
+                                                        $scoreA = "NR";
+                                                    } else {
+                                                        $scoreH = $all_score[$match->id][0];
+                                                        $scoreA = $all_score[0][$match->id];
+                                                    }
+                                                    ?>
+                                                    <?= $all_teams[$matches[$i]->team_id_home]; ?>
+                                                    <div class="col-xs-4"><input type="text" name="scorehome$j"
+                                                                                 value='<?= $scoreH ?>'
+                                                                                 disabled=false>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-2">SCORE</div>
+                                                <div class="col-xs-5"><?= $all_teams[$matches[$i]->team_id_away]; ?>
+                                                    <div class="col-xs-4"><input type="text" name="scoreaway$j"
+                                                                                 value='<?= $scoreA ?>'
+                                                                                 disabled=false>
+                                                    </div>
+                                                </div>
+                                                <?php $nb_set_score = $all_nb_set['poule 1'][$_GET['tournoi_id']]; ?>
+                                                <table class="table event-table card-text">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-left"><?= $all_teams[$matches[$i]->team_id_home]; ?></td>
+                                                        <td style="width: 50%;"> 21</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left"><?= $all_teams[$matches[$i]->team_id_away]; ?></td>
+                                                        <td style="width: 50%;">12</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <?php if ($organisateur->organisateur == $_SESSION['auth']): ?>
+
+                                                    <div>
+                                                        <button type="button" class="btn btn-info" name="button$j"
+                                                                onclick=dialog('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>','<?= $all_nb_set['poule 1'][$_GET['tournoi_id']]; ?>')>
+                                                            Ajouter le score
+                                                        </button>
+                                                        <button type="button" class="btn btn-info" name="button$j"
+                                                                onclick=dialog2('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>','<?= $all_nb_set['poule 1'][$_GET['tournoi_id']]; ?>')>
+                                                            Modifier le score
+                                                        </button>
+                                                    </div>
+                                                <?php endif; ?>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-footer">
-                                    <div class="col-xs-5">
-                                        <?php
-                                        if (empty($all_score[$match->id][0]) || empty($all_score[0][$match->id])) {
-                                            $scoreH = "NR";
-                                            $scoreA = "NR";
-                                        } else {
-                                            $scoreH = $all_score[$match->id][0];
-                                            $scoreA = $all_score[0][$match->id];
-                                        }
-                                        ?>
-                                        <?= $all_teams[$matches[$i]->team_id_home]; ?>
-                                        <div class="col-xs-4"><input type="text" name="scorehome$j"
-                                                                     value='<?= $scoreH ?>'
-                                                                     disabled=false>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">SCORE</div>
-                                    <div class="col-xs-5"><?= $all_teams[$matches[$i]->team_id_away]; ?>
-                                        <div class="col-xs-4"><input type="text" name="scoreaway$j"
-                                                                     value='<?= $scoreA ?>'
-                                                                     disabled=false>
-                                        </div>
-                                    </div>
-                                    <?php $nb_set_score = $all_nb_set['poule 1'][$_GET['tournoi_id']]; ?>
-                                    <table class="table event-table card-text">
-                                        <tbody>
-                                        <tr>
-                                            <td class="text-left"><?= $all_teams[$matches[$i]->team_id_home]; ?></td>
-                                            <td style="width: 50%;"> 21</td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left"><?= $all_teams[$matches[$i]->team_id_away]; ?></td>
-                                            <td style="width: 50%;">12</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    <?php if ($organisateur->organisateur == $_SESSION['auth']): ?>
-
-                                        <div>
-                                            <button type="button" class="btn btn-info" name="button$j"
-                                                    onclick=dialog('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>','<?= $all_nb_set['poule 1'][$_GET['tournoi_id']]; ?>')>
-                                                Ajouter le score
-                                            </button>
-                                            <button type="button" class="btn btn-info" name="button$j"
-                                                    onclick=dialog2('<?= $all_teams[$matches[$i]->team_id_home]; ?>','<?= $all_teams[$matches[$i]->team_id_away]; ?>','<?= $match->id ?>','<?= $all_nb_set['poule 1'][$_GET['tournoi_id']]; ?>')>
-                                                Modifier le score
-                                            </button>
-                                        </div>
-                                    <?php endif; ?>
-
-                                </div>
-                                </div>
-                                </div>
 
                                 <?php endif; ?>
                             <?php endfor; ?>
@@ -257,7 +257,20 @@
 
             <!--matches phase à élimination directe-->
             <div class="tab-pane " id="phase_qualif" role="tabpanel">
-
+                <ul class="nav nav-tabs" role="tablist">
+                    <?php for ($i = 0; $i < $nbPhases_[$nbScdTour]; $i++): ?>
+                        <li class="nav-item <?= $i == 0 ? 'active' : ''; ?>">
+                            <a class="nav-link " data-toggle="tab" href="#panel_elem<?= $i; ?>"
+                               role="tab"> <?= $lesPhases[count($lesPhases) - $nbPhases_[$nbScdTour] + $i]; ?></a>
+                        </li>
+                    <?php endfor; ?>
+                </ul>
+                <div class="tab-content">
+                    <?php for ($i = 0; $i < $nbPhases_[$nbScdTour]; $i++): ?>
+                    <div class="tab-pane" id="panel_elem<?= $i; ?>" role="tabpanel">
+                    </div>
+                    <?php endfor; ?>
+                </div>
             </div>
             <!--matches phase à élimination directe-->
 

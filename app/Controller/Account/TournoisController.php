@@ -309,7 +309,9 @@ class TournoisController extends AppController {
 
     public function calendrier() {
         $participants = $this->Participe->participantsEtPoulesParTour($_GET['tournoi_id'], 1);
-        $organisateur = $this->Participe->query("SELECT organisateur FROM events WHERE events.id = ? ",[$_GET['event_id']],true);
+        $second_tour = $this->Participe->participantsEtPoulesParTour($_GET['tournoi_id'], 2);
+        $nbScdTour = count($second_tour);
+        $organisateur = $this->Participe->query("SELECT organisateur FROM events WHERE events.id = ? ", [$_GET['event_id']], true);
         $poules = [];
         $equipes = [];
         $equipes_id = [];
@@ -320,7 +322,21 @@ class TournoisController extends AppController {
         }
         asort($equipes);
 
+        $lesQualifiees = $this->Participe->participantsQualifies($_GET['tournoi_id']);
 
+        32 + 16 + 8 + 4 + 2;
+        $phases = [32 => "16e", 16 => "Huitièmes", 8 => "Quarts", 4 => "Demi-finales", 2 => "Finale"];
+
+        $lesPhases = ["16e", "Huitièmes", "Quarts", "Demi-finales", "Finale"];
+        $nbPhases_ = [
+            32 => 5,
+            16 => 4,
+            8 => 3,
+            4 => 2,
+            2 => 1
+        ];
+
+        //var_dump($lesQualifiees);
         foreach ($equipes as $poule) {
             $poules[$poule] = [];
         }
@@ -500,6 +516,8 @@ class TournoisController extends AppController {
             $all_nb_set[$item->nom][$item->tournoi_id] = $item->nb_set;
 
         }
+        var_dump($all_poule_id);
+
         $querySetByTeamAndMatch = $this->Results->query("SELECT * FROM results, matches,setmatch WHERE results.match_id= matches.id AND results.id=setmatch.id_results");
         $compt = 1;
         foreach ($querySetByTeamAndMatch as $tuple) {
@@ -510,7 +528,7 @@ class TournoisController extends AppController {
         //var_dump($all_set_by_team_match);
 
 
-        $this->render('account.tournois.calendrier', compact('organisateur','participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
+        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases', 'lesPhases','lesQualifiees', 'nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
     }
 
     public function actualiser() {

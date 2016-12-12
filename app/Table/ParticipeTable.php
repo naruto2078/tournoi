@@ -29,7 +29,7 @@ class ParticipeTable extends Table {
     }
 
     public function participantsQualifies($tournoi_id){
-        return $this->query("SELECT * FROM teams,participe,poules WHERE teams.id = participe.team_id AND participe.tournoi_id=? AND poules.id=participe.poule_id AND participe.tour=? ORDER BY participe.poule_id",[$tournoi_id]);
+        return $this->query("SELECT * FROM teams,participe,poules WHERE teams.id = participe.team_id AND participe.tournoi_id=? AND poules.id=participe.poule_id AND participe.tour>1 ORDER BY participe.poule_id",[$tournoi_id]);
     }
 
 }
