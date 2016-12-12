@@ -320,6 +320,7 @@ class TournoisController extends AppController {
         }
         asort($equipes);
 
+
         foreach ($equipes as $poule) {
             $poules[$poule] = [];
         }
