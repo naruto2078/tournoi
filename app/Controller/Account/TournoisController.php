@@ -309,7 +309,7 @@ class TournoisController extends AppController {
 
     public function calendrier() {
         $participants = $this->Participe->participantsEtPoulesParTour($_GET['tournoi_id'], 1);
-
+        $organisateur = $this->Participe->query("SELECT organisateur FROM events WHERE events.id = ? ",[$_GET['event_id']],true);
         $poules = [];
         $equipes = [];
         $equipes_id = [];
@@ -509,7 +509,7 @@ class TournoisController extends AppController {
         //var_dump($all_set_by_team_match);
 
 
-        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
+        $this->render('account.tournois.calendrier', compact('organisateur','participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
     }
 
     public function actualiser() {
