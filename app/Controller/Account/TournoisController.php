@@ -39,8 +39,8 @@ class TournoisController extends AppController {
 
         //Masculin et feminin
         $genres = [
-            'Masculin' => 'Masculin',
-            'Feminin' => 'Feminin'
+        'Masculin' => 'Masculin',
+        'Feminin' => 'Feminin'
         ];
 
 
@@ -74,7 +74,7 @@ class TournoisController extends AppController {
                         /*'typeTarif' => $_POST["typetarif"],
                         'prix' => $prixDef*/
 
-                    ]);
+                        ]);
                 }
 
                 header('Location:index.php?p=account.index&user=' . $_SESSION['user']);
@@ -132,7 +132,7 @@ class TournoisController extends AppController {
                 $this->Participe->create([
                     'team_id' => $_POST['team'],
                     'tournoi_id' => $_POST['id']
-                ]);
+                    ]);
             }
         }
         $form = new BootstrapForm($_POST);
@@ -189,7 +189,7 @@ class TournoisController extends AppController {
             foreach ($les_poules as $k => $v) {
                 $this->Poule->create([
                     'nom' => $k
-                ]);
+                    ]);
                 $poule_id = $this->Poule->lastInsertId();
                 foreach ($v as $item) {
                     $id = $this->Team->query("SELECT id FROM teams WHERE name = ?", [$item], true);
@@ -276,7 +276,7 @@ class TournoisController extends AppController {
                         'group_id' => $poules_id["poule $indice"],
                         'team_id_home' => $equipes_id[$match[0]],
                         'team_id_away' => $equipes_id[$match[1]]
-                    ]);
+                        ]);
                 }
             }
             array_push($rencontres["poule $indice"], $journees);
@@ -298,7 +298,7 @@ class TournoisController extends AppController {
                 $date = date('Y-m-d H:i:s', $time);
                 $this->Match->update($matches[$i]->id, [
                     'date' => $date
-                ]);
+                    ]);
             }
         }
         var_dump($date);
@@ -349,78 +349,92 @@ class TournoisController extends AppController {
 
             $dejascrorer = $this->Results->query("SELECT count(*) AS nb_set FROM results ,setmatch WHERE results.id = setmatch.id_results AND results.match_id=? GROUP BY results.match_id", [$_POST['idMatch1']]);//verifie que le score de ce match a déja été inserer
 
-            foreach ($dejascrorer as $item) {
-                $nbsetDansData = $item->nb_set;
-            }
 
             //recupere l'id du resultat du match
             $identifiantRes = $this->Results->query("SELECT * FROM results WHERE match_id=?", [$_POST['idMatch1']]);
             foreach ($identifiantRes as $tuple) {
                 $idRes = $tuple->id;
+
             }
+            var_dump($idRes);
             //recuperer le nombre de set
 
             $nombreSet = $_POST['setNb1'];
+
+            if (count($dejascrorer)==0){
+                $nbsetDansData = 0;
+            }else{
+             var_dump("dejascorer");
+         }
+
             //recuperer l'id des equipes dun match
-            $getIdHomeAway = $this->Results->query("SELECT * FROM results, matches WHERE results.match_id= matches.id AND matches.id=?", [$_POST['idMatch1']]);
-            foreach ($getIdHomeAway as $tuple) {
-                $teamHome = $tuple->team_id_home;
-                $teamAway = $tuple->team_id_away;
-            }
-            if (isset($nbsetDansData)) {
-                if ($nbsetDansData == $nombreSet) {
-                    var_dump("deja validé");
-                } else {
-                    var_dump($nbsetDansData, $nombreSet);
-                    for ($i = 1; $i <= $nombreSet; $i++) {
-
-                        if ($_POST["idScoreH$i"] > $_POST["idScoreA$i"]) {
-                            $teamWinner = $teamHome;
-                        } else {
-                            $teamWinner = $teamAway;
-                        }
-
-                        $this->Setmatch->create([
-
-                            'id_results' => $idRes,
-                            'score_home' => $_POST["idScoreH$i"],
-                            'score_away' => $_POST["idScoreA$i"],
-                            'id_gagnant' => $teamWinner
-                        ]);
-                    }
-                }
-
+         $getIdHomeAway = $this->Results->query("SELECT * FROM results, matches WHERE results.match_id= matches.id AND matches.id=?", [$_POST['idMatch1']]);
+         foreach ($getIdHomeAway as $tuple) {
+            $teamHome = $tuple->team_id_home;
+            $teamAway = $tuple->team_id_away;
+        }
+        if (isset($nbsetDansData)) {
+            if ($nbsetDansData == $nombreSet) {
+                var_dump("deja validé");
             } else {
+                var_dump($nbsetDansData, $nombreSet);
+                for ($i = 1; $i <= $nombreSet; $i++) {
 
-                var_dump("nbsetDansData est null");
+                    if ($_POST["idScoreH$i"] > $_POST["idScoreA$i"]) {
+                        $teamWinner = $teamHome;
+                        $teamLoser=$teamAway;
+                    } else {
+                        $teamWinner = $teamAway;
+                        $teamLoser=$teamHome;
+                    }
+
+                    $this->Setmatch->create([
+
+                        'id_results' => $idRes,
+                        'score_home' => $_POST["idScoreH$i"],
+                        'score_away' => $_POST["idScoreA$i"],
+                        'id_gagnant' => $teamWinner,
+                        'id_perdant' => $teamLoser,
+                        'numeroSet' => $_POST["numeroSet$i"]
+                        ]);
+                }
             }
 
+        } else {
 
+            var_dump("nbsetDansData est null");
         }
 
-        if (!empty($_POST['idMatchMod1'])) {
+
+    }
+
+    if (!empty($_POST['idMatchMod1'])) {
             //recupere l'id du resultat du match
-            $identifiantRes = $this->Results->query("SELECT * FROM results WHERE match_id=?", [$_POST['idMatchMod1']]);
-            foreach ($identifiantRes as $tuple) {
-                $idRes = $tuple->id;
-            }
+        $identifiantRes = $this->Results->query("SELECT * FROM results WHERE match_id=?", [$_POST['idMatchMod1']]);
+        foreach ($identifiantRes as $tuple) {
+            $idRes = $tuple->id;
+        }
 
 //recuperer le nombre de set
 
-            $nombreSet = $_POST['setNbMod1'];
+        $nombreSet = $_POST['setNbMod1'];
 
 //recuperer l'id des equipes dun match
-            $getIdHomeAway = $this->Results->query("SELECT * FROM results, matches WHERE results.match_id= matches.id AND matches.id=?", [$_POST['idMatchMod1']]);
-            foreach ($getIdHomeAway as $tuple) {
-                $teamHome = $tuple->team_id_home;
-                $teamAway = $tuple->team_id_away;
-            }
+        $getIdHomeAway = $this->Results->query("SELECT * FROM results, matches WHERE results.match_id= matches.id AND matches.id=?", [$_POST['idMatchMod1']]);
+        foreach ($getIdHomeAway as $tuple) {
+            $teamHome = $tuple->team_id_home;
+            $teamAway = $tuple->team_id_away;
+        }
 
 
             $dejascrorer = $this->Results->query("SELECT count(*) AS nb_set FROM results ,setmatch WHERE results.id = setmatch.id_results AND results.match_id=? GROUP BY results.match_id", [$_POST['idMatchMod1']]);//verifie que le score de ce match a déja été inserer
-
-            foreach ($dejascrorer as $item) {
-                $nbsetDansData = $item->nb_set;
+            if (count($dejascrorer)==1){
+                foreach ($dejascrorer as $item) {
+                    $nbsetDansData = $item->nb_set;
+                }
+            }else 
+            {
+                var_dump("pas de set pour ce match dans la base");
             }
 
             if (isset($nbsetDansData)) {
@@ -435,7 +449,7 @@ class TournoisController extends AppController {
                             $teamWinner = $teamAway;
                         }
 
-                        $this->Setmatch->query("UPDATE setmatch SET score_home=?,score_away=? ,id_gagnant=? WHERE id_results=?", [$_POST["idScoreHMod$i"], $_POST["idScoreAMod$i"], $teamWinner, $idRes]);
+                        $this->Setmatch->query("UPDATE setmatch SET score_home=?,score_away=? ,id_gagnant=? , numeroSet=? WHERE id_results=?", [$_POST["idScoreHMod$i"], $_POST["idScoreAMod$i"], $teamWinner,$_POST["numeroSetMod$i"], $idRes]);
 
 
                     }
@@ -499,84 +513,88 @@ class TournoisController extends AppController {
             $all_nb_set[$item->nom][$item->tournoi_id] = $item->nb_set;
 
         }
-        $querySetByTeamAndMatch = $this->Results->query("SELECT * FROM results, matches,setmatch WHERE results.match_id= matches.id AND results.id=setmatch.id_results");
-        $compt = 1;
+
+       $querySetByTeamAndMatch = $this->Results->query("SELECT * FROM results, matches,setmatch WHERE results.match_id= matches.id AND results.id=setmatch.id_results");
+        
         foreach ($querySetByTeamAndMatch as $tuple) {
-            $all_set_by_team_match[$compt][$tuple->match_id][$tuple->team_id_home] = $tuple->score_home;
-            $all_set_by_team_match[$compt][$tuple->match_id][$tuple->team_id_away] = $tuple->score_away;
-            $compt++;
-        }
-        //var_dump($all_set_by_team_match);
 
 
-        $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
-    }
 
-    public function actualiser() {
+           $all_set_by_team_match[$tuple->match_id][$tuple->team_id_home] [$tuple->numeroSet]= $tuple->score_home;
+           $all_set_by_team_match[$tuple->match_id][$tuple->team_id_away][$tuple->numeroSet] = $tuple->score_away;
+            //$compt++;
+       }
+       var_dump($all_set_by_team_match);
 
-        $tour = $this->Participe->query("SELECT MAX(tour) AS tour_max FROM participe WHERE tournoi_id=?", [$_GET['tournoi_id']], true);
+
+       $this->render('account.tournois.calendrier', compact('participants', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set', 'all_set_by_team_match'));
+   }
+
+   public function actualiser() {
+
+    $tour = $this->Participe->query("SELECT MAX(tour) AS tour_max FROM participe WHERE tournoi_id=?", [$_GET['tournoi_id']], true);
         //var_dump($tour);
-        $participants = $this->Participe->participantsEtPoulesParTour($_GET['tournoi_id'], $tour->tour_max);
+    $participants = $this->Participe->participantsEtPoulesParTour($_GET['tournoi_id'], $tour->tour_max);
         //var_dump($participants);
 
-        $poules = [];
-        $equipes = [];
-        foreach ($participants as $participant) {
-            $equipes[$participant->name] = $participant->nom;
+    $poules = [];
+    $equipes = [];
+    foreach ($participants as $participant) {
+        $equipes[$participant->name] = $participant->nom;
 
+    }
+    asort($equipes);
+
+    foreach ($equipes as $poule) {
+        $poules[$poule] = [];
+    }
+
+    foreach ($equipes as $k => $v) {
+        array_push($poules[$v], $k);
+    }
+    $numero = count($poules);
+
+    $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=? AND tour=?)", [$_GET['tournoi_id'], $tour->tour_max], false);
+    $all_teams = [];
+    $all_teams_id = [];
+    $all_teams_reverse = [];
+    foreach ($equipes_ as $item) {
+        $all_teams[$item->id] = $item->name;
+        $all_teams_reverse[$item->name] = $item->id;
+    }
+    $equipes_tmp = $this->Team->query("SELECT teams.id, teams.name, poule_id,poules.nom FROM teams,poules,participe WHERE participe.poule_id = poules.id AND participe.team_id = teams.id AND participe.tournoi_id=? AND tour=?", [$_GET['tournoi_id'], $tour->tour_max], false);
+    $lesPoules = [];
+    foreach ($equipes_tmp as $item) {
+        $all_teams_poule[$item->name] = $item->nom;
+        $lesPoules[$item->nom] = $item->nom;
+    }
+
+
+    /*Mise en place des matches du prochain tour*/
+    $done = false;
+    $options = [];
+    if (isset($_POST["btn1"])) {
+        $equipes_prochainTour = [];
+        $nbEq = 0;
+        foreach ($lesPoules as $lapoule) {
+            $nbEq += count($_POST[str_replace(" ", "_", $lapoule)]);
         }
-        asort($equipes);
 
-        foreach ($equipes as $poule) {
-            $poules[$poule] = [];
-        }
-
-        foreach ($equipes as $k => $v) {
-            array_push($poules[$v], $k);
-        }
-        $numero = count($poules);
-
-        $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=? AND tour=?)", [$_GET['tournoi_id'], $tour->tour_max], false);
-        $all_teams = [];
-        $all_teams_id = [];
-        $all_teams_reverse = [];
-        foreach ($equipes_ as $item) {
-            $all_teams[$item->id] = $item->name;
-            $all_teams_reverse[$item->name] = $item->id;
-        }
-        $equipes_tmp = $this->Team->query("SELECT teams.id, teams.name, poule_id,poules.nom FROM teams,poules,participe WHERE participe.poule_id = poules.id AND participe.team_id = teams.id AND participe.tournoi_id=? AND tour=?", [$_GET['tournoi_id'], $tour->tour_max], false);
-        $lesPoules = [];
-        foreach ($equipes_tmp as $item) {
-            $all_teams_poule[$item->name] = $item->nom;
-            $lesPoules[$item->nom] = $item->nom;
-        }
-
-
-        /*Mise en place des matches du prochain tour*/
-        $done = false;
-        $options = [];
-        if (isset($_POST["btn1"])) {
-            $equipes_prochainTour = [];
-            $nbEq = 0;
+        for ($i = 0; $i < $nbEq; $i++) {
             foreach ($lesPoules as $lapoule) {
-                $nbEq += count($_POST[str_replace(" ", "_", $lapoule)]);
-            }
-
-            for ($i = 0; $i < $nbEq; $i++) {
-                foreach ($lesPoules as $lapoule) {
-
-                }
-            }
-            foreach ($lesPoules as $lapoule) {
-                foreach ($_POST[str_replace(" ", "_", $lapoule)] as $item) {
-                    $equipes_prochainTour[] = $item;
-                    $options[$all_teams_reverse[$item]] = $item;
-                }
 
             }
+        }
+        foreach ($lesPoules as $lapoule) {
+            foreach ($_POST[str_replace(" ", "_", $lapoule)] as $item) {
+                $equipes_prochainTour[] = $item;
+                $options[$all_teams_reverse[$item]] = $item;
+            }
+
+        }
             //var_dump($equipes_prochainTour);
-            $rencontres = $this->tirage($equipes_prochainTour);
-            $_SESSION["rencontres"] = $rencontres;
+        $rencontres = $this->tirage($equipes_prochainTour);
+        $_SESSION["rencontres"] = $rencontres;
             /*for ($i = 0; $i < count($rencontres); $i++) {
                 printf('%s vs %s<br />%s', $rencontres[$i], $rencontres[++$i], PHP_EOL);
             }*/
@@ -594,7 +612,7 @@ class TournoisController extends AppController {
                 $val = $i + 1;
                 $this->Poule->create([
                     'nom' => $phases[count($rencontres)] . ' ' . $val,
-                ]);
+                    ]);
                 $poule_id = $this->Poule->lastInsertId();
                 $time_aux = $_POST['date' . $i];
                 $time_aux = $time_aux . ' ' . $_POST['heure' . $i] . ':' . $_POST['minute' . $i] . ':00';
@@ -607,20 +625,20 @@ class TournoisController extends AppController {
                     'tour' => intval($tour->tour_max) + 1,
                     'poule_id' => $poule_id,
                     'a_paye' => 1
-                ]);
+                    ]);
                 $this->Participe->create([
                     'team_id' => $away,
                     'tournoi_id' => $_GET['tournoi_id'],
                     'tour' => intval($tour->tour_max) + 1,
                     'poule_id' => $poule_id,
                     'a_paye' => 1
-                ]);
+                    ]);
                 $this->Match->create([
                     'date' => $date,
                     'group_id' => $poule_id,
                     'team_id_home' => $home,
                     'team_id_away' => $away
-                ]);
+                    ]);
                 //var_dump($home, $away, $date);
             }
         }
