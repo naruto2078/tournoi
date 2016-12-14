@@ -42,9 +42,21 @@
                             <td style="width: 50%;"><?= $event->type_de_jeu; ?>x<?= $event->type_de_jeu; ?> joueurs
                             </td>
                         </tr>
+                        <tr>
+                            <td class="text-left">Statut</td>
+                            <td style="width: 50%; color: #30CFC0;font-weight: 600;">
+                                <?php if ($event->inscription_ouverte) {
+                                    echo "Inscriptions ouverte";
+                                } else {
+                                    echo "Inscriptions closes";
+                                } ?>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
-                    <a href="<?= $event->Url(); ?>" class="btn btn-primary">Détails</a>
+                    <?php if ($event->inscription_ouverte): ?>
+                        <a href="<?= $event->Url(); ?>" class="btn btn-primary">Détails</a>
+                    <?php endif; ?>
                 </div>
                 <!--card content-->
             </div>
@@ -81,5 +93,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-    </div></diV>
+    </div>
+</diV>
 </div>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147e0297-46c1-40e1-b795-935481c9073d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/tournois/calendrier.php" afterPath="$PROJECT_DIR$/app/Views/account/tournois/calendrier.php" />
     </list>
@@ -36,180 +35,140 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="tournoivolley@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="participe" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="tournoi" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TournoisController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="589" column="15" lean-forward="false" selection-start-line="589" selection-start-column="12" selection-end-line="589" selection-end-column="15" />
-              <folding>
-                <element signature="e#4599#7959#0#PHP" expanded="false" />
-                <element signature="e#7965#11419#0#PHP" expanded="false" />
-                <marker date="1481465274928" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
-                <marker date="1481465274928" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
-                <marker date="1481465274928" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
-                <marker date="1481465274928" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
-                <marker date="1481465274928" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
-                <marker date="1481465274928" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
-                <marker date="1481465274928" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
-                <marker date="1481465274928" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
-                <marker date="1481465274928" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
-                <marker date="1481465274928" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
-                <marker date="1481465274928" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
-                <marker date="1481465274928" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
-                <marker date="1481465274928" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
-                <marker date="1481465274928" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
-                <marker date="1481465274928" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
-                <marker date="1481465274928" expanded="true" signature="12161:12243" ph="SELECT * FRO... teams" />
-                <marker date="1481465274928" expanded="true" signature="12194:12242" ph="SELECT team_... participe" />
-                <marker date="1481465274928" expanded="true" signature="12317:12339" ph="SELECT * FRO... results" />
-                <marker date="1481465274928" expanded="true" signature="12768:12904" ph="SELECT count... results" />
-                <marker date="1481465274928" expanded="true" signature="13195:13233" ph="SELECT * FRO... results" />
-                <marker date="1481465274928" expanded="true" signature="13548:13630" ph="SELECT * FRO... results" />
-                <marker date="1481465274928" expanded="true" signature="14949:14987" ph="SELECT * FRO... results" />
-                <marker date="1481465274928" expanded="true" signature="15286:15368" ph="SELECT * FRO... results" />
-                <marker date="1481465274928" expanded="true" signature="15612:15748" ph="SELECT count... results" />
-                <marker date="1481465274928" expanded="true" signature="16447:16525" ph="UPDATE setma... " />
-                <marker date="1481465274928" expanded="true" signature="17705:17752" ph="SELECT nb_se... poules" />
-                <marker date="1481465274928" expanded="true" signature="18293:18342" ph="UPDATE poule... " />
-                <marker date="1481465274928" expanded="true" signature="18541:18714" ph="SELECT teams... teams" />
-                <marker date="1481465274928" expanded="true" signature="18975:19035" ph="SELECT * FRO... participe" />
-                <marker date="1481465274928" expanded="true" signature="18975:19056" ph="SELECT * FRO... participe" />
-                <marker date="1481465274928" expanded="true" signature="19373:19482" ph="SELECT * FRO... results" />
-                <marker date="1481465274928" expanded="true" signature="20130:20192" ph="SELECT MAX(t... participe" />
-                <marker date="1481465274928" expanded="true" signature="20842:20935" ph="SELECT * FRO... teams" />
-                <marker date="1481465274928" expanded="true" signature="20875:20934" ph="SELECT team_... participe" />
-                <marker date="1481465274928" expanded="true" signature="21270:21454" ph="SELECT teams... teams" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TournoisController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../tournoi - Copie/app/Controller/Account/TournoisController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="489" column="9" lean-forward="false" selection-start-line="489" selection-start-column="9" selection-end-line="489" selection-end-column="9" />
-              <folding>
-                <element signature="e#17407#18799#0#PHP" expanded="false" />
-                <marker date="1481108753446" expanded="true" signature="661:704" ph="SELECT nb_to... events" />
-                <marker date="1481108753446" expanded="true" signature="827:851" ph="SELECT * FRO... categories" />
-                <marker date="1481108753446" expanded="true" signature="2936:2969" ph="SELECT * FRO... tournois" />
-                <marker date="1481108753446" expanded="true" signature="3152:3245" ph="SELECT * FRO... tournois" />
-                <marker date="1481108753446" expanded="true" signature="3202:3244" ph="SELECT id FR... events" />
-                <marker date="1481108753446" expanded="true" signature="3659:3814" ph="SELECT teams... teams" />
-                <marker date="1481108753446" expanded="true" signature="3777:3813" ph="SELECT id FR... clubs" />
-                <marker date="1481108753446" expanded="true" signature="4040:4080" ph="SELECT * FRO... participe" />
-                <marker date="1481108753446" expanded="true" signature="4675:4724" ph="SELECT inscr... events" />
-                <marker date="1481108753446" expanded="true" signature="4791:5005" ph="SELECT DISTI... teams" />
-                <marker date="1481108753446" expanded="true" signature="6832:6867" ph="SELECT id FR... teams" />
-                <marker date="1481108753446" expanded="true" signature="6966:7030" ph="UPDATE parti... " />
-                <marker date="1481108753446" expanded="true" signature="10129:10211" ph="SELECT * FRO... teams" />
-                <marker date="1481108753446" expanded="true" signature="10162:10210" ph="SELECT team_... participe" />
-                <marker date="1481108753446" expanded="true" signature="11803:11885" ph="SELECT * FRO... teams" />
-                <marker date="1481108753446" expanded="true" signature="11836:11884" ph="SELECT team_... participe" />
-                <marker date="1481108753446" expanded="true" signature="12180:12353" ph="SELECT teams... teams" />
-                <marker date="1481108753446" expanded="true" signature="12809:12871" ph="SELECT MAX(t... participe" />
-                <marker date="1481108753446" expanded="true" signature="13615:13708" ph="SELECT * FRO... teams" />
-                <marker date="1481108753446" expanded="true" signature="13648:13707" ph="SELECT team_... participe" />
-                <marker date="1481108753446" expanded="true" signature="14043:14227" ph="SELECT teams... teams" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParticipeTable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Table/ParticipeTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-              <folding>
-                <marker date="1481396961192" expanded="true" signature="285:365" ph="SELECT count... $" />
-                <marker date="1481396961192" expanded="true" signature="472:611" ph="SELECT * FRO... teams" />
-                <marker date="1481396961192" expanded="true" signature="719:850" ph="SELECT * FRO... teams" />
-                <marker date="1481396961192" expanded="true" signature="972:1152" ph="SELECT * FRO... teams" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calendrier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/calendrier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1263">
-              <caret line="398" column="0" lean-forward="true" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#9116#16281#0#PHP" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actualiser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/actualiser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1269">
-              <caret line="47" column="113" lean-forward="false" selection-start-line="47" selection-start-column="107" selection-end-line="47" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gerer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/gerer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="participations.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/account/events/participations.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Views/home/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.61346996">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ParticipeTable.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Table/ParticipeTable.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="471">
+                  <caret line="31" column="181" lean-forward="false" selection-start-line="31" selection-start-column="181" selection-end-line="31" selection-end-column="181" />
+                  <folding>
+                    <marker date="1481547705286" expanded="true" signature="285:365" ph="SELECT count... $" />
+                    <marker date="1481547705286" expanded="true" signature="472:611" ph="SELECT * FRO... teams" />
+                    <marker date="1481547705286" expanded="true" signature="719:850" ph="SELECT * FRO... teams" />
+                    <marker date="1481547705286" expanded="true" signature="972:1152" ph="SELECT * FRO... teams" />
+                    <marker date="1481547705286" expanded="true" signature="1268:1286" ph="SELECT * FRO... team" />
+                    <marker date="1481547705286" expanded="true" signature="1268:1448" ph="SELECT * FRO... teams" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TournoisController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="482">
+                  <caret line="519" column="0" lean-forward="true" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#6#87#0#PHP" expanded="true" />
+                    <element signature="e#3160#3597#0#PHP" expanded="false" />
+                    <element signature="e#3603#4593#0#PHP" expanded="false" />
+                    <element signature="e#4599#7959#0#PHP" expanded="false" />
+                    <element signature="e#7965#11419#0#PHP" expanded="false" />
+                    <element signature="e#15648#17662#0#PHP" expanded="false" />
+                    <element signature="e#16247#16397#0#PHP" expanded="false" />
+                    <element signature="e#16681#16776#0#PHP" expanded="false" />
+                    <element signature="e#16790#17651#0#PHP" expanded="false" />
+                    <element signature="e#18393#19333#0#PHP" expanded="false" />
+                    <element signature="e#27252#27901#0#PHP" expanded="false" />
+                    <marker date="1481569416605" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
+                    <marker date="1481569416605" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
+                    <marker date="1481569416605" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
+                    <marker date="1481569416605" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
+                    <marker date="1481569416605" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
+                    <marker date="1481569416605" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
+                    <marker date="1481569416605" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
+                    <marker date="1481569416605" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
+                    <marker date="1481569416605" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
+                    <marker date="1481569416605" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
+                    <marker date="1481569416605" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
+                    <marker date="1481569416605" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
+                    <marker date="1481569416605" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
+                    <marker date="1481569416605" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
+                    <marker date="1481569416605" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
+                    <marker date="1481569416605" expanded="true" signature="11736:11781" ph="SELECT organ... events" />
+                    <marker date="1481569416605" expanded="true" signature="11736:11787" ph="SELECT organ... events" />
+                    <marker date="1481569416605" expanded="true" signature="12999:13081" ph="SELECT * FRO... teams" />
+                    <marker date="1481569416605" expanded="true" signature="13032:13080" ph="SELECT team_... participe" />
+                    <marker date="1481569416605" expanded="true" signature="13155:13177" ph="SELECT * FRO... results" />
+                    <marker date="1481569416605" expanded="true" signature="13606:13742" ph="SELECT count... results" />
+                    <marker date="1481569416605" expanded="true" signature="14033:14071" ph="SELECT * FRO... results" />
+                    <marker date="1481569416605" expanded="true" signature="14386:14468" ph="SELECT * FRO... results" />
+                    <marker date="1481569416605" expanded="true" signature="15787:15825" ph="SELECT * FRO... results" />
+                    <marker date="1481569416605" expanded="true" signature="16124:16206" ph="SELECT * FRO... results" />
+                    <marker date="1481569416605" expanded="true" signature="16450:16586" ph="SELECT count... results" />
+                    <marker date="1481569416605" expanded="true" signature="17285:17363" ph="UPDATE setma... " />
+                    <marker date="1481569416605" expanded="true" signature="18543:18590" ph="SELECT nb_se... poules" />
+                    <marker date="1481569416605" expanded="true" signature="19131:19180" ph="UPDATE poule... " />
+                    <marker date="1481569416605" expanded="true" signature="19379:19552" ph="SELECT teams... teams" />
+                    <marker date="1481569416605" expanded="true" signature="19813:19873" ph="SELECT * FRO... participe" />
+                    <marker date="1481569416605" expanded="true" signature="19813:19894" ph="SELECT * FRO... participe" />
+                    <marker date="1481569416605" expanded="true" signature="20212:20321" ph="SELECT * FRO... results" />
+                    <marker date="1481569416605" expanded="true" signature="21068:21130" ph="SELECT MAX(t... participe" />
+                    <marker date="1481569416605" expanded="true" signature="21780:21873" ph="SELECT * FRO... teams" />
+                    <marker date="1481569416605" expanded="true" signature="21813:21872" ph="SELECT team_... participe" />
+                    <marker date="1481569416605" expanded="true" signature="22208:22392" ph="SELECT teams... teams" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="calendrier.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/calendrier.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                    <element signature="e#18066#18549#0#PHP" expanded="false" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <marker date="1481569416527" expanded="true" signature="20824:20902" ph="..." />
+                    <marker date="1481569416527" expanded="true" signature="22374:22514" ph="..." />
+                    <marker date="1481569416527" expanded="true" signature="22439:22514" ph="..." />
+                    <marker date="1481569416527" expanded="true" signature="22807:22882" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="calendrier.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/calendrier.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="152">
+                  <caret line="295" column="38" lean-forward="false" selection-start-line="295" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                    <element signature="e#2913#9245#0#PHP" expanded="false" />
+                    <element signature="n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                    <element signature="e#19306#25073#0#PHP" expanded="false" />
+                    <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                    <marker date="1481569416527" expanded="false" signature="32608:33900" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -222,18 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zend_ext</find>
-      <find>groupesC</find>
-      <find>jquer</find>
-      <find>asort</find>
-      <find>ll_teams_id</find>
-      <find>participantsEt</find>
-      <find>last</find>
-      <find>part</find>
-      <find>participants()</find>
-      <find>Consolante?</find>
-      <find>Poule-&gt;cr</find>
-      <find>score</find>
       <find>9</find>
       <find>$all_set_by_team_match</find>
       <find>tabl</find>
@@ -250,7 +197,19 @@
       <find>presi</find>
       <find>s</find>
       <find>idp</find>
+      <find>calendrier</find>
+      <find>reg</find>
+      <find>ajouter</find>
+      <find>mes</find>
+      <find>16</find>
+      <find>phases</find>
+      <find>phase</find>
+      <find>lesQualifiees</find>
       <find>all_po</find>
+      <find>nu</find>
+      <find>numero</find>
+      <find>equipesP</find>
+      <find>va</find>
       <find>var</find>
     </findStrings>
   </component>
@@ -262,9 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/dashboard.html" />
-        <option value="$PROJECT_DIR$/public/bootstrap-layout.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/dash.html" />
         <option value="$PROJECT_DIR$/public/sidebar.css" />
         <option value="$PROJECT_DIR$/app/Views/templates/tmp.html" />
@@ -275,7 +231,6 @@
         <option value="$PROJECT_DIR$/app/Views/account/events/add.php" />
         <option value="$PROJECT_DIR$/app/Views/account/teams/add.php" />
         <option value="$PROJECT_DIR$/app/Views/account/events/AllEventByOrganizer.php" />
-        <option value="$PROJECT_DIR$/app/Views/account/events/register.php" />
         <option value="$PROJECT_DIR$/app/Views/account/teams/addPlayer.php" />
         <option value="$PROJECT_DIR$/app/Views/account/teams/gerer.php" />
         <option value="$PROJECT_DIR$/app/Views/account/tournois/register.php" />
@@ -310,6 +265,10 @@
         <option value="$PROJECT_DIR$/app/Views/templates/default.php" />
         <option value="dbtable:/8682884e/d0d4c559-afc6-47d9-bd03-a5378b7d9142/tournoivolley.participe" />
         <option value="$PROJECT_DIR$/app/Views/account/tournois/actualiser.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/events/register.php" />
+        <option value="$PROJECT_DIR$/app/Controller/Account/AccountController.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/index.php" />
+        <option value="$USER_HOME$/Downloads/calendrier.php" />
         <option value="$PROJECT_DIR$/app/Table/ParticipeTable.php" />
         <option value="$PROJECT_DIR$/app/Views/account/tournois/calendrier.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
@@ -375,7 +334,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -388,9 +347,169 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Table" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Account" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,18 +524,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account\tournois" />
-      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account\teams" />
-      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account\events" />
-      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\HLIN510\tournoi\public\css" />
       <recent name="C:\wamp64\www\HLIN510\tournoi\public" />
       <recent name="C:\wamp64\www\HLIN510\tournoi\public\js" />
       <recent name="C:\wamp64\www\HLIN510\tournoi\core" />
       <recent name="C:\wamp64\www\HLIN510\tournoi\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account\tournois" />
+      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account\teams" />
+      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account\events" />
+      <recent name="C:\wamp64\www\HLIN510\tournoi\app\Views\account" />
     </key>
   </component>
   <component name="RunManager">
@@ -574,7 +693,8 @@
       <workItem from="1481362633237" duration="1192000" />
       <workItem from="1481372051937" duration="540000" />
       <workItem from="1481390290109" duration="6647000" />
-      <workItem from="1481461562037" duration="3741000" />
+      <workItem from="1481461562037" duration="5243000" />
+      <workItem from="1481537536657" duration="28648000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de la fonction register dans la classe d'authentification DbAuth">
       <created>1477147768667</created>
@@ -601,7 +721,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="549086000" />
+    <option name="totallyTimeSpent" value="579236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,7 +736,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3238687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14934114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -650,7 +770,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3238687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14934114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -690,42 +810,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php" />
-    <entry file="file://$PROJECT_DIR$/core/HTML/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Table/PouleTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Entity/PouleEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Database/MysqlDataBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1820">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -740,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -754,24 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/events/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Entity/MatchEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Account/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="36" column="41" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="36" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -817,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/Account/TeamsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -863,13 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/events/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -915,51 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/events/participations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/gerer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Table/EventTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/templates/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="60" column="12" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/templates/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1560">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/home/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/participants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -975,26 +979,26 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/8682884e/d0d4c559-afc6-47d9-bd03-a5378b7d9142/tournoivolley.matches">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/8682884e/d0d4c559-afc6-47d9-bd03-a5378b7d9142/tournoivolley.events">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1006,14 +1010,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/8682884e/d0d4c559-afc6-47d9-bd03-a5378b7d9142/tournoivolley.participe">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1024,114 +1028,260 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/actualiser.php">
+    <entry file="file://$PROJECT_DIR$/../tournoi - Copie/app/Controller/Account/TournoisController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="47" column="113" lean-forward="false" selection-start-line="47" selection-start-column="107" selection-end-line="47" selection-end-column="113" />
+        <state relative-caret-position="162">
+          <caret line="494" column="0" lean-forward="true" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../tournoi - Copie/app/Controller/Account/TournoisController.php">
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/EventsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="489" column="9" lean-forward="false" selection-start-line="489" selection-start-column="9" selection-end-line="489" selection-end-column="9" />
+        <state relative-caret-position="16">
+          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#17407#18799#0#PHP" expanded="false" />
-            <marker date="1481108753446" expanded="true" signature="661:704" ph="SELECT nb_to... events" />
-            <marker date="1481108753446" expanded="true" signature="827:851" ph="SELECT * FRO... categories" />
-            <marker date="1481108753446" expanded="true" signature="2936:2969" ph="SELECT * FRO... tournois" />
-            <marker date="1481108753446" expanded="true" signature="3152:3245" ph="SELECT * FRO... tournois" />
-            <marker date="1481108753446" expanded="true" signature="3202:3244" ph="SELECT id FR... events" />
-            <marker date="1481108753446" expanded="true" signature="3659:3814" ph="SELECT teams... teams" />
-            <marker date="1481108753446" expanded="true" signature="3777:3813" ph="SELECT id FR... clubs" />
-            <marker date="1481108753446" expanded="true" signature="4040:4080" ph="SELECT * FRO... participe" />
-            <marker date="1481108753446" expanded="true" signature="4675:4724" ph="SELECT inscr... events" />
-            <marker date="1481108753446" expanded="true" signature="4791:5005" ph="SELECT DISTI... teams" />
-            <marker date="1481108753446" expanded="true" signature="6832:6867" ph="SELECT id FR... teams" />
-            <marker date="1481108753446" expanded="true" signature="6966:7030" ph="UPDATE parti... " />
-            <marker date="1481108753446" expanded="true" signature="10129:10211" ph="SELECT * FRO... teams" />
-            <marker date="1481108753446" expanded="true" signature="10162:10210" ph="SELECT team_... participe" />
-            <marker date="1481108753446" expanded="true" signature="11803:11885" ph="SELECT * FRO... teams" />
-            <marker date="1481108753446" expanded="true" signature="11836:11884" ph="SELECT team_... participe" />
-            <marker date="1481108753446" expanded="true" signature="12180:12353" ph="SELECT teams... teams" />
-            <marker date="1481108753446" expanded="true" signature="12809:12871" ph="SELECT MAX(t... participe" />
-            <marker date="1481108753446" expanded="true" signature="13615:13708" ph="SELECT * FRO... teams" />
-            <marker date="1481108753446" expanded="true" signature="13648:13707" ph="SELECT team_... participe" />
-            <marker date="1481108753446" expanded="true" signature="14043:14227" ph="SELECT teams... teams" />
+            <element signature="e#521#1514#0#PHP" expanded="false" />
+            <element signature="e#1720#3303#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/events/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/events/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/templates/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Table/EventTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1478632507429" expanded="true" signature="275:383" ph="SELECT id, n... $" />
+            <marker date="1478632507429" expanded="true" signature="563:745" ph="SELECT nom ,... tournois" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/events/participations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="25" column="82" lean-forward="false" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+          <folding>
+            <marker date="1481543099604" expanded="true" signature="388:428" ph="SELECT count... events" />
+            <marker date="1481543099604" expanded="true" signature="388:448" ph="SELECT count... events" />
+            <marker date="1481543099604" expanded="true" signature="520:626" ph="SELECT count... tournois" />
+            <marker date="1481543099604" expanded="true" signature="704:790" ph="SELECT count... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/gerer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/templates/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="95" column="12" lean-forward="false" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/calendrier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2986">
+          <caret line="238" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Table/ParticipeTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="471">
+          <caret line="31" column="181" lean-forward="false" selection-start-line="31" selection-start-column="181" selection-end-line="31" selection-end-column="181" />
           <folding>
-            <marker date="1481396961192" expanded="true" signature="285:365" ph="SELECT count... $" />
-            <marker date="1481396961192" expanded="true" signature="472:611" ph="SELECT * FRO... teams" />
-            <marker date="1481396961192" expanded="true" signature="719:850" ph="SELECT * FRO... teams" />
-            <marker date="1481396961192" expanded="true" signature="972:1152" ph="SELECT * FRO... teams" />
+            <marker date="1481547705286" expanded="true" signature="285:365" ph="SELECT count... $" />
+            <marker date="1481547705286" expanded="true" signature="472:611" ph="SELECT * FRO... teams" />
+            <marker date="1481547705286" expanded="true" signature="719:850" ph="SELECT * FRO... teams" />
+            <marker date="1481547705286" expanded="true" signature="972:1152" ph="SELECT * FRO... teams" />
+            <marker date="1481547705286" expanded="true" signature="1268:1286" ph="SELECT * FRO... team" />
+            <marker date="1481547705286" expanded="true" signature="1268:1448" ph="SELECT * FRO... teams" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/actualiser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-671">
+          <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+          <folding>
+            <element signature="e#2763#4764#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/calendrier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1263">
-          <caret line="398" column="0" lean-forward="true" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#9116#16281#0#PHP" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="e#18066#18549#0#PHP" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <marker date="1481569416527" expanded="true" signature="20824:20902" ph="..." />
+            <marker date="1481569416527" expanded="true" signature="22374:22514" ph="..." />
+            <marker date="1481569416527" expanded="true" signature="22439:22514" ph="..." />
+            <marker date="1481569416527" expanded="true" signature="22807:22882" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="589" column="15" lean-forward="false" selection-start-line="589" selection-start-column="12" selection-end-line="589" selection-end-column="15" />
+        <state relative-caret-position="482">
+          <caret line="519" column="0" lean-forward="true" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
           <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <element signature="e#3160#3597#0#PHP" expanded="false" />
+            <element signature="e#3603#4593#0#PHP" expanded="false" />
             <element signature="e#4599#7959#0#PHP" expanded="false" />
             <element signature="e#7965#11419#0#PHP" expanded="false" />
-            <marker date="1481465274928" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
-            <marker date="1481465274928" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
-            <marker date="1481465274928" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
-            <marker date="1481465274928" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
-            <marker date="1481465274928" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
-            <marker date="1481465274928" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
-            <marker date="1481465274928" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
-            <marker date="1481465274928" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
-            <marker date="1481465274928" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
-            <marker date="1481465274928" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
-            <marker date="1481465274928" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
-            <marker date="1481465274928" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
-            <marker date="1481465274928" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
-            <marker date="1481465274928" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
-            <marker date="1481465274928" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
-            <marker date="1481465274928" expanded="true" signature="12161:12243" ph="SELECT * FRO... teams" />
-            <marker date="1481465274928" expanded="true" signature="12194:12242" ph="SELECT team_... participe" />
-            <marker date="1481465274928" expanded="true" signature="12317:12339" ph="SELECT * FRO... results" />
-            <marker date="1481465274928" expanded="true" signature="12768:12904" ph="SELECT count... results" />
-            <marker date="1481465274928" expanded="true" signature="13195:13233" ph="SELECT * FRO... results" />
-            <marker date="1481465274928" expanded="true" signature="13548:13630" ph="SELECT * FRO... results" />
-            <marker date="1481465274928" expanded="true" signature="14949:14987" ph="SELECT * FRO... results" />
-            <marker date="1481465274928" expanded="true" signature="15286:15368" ph="SELECT * FRO... results" />
-            <marker date="1481465274928" expanded="true" signature="15612:15748" ph="SELECT count... results" />
-            <marker date="1481465274928" expanded="true" signature="16447:16525" ph="UPDATE setma... " />
-            <marker date="1481465274928" expanded="true" signature="17705:17752" ph="SELECT nb_se... poules" />
-            <marker date="1481465274928" expanded="true" signature="18293:18342" ph="UPDATE poule... " />
-            <marker date="1481465274928" expanded="true" signature="18541:18714" ph="SELECT teams... teams" />
-            <marker date="1481465274928" expanded="true" signature="18975:19035" ph="SELECT * FRO... participe" />
-            <marker date="1481465274928" expanded="true" signature="18975:19056" ph="SELECT * FRO... participe" />
-            <marker date="1481465274928" expanded="true" signature="19373:19482" ph="SELECT * FRO... results" />
-            <marker date="1481465274928" expanded="true" signature="20130:20192" ph="SELECT MAX(t... participe" />
-            <marker date="1481465274928" expanded="true" signature="20842:20935" ph="SELECT * FRO... teams" />
-            <marker date="1481465274928" expanded="true" signature="20875:20934" ph="SELECT team_... participe" />
-            <marker date="1481465274928" expanded="true" signature="21270:21454" ph="SELECT teams... teams" />
+            <element signature="e#15648#17662#0#PHP" expanded="false" />
+            <element signature="e#16247#16397#0#PHP" expanded="false" />
+            <element signature="e#16681#16776#0#PHP" expanded="false" />
+            <element signature="e#16790#17651#0#PHP" expanded="false" />
+            <element signature="e#18393#19333#0#PHP" expanded="false" />
+            <element signature="e#27252#27901#0#PHP" expanded="false" />
+            <marker date="1481569416605" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
+            <marker date="1481569416605" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
+            <marker date="1481569416605" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
+            <marker date="1481569416605" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
+            <marker date="1481569416605" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
+            <marker date="1481569416605" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
+            <marker date="1481569416605" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
+            <marker date="1481569416605" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
+            <marker date="1481569416605" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
+            <marker date="1481569416605" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
+            <marker date="1481569416605" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
+            <marker date="1481569416605" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
+            <marker date="1481569416605" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
+            <marker date="1481569416605" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
+            <marker date="1481569416605" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
+            <marker date="1481569416605" expanded="true" signature="11736:11781" ph="SELECT organ... events" />
+            <marker date="1481569416605" expanded="true" signature="11736:11787" ph="SELECT organ... events" />
+            <marker date="1481569416605" expanded="true" signature="12999:13081" ph="SELECT * FRO... teams" />
+            <marker date="1481569416605" expanded="true" signature="13032:13080" ph="SELECT team_... participe" />
+            <marker date="1481569416605" expanded="true" signature="13155:13177" ph="SELECT * FRO... results" />
+            <marker date="1481569416605" expanded="true" signature="13606:13742" ph="SELECT count... results" />
+            <marker date="1481569416605" expanded="true" signature="14033:14071" ph="SELECT * FRO... results" />
+            <marker date="1481569416605" expanded="true" signature="14386:14468" ph="SELECT * FRO... results" />
+            <marker date="1481569416605" expanded="true" signature="15787:15825" ph="SELECT * FRO... results" />
+            <marker date="1481569416605" expanded="true" signature="16124:16206" ph="SELECT * FRO... results" />
+            <marker date="1481569416605" expanded="true" signature="16450:16586" ph="SELECT count... results" />
+            <marker date="1481569416605" expanded="true" signature="17285:17363" ph="UPDATE setma... " />
+            <marker date="1481569416605" expanded="true" signature="18543:18590" ph="SELECT nb_se... poules" />
+            <marker date="1481569416605" expanded="true" signature="19131:19180" ph="UPDATE poule... " />
+            <marker date="1481569416605" expanded="true" signature="19379:19552" ph="SELECT teams... teams" />
+            <marker date="1481569416605" expanded="true" signature="19813:19873" ph="SELECT * FRO... participe" />
+            <marker date="1481569416605" expanded="true" signature="19813:19894" ph="SELECT * FRO... participe" />
+            <marker date="1481569416605" expanded="true" signature="20212:20321" ph="SELECT * FRO... results" />
+            <marker date="1481569416605" expanded="true" signature="21068:21130" ph="SELECT MAX(t... participe" />
+            <marker date="1481569416605" expanded="true" signature="21780:21873" ph="SELECT * FRO... teams" />
+            <marker date="1481569416605" expanded="true" signature="21813:21872" ph="SELECT team_... participe" />
+            <marker date="1481569416605" expanded="true" signature="22208:22392" ph="SELECT teams... teams" />
           </folding>
         </state>
       </provider>

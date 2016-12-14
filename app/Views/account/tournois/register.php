@@ -53,7 +53,7 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <h4 class="modal-title" id="myModalLabel">Participation au tournoi <?= $tournoi->nom; ?> </h4>
+                                <h4 class="modal-title" id="myModalLabel">Participation au tournoi <?php echo  $tournoi->nom; ?> </h4>
                             </div>
                             <!--Body-->
                             <div class="modal-body">
@@ -198,7 +198,7 @@
 <script type="text/javascript">
 
     function dialog(typeTarif,id) {
-alert(typeTarif+id);
+//alert(typeTarif+id);
 //document.getElementById("toto").data-target="#myModal";
 if (typeTarif=='payant'){
   
