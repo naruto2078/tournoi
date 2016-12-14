@@ -527,10 +527,25 @@ class TournoisController extends AppController {
             $compt++;
         }
         //var_dump($all_set_by_team_match);
+        $queryClassement =$this->Results->query ( "SELECT * FROM classementparpoule");
+        $all_classement=[];
+        foreach ($queryClassement as $tuple) {
+            $classement_ordonne=$this->Results->query ("SELECT `m`.`group_id`,m.`team`,`m`.`MatchGagne`,m.`matchperdu`,m.`quotientsetGP`,m.`quotientpointGP`, @curRow := @curRow + 1 AS row_number FROM `classementparpoule` m JOIN    (SELECT @curRow := 0) r WHERE `group_id`=? order by `m`.`group_id`,`m`.`MatchGagne` desc,m.`quotientsetGP` desc,m.`quotientpointGP` desc", [$tuple->group_id]);
 
-var_dump($all_set_by_team_match);
+            foreach ($classement_ordonne as $key) {
 
-        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases','equipesParPhase', 'lesPhases','lesQualifiees', 'all_set_by_team_match','nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
+
+                $all_classement[$tuple->group_id][$key->row_number][1]=$key->team;
+                $all_classement[$tuple->group_id][$key->row_number][2]=$key->MatchGagne;
+                $all_classement[$tuple->group_id][$key->row_number][3]=$key->matchperdu;
+                $all_classement[$tuple->group_id][$key->row_number][4]=$key->quotientsetGP;
+                $all_classement[$tuple->group_id][$key->row_number][5]=$key->quotientpointGP;
+            }
+        }
+
+        var_dump($all_classement);
+
+        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases','equipesParPhase', 'lesPhases','lesQualifiees', 'all_set_by_team_match','nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set','all_classement'));
     }
 
     public function actualiser() {

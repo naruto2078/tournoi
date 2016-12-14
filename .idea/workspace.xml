@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147e0297-46c1-40e1-b795-935481c9073d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Controller/Account/TerrainsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Entity/TerrainEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Table/TerrainTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Views/account/terrains/add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/App.php" afterPath="$PROJECT_DIR$/app/App.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" afterPath="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Table/TournoiTable.php" afterPath="$PROJECT_DIR$/app/Table/TournoiTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Entity/SetmatchEntity.php" afterPath="$PROJECT_DIR$/app/Entity/SetmatchEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/tournois/add.php" afterPath="$PROJECT_DIR$/app/Views/account/tournois/add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/tournois/calendrier.php" afterPath="$PROJECT_DIR$/app/Views/account/tournois/calendrier.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/tournois/register.php" afterPath="$PROJECT_DIR$/app/Views/account/tournois/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php" afterPath="$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/home/index.php" afterPath="$PROJECT_DIR$/app/Views/home/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/templates/dashboard.php" afterPath="$PROJECT_DIR$/app/Views/templates/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Controller/Controller.php" afterPath="$PROJECT_DIR$/core/Controller/Controller.php" />
     </list>
     <ignored path="tournoi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,60 +36,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TournoisController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TournoisController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="29" />
+            <state relative-caret-position="525">
+              <caret line="732" column="0" lean-forward="true" selection-start-line="732" selection-start-column="0" selection-end-line="732" selection-end-column="0" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
-                <element signature="e#27395#28044#0#PHP" expanded="false" />
-                <marker date="1481658866511" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
-                <marker date="1481658866511" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
-                <marker date="1481658866511" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
-                <marker date="1481658866511" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
-                <marker date="1481658866511" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
-                <marker date="1481658866511" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
-                <marker date="1481658866511" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
-                <marker date="1481658866511" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
-                <marker date="1481658866511" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
-                <marker date="1481658866511" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
-                <marker date="1481658866511" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
-                <marker date="1481658866511" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
-                <marker date="1481658866511" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
-                <marker date="1481658866511" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
-                <marker date="1481658866511" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
-                <marker date="1481658866511" expanded="true" signature="11736:11787" ph="SELECT organ... events" />
-                <marker date="1481658866511" expanded="true" signature="12999:13081" ph="SELECT * FRO... teams" />
-                <marker date="1481658866511" expanded="true" signature="13032:13080" ph="SELECT team_... participe" />
-                <marker date="1481658866511" expanded="true" signature="13155:13225" ph="SELECT * FRO... results" />
-                <marker date="1481658866511" expanded="true" signature="13654:13790" ph="SELECT count... results" />
-                <marker date="1481658866511" expanded="true" signature="14081:14119" ph="SELECT * FRO... results" />
-                <marker date="1481658866511" expanded="true" signature="14434:14516" ph="SELECT * FRO... results" />
-                <marker date="1481658866511" expanded="true" signature="15835:15873" ph="SELECT * FRO... results" />
-                <marker date="1481658866511" expanded="true" signature="16172:16254" ph="SELECT * FRO... results" />
-                <marker date="1481658866511" expanded="true" signature="16498:16634" ph="SELECT count... results" />
-                <marker date="1481658866511" expanded="true" signature="17333:17411" ph="UPDATE setma... " />
-                <marker date="1481658866511" expanded="true" signature="18591:18638" ph="SELECT nb_se... poules" />
-                <marker date="1481658866511" expanded="true" signature="19179:19228" ph="UPDATE poule... " />
-                <marker date="1481658866511" expanded="true" signature="19427:19600" ph="SELECT teams... teams" />
-                <marker date="1481658866511" expanded="true" signature="19861:19942" ph="SELECT * FRO... participe" />
-                <marker date="1481658866511" expanded="true" signature="20260:20369" ph="SELECT * FRO... results" />
-                <marker date="1481658866511" expanded="true" signature="21211:21273" ph="SELECT MAX(t... participe" />
-                <marker date="1481658866511" expanded="true" signature="21923:22016" ph="SELECT * FRO... teams" />
-                <marker date="1481658866511" expanded="true" signature="21956:22015" ph="SELECT team_... participe" />
-                <marker date="1481658866511" expanded="true" signature="22351:22535" ph="SELECT teams... teams" />
+                <element signature="e#28492#29141#0#PHP" expanded="false" />
+                <marker date="1481684763598" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
+                <marker date="1481684763598" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
+                <marker date="1481684763598" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
+                <marker date="1481684763598" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
+                <marker date="1481684763598" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
+                <marker date="1481684763598" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
+                <marker date="1481684763598" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
+                <marker date="1481684763598" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
+                <marker date="1481684763598" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
+                <marker date="1481684763598" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
+                <marker date="1481684763598" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
+                <marker date="1481684763598" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
+                <marker date="1481684763598" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
+                <marker date="1481684763598" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
+                <marker date="1481684763598" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
+                <marker date="1481684763598" expanded="true" signature="11736:11787" ph="SELECT organ... events" />
+                <marker date="1481684763598" expanded="true" signature="12999:13081" ph="SELECT * FRO... teams" />
+                <marker date="1481684763598" expanded="true" signature="13032:13080" ph="SELECT team_... participe" />
+                <marker date="1481684763598" expanded="true" signature="13155:13225" ph="SELECT * FRO... results" />
+                <marker date="1481684763598" expanded="true" signature="13654:13790" ph="SELECT count... results" />
+                <marker date="1481684763598" expanded="true" signature="14081:14119" ph="SELECT * FRO... results" />
+                <marker date="1481684763598" expanded="true" signature="14434:14516" ph="SELECT * FRO... results" />
+                <marker date="1481684763598" expanded="true" signature="15835:15873" ph="SELECT * FRO... results" />
+                <marker date="1481684763598" expanded="true" signature="16172:16254" ph="SELECT * FRO... results" />
+                <marker date="1481684763598" expanded="true" signature="16498:16634" ph="SELECT count... results" />
+                <marker date="1481684763598" expanded="true" signature="17333:17411" ph="UPDATE setma... " />
+                <marker date="1481684763598" expanded="true" signature="18591:18638" ph="SELECT nb_se... poules" />
+                <marker date="1481684763598" expanded="true" signature="19179:19228" ph="UPDATE poule... " />
+                <marker date="1481684763598" expanded="true" signature="19427:19600" ph="SELECT teams... teams" />
+                <marker date="1481684763598" expanded="true" signature="19861:19942" ph="SELECT * FRO... participe" />
+                <marker date="1481684763598" expanded="true" signature="20260:20369" ph="SELECT * FRO... results" />
+                <marker date="1481684763598" expanded="true" signature="20821:20853" ph="SELECT * FRO... classementparpoule" />
+                <marker date="1481684763598" expanded="true" signature="20988:21299" ph="SELECT `m`.`... classementparpoule" />
+                <marker date="1481684763598" expanded="true" signature="21164:21183" ph="SELECT @curR... " />
+                <marker date="1481684763598" expanded="true" signature="22308:22370" ph="SELECT MAX(t... participe" />
+                <marker date="1481684763598" expanded="true" signature="23020:23113" ph="SELECT * FRO... teams" />
+                <marker date="1481684763598" expanded="true" signature="23053:23112" ph="SELECT team_... participe" />
+                <marker date="1481684763598" expanded="true" signature="23448:23632" ph="SELECT teams... teams" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Views/home/index.php">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1973">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#2742#2749#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#6638#6645#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -264,11 +269,9 @@
         <option value="$USER_HOME$/Downloads/calendrier.php" />
         <option value="$PROJECT_DIR$/app/Table/ParticipeTable.php" />
         <option value="$USER_HOME$/Downloads/calendrier (2).php" />
-        <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
         <option value="$PROJECT_DIR$/app/Views/account/tournois/calendrier.php" />
         <option value="$PROJECT_DIR$/app/App.php" />
         <option value="$PROJECT_DIR$/core/Controller/Controller.php" />
-        <option value="$PROJECT_DIR$/app/Views/account/tournois/register.php" />
         <option value="$PROJECT_DIR$/app/Entity/TerrainEntity.php" />
         <option value="$PROJECT_DIR$/app/Table/TerrainTable.php" />
         <option value="$PROJECT_DIR$/app/Controller/Account/TerrainController.php" />
@@ -278,6 +281,8 @@
         <option value="$PROJECT_DIR$/app/Views/account/tournois/tournoiByEvent.php" />
         <option value="$PROJECT_DIR$/app/Table/TournoiTable.php" />
         <option value="$PROJECT_DIR$/app/Views/home/index.php" />
+        <option value="$PROJECT_DIR$/app/Views/account/tournois/register.php" />
+        <option value="$PROJECT_DIR$/app/Controller/Account/TournoisController.php" />
       </list>
     </option>
   </component>
@@ -769,7 +774,7 @@
       <workItem from="1481537536657" duration="29245000" />
       <workItem from="1481628074353" duration="3569000" />
       <workItem from="1481642601581" duration="23488000" />
-      <workItem from="1481678141937" duration="1883000" />
+      <workItem from="1481678141937" duration="3913000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de la fonction register dans la classe d'authentification DbAuth">
       <created>1477147768667</created>
@@ -796,7 +801,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="608773000" />
+    <option name="totallyTimeSpent" value="610803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,7 +813,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22327965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1188,13 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Entity/TerrainEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1260,57 +1258,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="29" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <element signature="e#27395#28044#0#PHP" expanded="false" />
-            <marker date="1481658866511" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
-            <marker date="1481658866511" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
-            <marker date="1481658866511" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
-            <marker date="1481658866511" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
-            <marker date="1481658866511" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
-            <marker date="1481658866511" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
-            <marker date="1481658866511" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
-            <marker date="1481658866511" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
-            <marker date="1481658866511" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
-            <marker date="1481658866511" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
-            <marker date="1481658866511" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
-            <marker date="1481658866511" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
-            <marker date="1481658866511" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
-            <marker date="1481658866511" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
-            <marker date="1481658866511" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
-            <marker date="1481658866511" expanded="true" signature="11736:11787" ph="SELECT organ... events" />
-            <marker date="1481658866511" expanded="true" signature="12999:13081" ph="SELECT * FRO... teams" />
-            <marker date="1481658866511" expanded="true" signature="13032:13080" ph="SELECT team_... participe" />
-            <marker date="1481658866511" expanded="true" signature="13155:13225" ph="SELECT * FRO... results" />
-            <marker date="1481658866511" expanded="true" signature="13654:13790" ph="SELECT count... results" />
-            <marker date="1481658866511" expanded="true" signature="14081:14119" ph="SELECT * FRO... results" />
-            <marker date="1481658866511" expanded="true" signature="14434:14516" ph="SELECT * FRO... results" />
-            <marker date="1481658866511" expanded="true" signature="15835:15873" ph="SELECT * FRO... results" />
-            <marker date="1481658866511" expanded="true" signature="16172:16254" ph="SELECT * FRO... results" />
-            <marker date="1481658866511" expanded="true" signature="16498:16634" ph="SELECT count... results" />
-            <marker date="1481658866511" expanded="true" signature="17333:17411" ph="UPDATE setma... " />
-            <marker date="1481658866511" expanded="true" signature="18591:18638" ph="SELECT nb_se... poules" />
-            <marker date="1481658866511" expanded="true" signature="19179:19228" ph="UPDATE poule... " />
-            <marker date="1481658866511" expanded="true" signature="19427:19600" ph="SELECT teams... teams" />
-            <marker date="1481658866511" expanded="true" signature="19861:19942" ph="SELECT * FRO... participe" />
-            <marker date="1481658866511" expanded="true" signature="20260:20369" ph="SELECT * FRO... results" />
-            <marker date="1481658866511" expanded="true" signature="21211:21273" ph="SELECT MAX(t... participe" />
-            <marker date="1481658866511" expanded="true" signature="21923:22016" ph="SELECT * FRO... teams" />
-            <marker date="1481658866511" expanded="true" signature="21956:22015" ph="SELECT team_... participe" />
-            <marker date="1481658866511" expanded="true" signature="22351:22535" ph="SELECT teams... teams" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/account/tournois/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1973">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#2742#2749#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#6638#6645#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Account/TournoisController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="732" column="0" lean-forward="true" selection-start-line="732" selection-start-column="0" selection-end-line="732" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <element signature="e#28492#29141#0#PHP" expanded="false" />
+            <marker date="1481684763598" expanded="true" signature="699:742" ph="SELECT nb_to... events" />
+            <marker date="1481684763598" expanded="true" signature="865:889" ph="SELECT * FRO... categories" />
+            <marker date="1481684763598" expanded="true" signature="3012:3045" ph="SELECT * FRO... tournois" />
+            <marker date="1481684763598" expanded="true" signature="3228:3321" ph="SELECT * FRO... tournois" />
+            <marker date="1481684763598" expanded="true" signature="3278:3320" ph="SELECT id FR... events" />
+            <marker date="1481684763598" expanded="true" signature="3735:3890" ph="SELECT teams... teams" />
+            <marker date="1481684763598" expanded="true" signature="3853:3889" ph="SELECT id FR... clubs" />
+            <marker date="1481684763598" expanded="true" signature="4116:4156" ph="SELECT * FRO... participe" />
+            <marker date="1481684763598" expanded="true" signature="4751:4800" ph="SELECT inscr... events" />
+            <marker date="1481684763598" expanded="true" signature="4867:5081" ph="SELECT DISTI... teams" />
+            <marker date="1481684763598" expanded="true" signature="6908:6943" ph="SELECT id FR... teams" />
+            <marker date="1481684763598" expanded="true" signature="7042:7106" ph="UPDATE parti... " />
+            <marker date="1481684763598" expanded="true" signature="7322:7345" ph="SELECT * FRO... participe" />
+            <marker date="1481684763598" expanded="true" signature="10487:10569" ph="SELECT * FRO... teams" />
+            <marker date="1481684763598" expanded="true" signature="10520:10568" ph="SELECT team_... participe" />
+            <marker date="1481684763598" expanded="true" signature="11736:11787" ph="SELECT organ... events" />
+            <marker date="1481684763598" expanded="true" signature="12999:13081" ph="SELECT * FRO... teams" />
+            <marker date="1481684763598" expanded="true" signature="13032:13080" ph="SELECT team_... participe" />
+            <marker date="1481684763598" expanded="true" signature="13155:13225" ph="SELECT * FRO... results" />
+            <marker date="1481684763598" expanded="true" signature="13654:13790" ph="SELECT count... results" />
+            <marker date="1481684763598" expanded="true" signature="14081:14119" ph="SELECT * FRO... results" />
+            <marker date="1481684763598" expanded="true" signature="14434:14516" ph="SELECT * FRO... results" />
+            <marker date="1481684763598" expanded="true" signature="15835:15873" ph="SELECT * FRO... results" />
+            <marker date="1481684763598" expanded="true" signature="16172:16254" ph="SELECT * FRO... results" />
+            <marker date="1481684763598" expanded="true" signature="16498:16634" ph="SELECT count... results" />
+            <marker date="1481684763598" expanded="true" signature="17333:17411" ph="UPDATE setma... " />
+            <marker date="1481684763598" expanded="true" signature="18591:18638" ph="SELECT nb_se... poules" />
+            <marker date="1481684763598" expanded="true" signature="19179:19228" ph="UPDATE poule... " />
+            <marker date="1481684763598" expanded="true" signature="19427:19600" ph="SELECT teams... teams" />
+            <marker date="1481684763598" expanded="true" signature="19861:19942" ph="SELECT * FRO... participe" />
+            <marker date="1481684763598" expanded="true" signature="20260:20369" ph="SELECT * FRO... results" />
+            <marker date="1481684763598" expanded="true" signature="20821:20853" ph="SELECT * FRO... classementparpoule" />
+            <marker date="1481684763598" expanded="true" signature="20988:21299" ph="SELECT `m`.`... classementparpoule" />
+            <marker date="1481684763598" expanded="true" signature="21164:21183" ph="SELECT @curR... " />
+            <marker date="1481684763598" expanded="true" signature="22308:22370" ph="SELECT MAX(t... participe" />
+            <marker date="1481684763598" expanded="true" signature="23020:23113" ph="SELECT * FRO... teams" />
+            <marker date="1481684763598" expanded="true" signature="23053:23112" ph="SELECT team_... participe" />
+            <marker date="1481684763598" expanded="true" signature="23448:23632" ph="SELECT teams... teams" />
+          </folding>
         </state>
       </provider>
     </entry>

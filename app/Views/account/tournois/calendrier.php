@@ -46,14 +46,25 @@
                             <tr>
                                 <th>#</th>
                                 <th>Equipe</th>
+                                <th>Matchs Gagnés</th>
+                                <th>Matchs perdus</th>
+                                <th>Quotient Set</th>
+                                <th>Quotient Set</th>
+
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $idT=  $all_poule_id['poule 1'][$_GET['tournoi_id']];  ?>
                             <?php
                             foreach ($poules["poule 1"] as $k => $equipe): ?>
+                            <?= $ind =$k + 1; ?>
                                 <tr>
-                                    <td><?= $k + 1; ?></td>
-                                    <td><?= $equipe; ?></td>
+                                <td><?= $k + 1; ?></td>
+                                    <td><?= $all_classement[64][1][1] ?></td>
+                                    <td><?= $all_classement[64][1][2] ?></td>
+                                    <td><?= $all_classement[64][1][3] ?></td>
+                                    <td><?= $all_classement[64][1][4] ?></td>
+                                    <td><?= $all_classement[64][1][5] ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>

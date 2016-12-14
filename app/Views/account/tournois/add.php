@@ -29,23 +29,15 @@
                         <div class="form-group">
                             <?= $form->select("nom_categorie$i", 'nom_categorie', $categories); ?>
                         </div>
-
+                        
                         <div class="form-group">
-<<<<<<< HEAD
                                 <input id="gratuit" type="radio" name=<?php echo "typetarif".$i ;?> value="gratuit" onclick="desactiver(<?php echo $i ;?>)"/> Gratuit
                                 <input id="payant" type="radio" name=<?php echo "typetarif".$i ;?> value="payant" onclick="activer(<?php echo $i ;?>)"/> Payant
                             </div>
-=======
-                            <input id="gratuit" type="radio" name="typetarif" value="gratuit"
-                                   onclick="desactiver(<?php echo $i; ?>)"/> Gratuit
-                            <input id="payant" type="radio" name="typetarif" value="payant"
-                                   onclick="activer(<?php echo $i; ?>)"/> Payant
-                        </div>
->>>>>>> 8a3fa56398fc0fbd4ad2d455da12bfac5363f356
                         <div class="form-group">
-                            <?= $form->input('prix', 'prix', ['type' => 'number', 'placeholder' => 'Prix', 'id' => 'prix' . $i, 'disabled' => 'true']); ?>
+                                <?= $form->input('prix', 'prix', ['type' => 'number', 'placeholder' => 'Prix', 'id' => 'prix'.$i,'disabled'=>'true']); ?>
 
-                        </div>
+                            </div>
                         <div class="f1-buttons">
                             <?php if ($i < intval($nb_tournois)) { ?>
                                 <button type="button" class="btn btn-next">Suivant</button>
@@ -59,25 +51,18 @@
             </form>
         </div>
     </div>
-    <script type="text/javascript">
-
-        function activer(i) {
+<script type="text/javascript">
+    
+    function activer(i) {
 //alert("activer");
-            document.getElementById('prix' + i).disabled = false;
+document.getElementById('prix'+i).disabled=false;
 
-        }
+}
 
-<<<<<<< HEAD
   function desactiver(i) {
-alert(i);
+//alert(i);
 document.getElementById('prix'+i).disabled=true;
 document.getElementById('prix'+i).value="0";
-=======
-        function desactiver(i) {
-//alert("desactiver");
-            document.getElementById('prix' + i).disabled = true;
-            document.getElementById('prix' + i).value = "0";
->>>>>>> 8a3fa56398fc0fbd4ad2d455da12bfac5363f356
 
-        }
-    </script>
+}
+</script>
