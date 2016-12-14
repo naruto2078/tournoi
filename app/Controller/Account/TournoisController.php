@@ -349,7 +349,7 @@ class TournoisController extends AppController {
 
         $matches = $this->Match->matchesTournoi($_GET['tournoi_id']);
         $equipes_ = $this->Team->query("SELECT * FROM teams WHERE id IN (SELECT team_id FROM participe WHERE tournoi_id=?)", [$_GET['tournoi_id']], false);
-        $score = $this->Results->query("SELECT *  FROM results", false);
+        $score = $this->Results->query("SELECT *  FROM results,setmatch WHERE results.id = setmatch.id_results", false);
         $all_teams = [];
 
         foreach ($equipes_ as $item) {
@@ -520,6 +520,7 @@ class TournoisController extends AppController {
 
         $querySetByTeamAndMatch = $this->Results->query("SELECT * FROM results, matches,setmatch WHERE results.match_id= matches.id AND results.id=setmatch.id_results");
         $compt = 1;
+        $all_set_by_team_match = [];
         foreach ($querySetByTeamAndMatch as $tuple) {
             $all_set_by_team_match[$compt][$tuple->match_id][$tuple->team_id_home] = $tuple->score_home;
             $all_set_by_team_match[$compt][$tuple->match_id][$tuple->team_id_away] = $tuple->score_away;
@@ -527,8 +528,9 @@ class TournoisController extends AppController {
         }
         //var_dump($all_set_by_team_match);
 
+var_dump($all_set_by_team_match);
 
-        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases','equipesParPhase', 'lesPhases','lesQualifiees', 'nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
+        $this->render('account.tournois.calendrier', compact('organisateur', 'participants', 'nbPhases_', 'phases','equipesParPhase', 'lesPhases','lesQualifiees', 'all_set_by_team_match','nbScdTour', 'numero', 'poules', 'matches', 'all_teams', 'all_teams_poule', 'lesPoules', 'all_score', 'all_poule_id', 'all_nb_set'));
     }
 
     public function actualiser() {

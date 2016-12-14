@@ -122,6 +122,11 @@
                     <li><a href="index.php?p=account.events.register"><i></i>Participer à un tournoi</a></li>
                 </ul>
             </li>
+            <li>
+                <a href="index.php?p=account.terrains.add"><i class="fa fa-asterisk"></i>
+                    <span class="sidebar-text ">Ajouter un terrain</span>
+                </a>
+            </li>
         </ul>
     </div>
 

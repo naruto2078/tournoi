@@ -18,7 +18,7 @@
 
             <!--Main information-->
             <div class="col-md-5">
-                <h2 class="h2-responsive">Bienvenue sur tournoi.local</h2>
+                <h2 class="h2-responsive">Bienvenue sur tournoi-volley</h2>
                 <hr>
                 <p><h4>Le site qui facilite la création de vos évènements de volley et de leurs différents tournois
                     ainsi que leur gestion!<br>Nous nous occupons de la préinscription des équipes en ligne, de la mise

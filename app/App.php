@@ -10,11 +10,11 @@ use Core\DataBase\MysqlDataBase;
 
 /**
  * Class App : noyau de l'appli
- * utilise le pattern Singleton et le pattern Factory
+ * utilise le pattern Singleton
  * @package App
  */
 class App {
-    public $title = 'Mon super site';
+    public $title = 'Tournoi Volley';
     private $db_instance;
     private static $_instance;
 
