@@ -57,14 +57,52 @@
                             <?php $idT=  $all_poule_id['poule 1'][$_GET['tournoi_id']];  ?>
                             <?php
                             foreach ($poules["poule 1"] as $k => $equipe): ?>
-                            <?= $ind =$k + 1; ?>
+                                <?php $ind =$k + 1; ?>
                                 <tr>
-                                <td><?= $k + 1; ?></td>
-                                    <td><?= $all_classement[64][1][1] ?></td>
-                                    <td><?= $all_classement[64][1][2] ?></td>
-                                    <td><?= $all_classement[64][1][3] ?></td>
-                                    <td><?= $all_classement[64][1][4] ?></td>
-                                    <td><?= $all_classement[64][1][5] ?></td>
+                                    <?php
+                                    if (empty($all_classement[$idT][$k + 1][4])){
+                                        $quotientset='NR';
+                                    }
+                                    else{
+                                        if ($all_classement[$idT][$k + 1][4]<0 ){
+                                            $quotientset='NR';
+                                        }else
+                                        {
+                                            $quotientset=$all_classement[$idT][$k + 1][4];
+                                        }
+                                    }
+
+                                    if (!empty($all_classement[  $idT ][$k + 1 ][1] )){
+                                        $teamname=$all_classement[  $idT ][$k + 1 ][1] ;
+                                    }else {
+                                        $teamname='NR';
+                                    }
+
+                                    if (!empty($all_classement[  $idT ][$k + 1 ][2] )){
+                                        $matchWin=$all_classement[  $idT ][$k + 1 ][2] ;
+                                    }else {
+                                        $matchWin='NR';
+                                    }
+
+                                    if (!empty($all_classement[  $idT ][$k + 1 ][3] )){
+                                        $matchLoose=$all_classement[  $idT ][$k + 1 ][3] ;
+                                    }else {
+                                        $matchLoose='NR';
+                                    }
+                                    if (!empty($all_classement[  $idT ][$k + 1 ][5] )){
+                                        $quotientPoint=$all_classement[  $idT ][$k + 1 ][5] ;
+                                    }else {
+                                        $quotientPoint='NR';
+                                    }
+
+
+                                    ?>
+                                    <td><?= $k + 1; ?></td>
+                                    <td><?= $teamname; ?></td>
+                                    <td><?= $matchWin; ?></td>
+                                    <td><?= $matchLoose;?></td>
+                                    <td><?= $quotientset; ?></td>
+                                    <td><?= $quotientPoint; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>
@@ -167,13 +205,63 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Equipe</th>
+                                    <th>Matchs Gagnés</th>
+                                    <th>Matchs perdus</th>
+                                    <th>Quotient Set</th>
+                                    <th>Quotient Set</th>
+
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($poules['poule ' . $i] as $k => $equipe): ?>
+                                <?php $idT=  $all_poule_id['poule ' . $i][$_GET['tournoi_id']];  ?>
+                                <?php
+                                foreach ($poules['poule ' . $i] as $k => $equipe): ?>
+                                    <?php $ind =$k + 1; ?>
                                     <tr>
+                                        <?php
+                                        if (empty($all_classement[$idT][$k + 1][4])){
+                                            $quotientset='NR';
+                                        }
+                                        else{
+                                            if ($all_classement[$idT][$k + 1][4]<0  ){
+                                                $quotientset='NR';
+                                            }else
+                                            {
+                                                $quotientset=$all_classement[$idT][$k + 1][4];
+                                            }
+                                        }
+
+                                        if (!empty($all_classement[  $idT ][$k + 1 ][1] )){
+                                            $teamname=$all_classement[  $idT ][$k + 1 ][1] ;
+                                        }else {
+                                            $teamname='NR';
+                                        }
+
+                                        if (!empty($all_classement[  $idT ][$k + 1 ][2] )){
+                                            $matchWin=$all_classement[  $idT ][$k + 1 ][2] ;
+                                        }else {
+                                            $matchWin='NR';
+                                        }
+
+                                        if (!empty($all_classement[  $idT ][$k + 1 ][3] )){
+                                            $matchLoose=$all_classement[  $idT ][$k + 1 ][3] ;
+                                        }else {
+                                            $matchLoose='NR';
+                                        }
+                                        if (!empty($all_classement[  $idT ][$k + 1 ][5] )){
+                                            $quotientPoint=$all_classement[  $idT ][$k + 1 ][5] ;
+                                        }else {
+                                            $quotientPoint='NR';
+                                        }
+
+
+                                        ?>
                                         <td><?= $k + 1; ?></td>
-                                        <td><?= $equipe; ?></td>
+                                        <td><?= $teamname; ?></td>
+                                        <td><?= $matchWin; ?></td>
+                                        <td><?= $matchLoose;?></td>
+                                        <td><?= $quotientset; ?></td>
+                                        <td><?= $quotientPoint; ?></td>
                                     </tr>
                                 <?php endforeach; ?>
                                 </tbody>
@@ -752,7 +840,7 @@
             <script type="text/javascript">
 
                 function dialog(home, away, idMatch, nbset) {
-                    alert("Equipe Dom " + home + "Equipe Ext " + away + "idMatch " + idMatch + "nb Set " + nbset);
+                    //alert("Equipe Dom " + home + "Equipe Ext " + away + "idMatch " + idMatch + "nb Set " + nbset);
 //document.getElementById("toto").data-target="#myModal";
 
 
@@ -777,10 +865,10 @@
                 }
 
                 function dialog2(home, away, idMatch, nbset) {
-//alert(home + away + idMatch);
+////alert(home + away + idMatch);
 //document.getElementById("toto").data-target="#myModal";
 
-                    alert("MODIFIER :Equipe Dom " + home + "Equipe Ext " + away + "idMacth " + idMatch + "nb Set " + nbset);
+                    //alert("MODIFIER :Equipe Dom " + home + "Equipe Ext " + away + "idMacth " + idMatch + "nb Set " + nbset);
                     $('#myModal2').modal();
 //$('#myModal2').find('.modal-title').val(home + away+idMatch);
                     $(".modal-body #id3").val(home + away + idMatch);
@@ -805,7 +893,7 @@
 
 
                 function dialogPoule(idPoule) {
-                    alert(idPoule);
+                    //alert(idPoule);
                     $('#myModalPoule').modal();
                     $(".modal-body #idPoule").val(idPoule);
                     /* var maxField=10;
@@ -818,7 +906,7 @@
 
                 }
                 function desactiver(i) {
-//alert("desactiver");
+////alert("desactiver");
                     document.getElementById('prix' + i).disabled = true;
                     document.getElementById('prix' + i).value = "0";
 

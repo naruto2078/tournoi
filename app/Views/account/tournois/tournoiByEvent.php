@@ -6,6 +6,7 @@
 <hr class="extra-margins">
 <div class="row">
     <?php foreach ($tournois as $tournoi) : ?>
+
     <div class="col-sm-4">
         <div class="card">
             <div class="view overlay hm-white-slight">
